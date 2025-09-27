@@ -2,13 +2,15 @@ import numpy as np
 import pandas as pd
 import joblib
 import logging
+import json
 from pathlib import Path
 from sklearn.model_selection import train_test_split, StratifiedKFold, cross_val_score
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, f1_score
+from sklearn.metrics import accuracy_score, f1_score, classification_report
 from xgboost import XGBClassifier
 from collections import Counter
+import time
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)-8s %(message)s")
 log = logging.getLogger("evodoc.trainer")
@@ -24,6 +26,11 @@ class ModelTrainer:
         self.best_model = None
         self.best_score = 0
         self.label_encoder = None
+        self.X_train = None
+        self.X_test = None
+        self.y_train = None
+        self.y_test = None
+        self.unique_labels = None
         
     def load_data(self):
         try:
@@ -41,15 +48,12 @@ class ModelTrainer:
             log.error("Please run data processing first")
             return None, None, None, None
     
-    def filter_rare_classes(self, X, y, min_samples=2):
-        """Remove classes with fewer than min_samples"""
+    def filter_rare_classes(self, X, y, min_samples=5):
         class_counts = Counter(y)
-        
         rare_classes = [cls for cls, count in class_counts.items() if count < min_samples]
         
         if rare_classes:
             log.info(f"Removing {len(rare_classes)} rare classes with < {min_samples} samples")
-            
             mask = ~np.isin(y, rare_classes)
             X_filtered = X[mask]
             y_filtered = y[mask]
@@ -59,164 +63,304 @@ class ModelTrainer:
             y_remapped = np.array([label_mapping[label] for label in y_filtered])
             
             log.info(f"After filtering: X={X_filtered.shape}, y={y_remapped.shape}, classes={len(unique_labels)}")
-            
             return X_filtered, y_remapped, unique_labels
         
         return X, y, np.unique(y)
     
-    def get_model_configs(self, n_classes, n_features):
-        base_configs = {
-            "xgb": {
-                "model": XGBClassifier,
-                "params": {
-                    "n_estimators": min(100, max(50, n_features // 5)),
-                    "max_depth": min(6, max(3, int(np.log2(n_features)))),
-                    "learning_rate": 0.1,
-                    "subsample": 0.8,
-                    "colsample_bytree": 0.8,
-                    "random_state": 42,
-                    "eval_metric": 'mlogloss',
-                    "use_label_encoder": False,
-                    "verbosity": 0
-                }
-            },
-            "rf": {
-                "model": RandomForestClassifier,
-                "params": {
-                    "n_estimators": min(100, max(50, n_features // 10)),
-                    "max_depth": min(10, max(5, int(np.sqrt(n_features)))),
-                    "random_state": 42,
-                    "n_jobs": -1,
-                    "verbose": 0
-                }
-            },
-            "logreg": {
-                "model": LogisticRegression,
-                "params": {
-                    "max_iter": min(1000, max(200, n_classes * 2)),
-                    "random_state": 42,
-                    "n_jobs": -1,
-                    "verbose": 0
-                }
-            }
-        }
-        
-        if n_classes > 100:
-            base_configs["logreg"]["params"]["solver"] = "saga"
-            base_configs["logreg"]["params"]["C"] = 0.1
-        
-        return base_configs
-    
-    def train_models(self):
+    def prepare_data(self):
         X, y, symptom_columns, label_encoder = self.load_data()
         
         if X is None:
-            return None
+            return False
             
         self.label_encoder = label_encoder
-        
-        X_filtered, y_filtered, unique_labels = self.filter_rare_classes(X, y, min_samples=2)
-        
-        n_classes = len(unique_labels)
-        n_features = X_filtered.shape[1]
-        
-        log.info(f"Training with {n_classes} classes and {n_features} features")
+        X_filtered, y_filtered, unique_labels = self.filter_rare_classes(X, y, min_samples=5)
+        self.unique_labels = unique_labels
         
         try:
-            X_train, X_test, y_train, y_test = train_test_split(
+            self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(
                 X_filtered, y_filtered, test_size=0.2, random_state=42, stratify=y_filtered
             )
         except ValueError as e:
             log.warning(f"Stratified split failed: {e}")
             log.info("Using random split instead")
-            X_train, X_test, y_train, y_test = train_test_split(
+            self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(
                 X_filtered, y_filtered, test_size=0.2, random_state=42
             )
         
-        models_config = self.get_model_configs(n_classes, n_features)
-        results = {}
+        log.info(f"Data prepared: Train={self.X_train.shape}, Test={self.X_test.shape}")
+        return True
+    
+    def train_xgboost(self, save_model=True):
+        log.info("Training XGBoost model...")
         
-        for name, config in models_config.items():
-            log.info(f"Training {name.upper()} model...")
-            
+        n_classes = len(self.unique_labels)
+        n_features = self.X_train.shape[1]
+        
+        params = {
+            "n_estimators": min(100, max(50, n_features // 5)),
+            "max_depth": min(6, max(3, int(np.log2(n_features)))),
+            "learning_rate": 0.1,
+            "subsample": 0.8,
+            "colsample_bytree": 0.8,
+            "random_state": 42,
+            "eval_metric": 'mlogloss',
+            "use_label_encoder": False,
+            "verbosity": 0
+        }
+        
+        model = XGBClassifier(**params)
+        
+        start_time = time.time()
+        
+        try:
+            cv_folds = min(3, len(np.unique(self.y_train)))
+            cv_scores = cross_val_score(model, self.X_train, self.y_train, cv=cv_folds, scoring='accuracy')
+            cv_mean = cv_scores.mean()
+            cv_std = cv_scores.std()
+        except Exception as cv_error:
+            log.warning(f"Cross-validation failed: {cv_error}")
+            cv_mean, cv_std = 0.0, 0.0
+        
+        model.fit(self.X_train, self.y_train)
+        
+        y_pred = model.predict(self.X_test)
+        y_proba = model.predict_proba(self.X_test)
+        
+        accuracy = accuracy_score(self.y_test, y_pred)
+        f1 = f1_score(self.y_test, y_pred, average='weighted')
+        top3_acc = self.top_k_accuracy(self.y_test, y_proba, k=min(3, n_classes))
+        top5_acc = self.top_k_accuracy(self.y_test, y_proba, k=min(5, n_classes))
+        
+        training_time = time.time() - start_time
+        
+        results = {
+            'model': model,
+            'cv_mean': cv_mean,
+            'cv_std': cv_std,
+            'test_accuracy': accuracy,
+            'test_f1': f1,
+            'top3_accuracy': top3_acc,
+            'top5_accuracy': top5_acc,
+            'training_time': training_time,
+            'params': params
+        }
+        
+        log.info(f"XGBoost: CV={cv_mean:.4f}±{cv_std:.4f}, Test Acc={accuracy:.4f}, "
+                f"F1={f1:.4f}, Top3={top3_acc:.4f}, Top5={top5_acc:.4f}, Time={training_time:.2f}s")
+        
+        if save_model:
+            joblib.dump(model, MODELS_DIR / "xgb_model.pkl")
+            with open(MODELS_DIR / "xgb_results.json", "w") as f:
+                json.dump({k: v for k, v in results.items() if k != 'model'}, f, indent=2)
+            log.info("XGBoost model saved")
+        
+        return results
+    
+    def train_random_forest(self, save_model=True):
+        log.info("Training Random Forest model...")
+        
+        n_classes = len(self.unique_labels)
+        n_features = self.X_train.shape[1]
+        
+        params = {
+            "n_estimators": min(100, max(50, n_features // 10)),
+            "max_depth": min(10, max(5, int(np.sqrt(n_features)))),
+            "random_state": 42,
+            "n_jobs": -1,
+            "verbose": 0
+        }
+        
+        model = RandomForestClassifier(**params)
+        
+        start_time = time.time()
+        
+        try:
+            cv_folds = min(3, len(np.unique(self.y_train)))
+            cv_scores = cross_val_score(model, self.X_train, self.y_train, cv=cv_folds, scoring='accuracy')
+            cv_mean = cv_scores.mean()
+            cv_std = cv_scores.std()
+        except Exception as cv_error:
+            log.warning(f"Cross-validation failed: {cv_error}")
+            cv_mean, cv_std = 0.0, 0.0
+        
+        model.fit(self.X_train, self.y_train)
+        
+        y_pred = model.predict(self.X_test)
+        y_proba = model.predict_proba(self.X_test)
+        
+        accuracy = accuracy_score(self.y_test, y_pred)
+        f1 = f1_score(self.y_test, y_pred, average='weighted')
+        top3_acc = self.top_k_accuracy(self.y_test, y_proba, k=min(3, n_classes))
+        top5_acc = self.top_k_accuracy(self.y_test, y_proba, k=min(5, n_classes))
+        
+        training_time = time.time() - start_time
+        
+        results = {
+            'model': model,
+            'cv_mean': cv_mean,
+            'cv_std': cv_std,
+            'test_accuracy': accuracy,
+            'test_f1': f1,
+            'top3_accuracy': top3_acc,
+            'top5_accuracy': top5_acc,
+            'training_time': training_time,
+            'params': params
+        }
+        
+        log.info(f"Random Forest: CV={cv_mean:.4f}±{cv_std:.4f}, Test Acc={accuracy:.4f}, "
+                f"F1={f1:.4f}, Top3={top3_acc:.4f}, Top5={top5_acc:.4f}, Time={training_time:.2f}s")
+        
+        if save_model:
+            joblib.dump(model, MODELS_DIR / "rf_model.pkl")
+            with open(MODELS_DIR / "rf_results.json", "w") as f:
+                json.dump({k: v for k, v in results.items() if k != 'model'}, f, indent=2)
+            log.info("Random Forest model saved")
+        
+        return results
+    
+    def train_logistic_regression(self, save_model=True):
+        log.info("Training Logistic Regression model...")
+        
+        n_classes = len(self.unique_labels)
+        n_samples = self.X_train.shape[0]
+        
+        # Optimized parameters for large datasets
+        params = {
+            "max_iter": 200,  # Reduced iterations
+            "random_state": 42,
+            "n_jobs": -1,
+            "verbose": 1,  # Show progress
+            "solver": "saga",  # Better for large datasets
+            "C": 1.0,  # Regularization
+            "tol": 1e-3  # Looser tolerance for faster convergence
+        }
+        
+        # For very large datasets, use more aggressive settings
+        if n_samples > 100000:
+            params.update({
+                "max_iter": 100,
+                "tol": 1e-2,
+                "C": 0.1
+            })
+            log.info("Using optimized settings for large dataset")
+        
+        model = LogisticRegression(**params)
+        
+        start_time = time.time()
+        
+        # Skip cross-validation for very large datasets to save time
+        if n_samples > 150000:
+            log.info("Skipping cross-validation for large dataset")
+            cv_mean, cv_std = 0.0, 0.0
+        else:
             try:
-                model = config["model"](**config["params"])
-                
-                try:
-                    cv_folds = min(3, len(np.unique(y_train)))
-                    cv_scores = cross_val_score(
-                        model, X_train, y_train, cv=cv_folds, scoring='accuracy'
-                    )
-                    cv_mean = cv_scores.mean()
-                    cv_std = cv_scores.std()
-                except Exception as cv_error:
-                    log.warning(f"Cross-validation failed for {name}: {cv_error}")
-                    cv_mean, cv_std = 0.0, 0.0
-                
-                model.fit(X_train, y_train)
-                
-                y_pred = model.predict(X_test)
-                y_proba = model.predict_proba(X_test)
-                
-                accuracy = accuracy_score(y_test, y_pred)
-                f1 = f1_score(y_test, y_pred, average='weighted')
-                top3_acc = self.top_k_accuracy(y_test, y_proba, k=min(3, n_classes))
-                top5_acc = self.top_k_accuracy(y_test, y_proba, k=min(5, n_classes))
-                
-                results[name] = {
-                    'model': model,
-                    'cv_mean': cv_mean,
-                    'cv_std': cv_std,
-                    'test_accuracy': accuracy,
-                    'test_f1': f1,
-                    'top3_accuracy': top3_acc,
-                    'top5_accuracy': top5_acc
-                }
-                
-                log.info(f"{name.upper()}: CV={cv_mean:.4f}±{cv_std:.4f}, "
-                        f"Test Acc={accuracy:.4f}, F1={f1:.4f}, Top3={top3_acc:.4f}, Top5={top5_acc:.4f}")
-                
-                if accuracy > self.best_score:
-                    self.best_score = accuracy
-                    self.best_model = model
-                    self.best_model_name = name
-                    
-            except Exception as e:
-                log.error(f"Error training {name}: {e}")
-                continue
+                cv_folds = min(3, len(np.unique(self.y_train)))
+                cv_scores = cross_val_score(model, self.X_train, self.y_train, cv=cv_folds, scoring='accuracy')
+                cv_mean = cv_scores.mean()
+                cv_std = cv_scores.std()
+            except Exception as cv_error:
+                log.warning(f"Cross-validation failed: {cv_error}")
+                cv_mean, cv_std = 0.0, 0.0
         
-        if not results:
-            log.error("No models were successfully trained")
+        log.info("Starting model training...")
+        model.fit(self.X_train, self.y_train)
+        log.info("Model training completed")
+        
+        y_pred = model.predict(self.X_test)
+        y_proba = model.predict_proba(self.X_test)
+        
+        accuracy = accuracy_score(self.y_test, y_pred)
+        f1 = f1_score(self.y_test, y_pred, average='weighted')
+        top3_acc = self.top_k_accuracy(self.y_test, y_proba, k=min(3, n_classes))
+        top5_acc = self.top_k_accuracy(self.y_test, y_proba, k=min(5, n_classes))
+        
+        training_time = time.time() - start_time
+        
+        results = {
+            'model': model,
+            'cv_mean': cv_mean,
+            'cv_std': cv_std,
+            'test_accuracy': accuracy,
+            'test_f1': f1,
+            'top3_accuracy': top3_acc,
+            'top5_accuracy': top5_acc,
+            'training_time': training_time,
+            'params': params
+        }
+        
+        log.info(f"Logistic Regression: CV={cv_mean:.4f}±{cv_std:.4f}, Test Acc={accuracy:.4f}, "
+                f"F1={f1:.4f}, Top3={top3_acc:.4f}, Top5={top5_acc:.4f}, Time={training_time:.2f}s")
+        
+        if save_model:
+            joblib.dump(model, MODELS_DIR / "logreg_model.pkl")
+            with open(MODELS_DIR / "logreg_results.json", "w") as f:
+                json.dump({k: v for k, v in results.items() if k != 'model'}, f, indent=2)
+            log.info("Logistic Regression model saved")
+        
+        return results
+    
+    def train_all_models(self):
+        if not self.prepare_data():
             return None
         
-        self.models = results
+        results = {}
         
-        for name, result in results.items():
-            model_path = MODELS_DIR / f"{name}_model.pkl"
-            joblib.dump(result['model'], model_path)
-            log.info(f"Saved {name} model to {model_path}")
+        try:
+            results['xgb'] = self.train_xgboost()
+        except Exception as e:
+            log.error(f"XGBoost training failed: {e}")
         
-        joblib.dump(self.best_model, MODELS_DIR / "best_model.pkl")
-        joblib.dump(self.label_encoder, MODELS_DIR / "label_encoder.pkl")
+        try:
+            results['rf'] = self.train_random_forest()
+        except Exception as e:
+            log.error(f"Random Forest training failed: {e}")
         
-        filtered_label_encoder = joblib.load(PROCESSED_DIR / "label_encoder.pkl")
-        filtered_classes = [filtered_label_encoder.classes_[i] for i in unique_labels]
+        try:
+            results['logreg'] = self.train_logistic_regression()
+        except Exception as e:
+            log.error(f"Logistic Regression training failed: {e}")
         
-        class FilteredLabelEncoder:
-            def __init__(self, original_encoder, filtered_classes, label_mapping):
-                self.original_encoder = original_encoder
-                self.classes_ = np.array(filtered_classes)
-                self.label_mapping = label_mapping
+        if results:
+            best_model_name = max(results.keys(), key=lambda k: results[k]['test_accuracy'])
+            best_model = results[best_model_name]['model']
+            best_score = results[best_model_name]['test_accuracy']
             
-            def inverse_transform(self, y):
-                return self.classes_[y]
-        
-        label_mapping = {new_label: old_label for new_label, old_label in enumerate(unique_labels)}
-        filtered_encoder = FilteredLabelEncoder(label_encoder, filtered_classes, label_mapping)
-        
-        joblib.dump(filtered_encoder, MODELS_DIR / "filtered_label_encoder.pkl")
-        
-        log.info(f"Best model: {self.best_model_name.upper()} with accuracy {self.best_score:.4f}")
+            joblib.dump(best_model, MODELS_DIR / "best_model.pkl")
+            
+            filtered_label_encoder = joblib.load(PROCESSED_DIR / "label_encoder.pkl")
+            filtered_classes = [filtered_label_encoder.classes_[i] for i in self.unique_labels]
+            
+            class FilteredLabelEncoder:
+                def __init__(self, original_encoder, filtered_classes, label_mapping):
+                    self.original_encoder = original_encoder
+                    self.classes_ = np.array(filtered_classes)
+                    self.label_mapping = label_mapping
+                
+                def inverse_transform(self, y):
+                    return self.classes_[y]
+            
+            label_mapping = {new_label: old_label for new_label, old_label in enumerate(self.unique_labels)}
+            filtered_encoder = FilteredLabelEncoder(self.label_encoder, filtered_classes, label_mapping)
+            
+            joblib.dump(filtered_encoder, MODELS_DIR / "filtered_label_encoder.pkl")
+            
+            summary = {
+                'best_model': best_model_name,
+                'best_accuracy': best_score,
+                'all_results': {k: {key: val for key, val in v.items() if key != 'model'} 
+                               for k, v in results.items()}
+            }
+            
+            with open(MODELS_DIR / "training_summary.json", "w") as f:
+                json.dump(summary, f, indent=2)
+            
+            log.info(f"Best model: {best_model_name.upper()} with accuracy {best_score:.4f}")
+            
+            self.models = results
+            self.best_model = best_model
+            self.best_score = best_score
+            self.best_model_name = best_model_name
         
         return results
     
@@ -232,38 +376,23 @@ class ModelTrainer:
         else:
             model = joblib.load(MODELS_DIR / f"{model_name}_model.pkl")
         
-        X, y, symptom_columns, label_encoder = self.load_data()
+        if self.X_test is None:
+            self.prepare_data()
         
-        X_filtered, y_filtered, unique_labels = self.filter_rare_classes(X, y, min_samples=2)
+        y_pred = model.predict(self.X_test)
+        y_proba = model.predict_proba(self.X_test)
         
-        try:
-            X_train, X_test, y_train, y_test = train_test_split(
-                X_filtered, y_filtered, test_size=0.2, random_state=42, stratify=y_filtered
-            )
-        except ValueError:
-            X_train, X_test, y_train, y_test = train_test_split(
-                X_filtered, y_filtered, test_size=0.2, random_state=42
-            )
+        n_classes = len(self.unique_labels)
         
-        y_pred = model.predict(X_test)
-        y_proba = model.predict_proba(X_test)
-        
-        n_classes = len(unique_labels)
-        
-        print("\n=== Model Evaluation Report ===")
-        print(f"Test Accuracy: {accuracy_score(y_test, y_pred):.4f}")
-        print(f"Test F1-Score: {f1_score(y_test, y_pred, average='weighted'):.4f}")
-        print(f"Top-3 Accuracy: {self.top_k_accuracy(y_test, y_proba, k=min(3, n_classes)):.4f}")
-        print(f"Top-5 Accuracy: {self.top_k_accuracy(y_test, y_proba, k=min(5, n_classes)):.4f}")
-        
-        print(f"\nDataset Statistics:")
-        print(f"Total samples (after filtering): {len(X_filtered)}")
-        print(f"Features: {len(symptom_columns)}")
-        print(f"Classes (after filtering): {n_classes}")
+        print(f"\n=== {model_name.upper()} Model Evaluation Report ===")
+        print(f"Test Accuracy: {accuracy_score(self.y_test, y_pred):.4f}")
+        print(f"Test F1-Score: {f1_score(self.y_test, y_pred, average='weighted'):.4f}")
+        print(f"Top-3 Accuracy: {self.top_k_accuracy(self.y_test, y_proba, k=min(3, n_classes)):.4f}")
+        print(f"Top-5 Accuracy: {self.top_k_accuracy(self.y_test, y_proba, k=min(5, n_classes)):.4f}")
         
         return {
-            'accuracy': accuracy_score(y_test, y_pred),
-            'f1': f1_score(y_test, y_pred, average='weighted'),
-            'top3': self.top_k_accuracy(y_test, y_proba, k=min(3, n_classes)),
-            'top5': self.top_k_accuracy(y_test, y_proba, k=min(5, n_classes))
+            'accuracy': accuracy_score(self.y_test, y_pred),
+            'f1': f1_score(self.y_test, y_pred, average='weighted'),
+            'top3': self.top_k_accuracy(self.y_test, y_proba, k=min(3, n_classes)),
+            'top5': self.top_k_accuracy(self.y_test, y_proba, k=min(5, n_classes))
         }
