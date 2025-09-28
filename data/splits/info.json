@@ -1,0 +1,13 @@
+{
+  "original_dataset": "./data/raw/Symptom2Disease.csv",
+  "target_column": "diseases",
+  "total_samples": 246945,
+  "total_diseases": 773,
+  "groups_created": [
+    "respiratory",
+    "heart",
+    "diabetes",
+    "brain",
+    "other"
+  ]
+}

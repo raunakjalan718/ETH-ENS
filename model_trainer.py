@@ -110,7 +110,6 @@ class ModelTrainer:
         }
         
         model = XGBClassifier(**params)
-        
         start_time = time.time()
         
         try:
@@ -131,7 +130,6 @@ class ModelTrainer:
         f1 = f1_score(self.y_test, y_pred, average='weighted')
         top3_acc = self.top_k_accuracy(self.y_test, y_proba, k=min(3, n_classes))
         top5_acc = self.top_k_accuracy(self.y_test, y_proba, k=min(5, n_classes))
-        
         training_time = time.time() - start_time
         
         results = {
@@ -172,7 +170,6 @@ class ModelTrainer:
         }
         
         model = RandomForestClassifier(**params)
-        
         start_time = time.time()
         
         try:
@@ -193,7 +190,6 @@ class ModelTrainer:
         f1 = f1_score(self.y_test, y_pred, average='weighted')
         top3_acc = self.top_k_accuracy(self.y_test, y_proba, k=min(3, n_classes))
         top5_acc = self.top_k_accuracy(self.y_test, y_proba, k=min(5, n_classes))
-        
         training_time = time.time() - start_time
         
         results = {
@@ -225,18 +221,16 @@ class ModelTrainer:
         n_classes = len(self.unique_labels)
         n_samples = self.X_train.shape[0]
         
-        # Optimized parameters for large datasets
         params = {
-            "max_iter": 200,  # Reduced iterations
+            "max_iter": 200,
             "random_state": 42,
             "n_jobs": -1,
-            "verbose": 1,  # Show progress
-            "solver": "saga",  # Better for large datasets
-            "C": 1.0,  # Regularization
-            "tol": 1e-3  # Looser tolerance for faster convergence
+            "verbose": 1,
+            "solver": "saga",
+            "C": 1.0,
+            "tol": 1e-3
         }
         
-        # For very large datasets, use more aggressive settings
         if n_samples > 100000:
             params.update({
                 "max_iter": 100,
@@ -246,10 +240,8 @@ class ModelTrainer:
             log.info("Using optimized settings for large dataset")
         
         model = LogisticRegression(**params)
-        
         start_time = time.time()
         
-        # Skip cross-validation for very large datasets to save time
         if n_samples > 150000:
             log.info("Skipping cross-validation for large dataset")
             cv_mean, cv_std = 0.0, 0.0
@@ -274,7 +266,6 @@ class ModelTrainer:
         f1 = f1_score(self.y_test, y_pred, average='weighted')
         top3_acc = self.top_k_accuracy(self.y_test, y_proba, k=min(3, n_classes))
         top5_acc = self.top_k_accuracy(self.y_test, y_proba, k=min(5, n_classes))
-        
         training_time = time.time() - start_time
         
         results = {

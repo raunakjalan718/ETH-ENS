@@ -1,0 +1,13 @@
+{
+  "counter": 0,
+  "entities": {},
+  "snapshots": [
+    {
+      "name": "snapshot_20250927_233054",
+      "created_at": "2025-09-27T23:30:54.140396",
+      "disease_map": {},
+      "symptom_map": {},
+      "total_entities": 0
+    }
+  ]
+}

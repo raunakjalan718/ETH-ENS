@@ -1,0 +1,7567 @@
+{
+  "counter": 1134,
+  "entities": {
+    "asthma.evodoc": {
+      "type": "disease",
+      "name": "asthma",
+      "code": "0x000001",
+      "id": 1,
+      "icd10": "J01"
+    },
+    "gastroesophageal_reflux_disease_(gerd).evodoc": {
+      "type": "disease",
+      "name": "gastroesophageal reflux disease (gerd)",
+      "code": "0x000002",
+      "id": 2,
+      "icd10": "J02"
+    },
+    "pneumonia.evodoc": {
+      "type": "disease",
+      "name": "pneumonia",
+      "code": "0x000003",
+      "id": 3,
+      "icd10": "J03"
+    },
+    "cold_sore.evodoc": {
+      "type": "disease",
+      "name": "cold sore",
+      "code": "0x000004",
+      "id": 4,
+      "icd10": "J04"
+    },
+    "vesicoureteral_reflux.evodoc": {
+      "type": "disease",
+      "name": "vesicoureteral reflux",
+      "code": "0x000005",
+      "id": 5,
+      "icd10": "J05"
+    },
+    "whooping_cough.evodoc": {
+      "type": "disease",
+      "name": "whooping cough",
+      "code": "0x000006",
+      "id": 6,
+      "icd10": "J06"
+    },
+    "fluid_overload.evodoc": {
+      "type": "disease",
+      "name": "fluid overload",
+      "code": "0x000007",
+      "id": 7,
+      "icd10": "J07"
+    },
+    "atrial_flutter.evodoc": {
+      "type": "disease",
+      "name": "atrial flutter",
+      "code": "0x000008",
+      "id": 8,
+      "icd10": "J08"
+    },
+    "acute_bronchitis.evodoc": {
+      "type": "disease",
+      "name": "acute bronchitis",
+      "code": "0x000009",
+      "id": 9,
+      "icd10": "J09"
+    },
+    "common_cold.evodoc": {
+      "type": "disease",
+      "name": "common cold",
+      "code": "0x00000A",
+      "id": 10,
+      "icd10": "J10"
+    },
+    "flu.evodoc": {
+      "type": "disease",
+      "name": "flu",
+      "code": "0x00000B",
+      "id": 11,
+      "icd10": "J11"
+    },
+    "anxiety_and_nervousness.evodoc": {
+      "type": "symptom",
+      "name": "anxiety and nervousness",
+      "code": "0x00000C",
+      "id": 12
+    },
+    "depression.evodoc": {
+      "type": "symptom",
+      "name": "depression",
+      "code": "0x00000D",
+      "id": 13
+    },
+    "shortness_of_breath.evodoc": {
+      "type": "symptom",
+      "name": "shortness of breath",
+      "code": "0x00000E",
+      "id": 14
+    },
+    "depressive_or_psychotic_symptoms.evodoc": {
+      "type": "symptom",
+      "name": "depressive or psychotic symptoms",
+      "code": "0x00000F",
+      "id": 15
+    },
+    "sharp_chest_pain.evodoc": {
+      "type": "symptom",
+      "name": "sharp chest pain",
+      "code": "0x000010",
+      "id": 16
+    },
+    "dizziness.evodoc": {
+      "type": "symptom",
+      "name": "dizziness",
+      "code": "0x000011",
+      "id": 17
+    },
+    "insomnia.evodoc": {
+      "type": "symptom",
+      "name": "insomnia",
+      "code": "0x000012",
+      "id": 18
+    },
+    "abnormal_involuntary_movements.evodoc": {
+      "type": "symptom",
+      "name": "abnormal involuntary movements",
+      "code": "0x000013",
+      "id": 19
+    },
+    "chest_tightness.evodoc": {
+      "type": "symptom",
+      "name": "chest tightness",
+      "code": "0x000014",
+      "id": 20
+    },
+    "palpitations.evodoc": {
+      "type": "symptom",
+      "name": "palpitations",
+      "code": "0x000015",
+      "id": 21
+    },
+    "irregular_heartbeat.evodoc": {
+      "type": "symptom",
+      "name": "irregular heartbeat",
+      "code": "0x000016",
+      "id": 22
+    },
+    "breathing_fast.evodoc": {
+      "type": "symptom",
+      "name": "breathing fast",
+      "code": "0x000017",
+      "id": 23
+    },
+    "hoarse_voice.evodoc": {
+      "type": "symptom",
+      "name": "hoarse voice",
+      "code": "0x000018",
+      "id": 24
+    },
+    "sore_throat.evodoc": {
+      "type": "symptom",
+      "name": "sore throat",
+      "code": "0x000019",
+      "id": 25
+    },
+    "difficulty_speaking.evodoc": {
+      "type": "symptom",
+      "name": "difficulty speaking",
+      "code": "0x00001A",
+      "id": 26
+    },
+    "cough.evodoc": {
+      "type": "symptom",
+      "name": "cough",
+      "code": "0x00001B",
+      "id": 27
+    },
+    "nasal_congestion.evodoc": {
+      "type": "symptom",
+      "name": "nasal congestion",
+      "code": "0x00001C",
+      "id": 28
+    },
+    "throat_swelling.evodoc": {
+      "type": "symptom",
+      "name": "throat swelling",
+      "code": "0x00001D",
+      "id": 29
+    },
+    "diminished_hearing.evodoc": {
+      "type": "symptom",
+      "name": "diminished hearing",
+      "code": "0x00001E",
+      "id": 30
+    },
+    "lump_in_throat.evodoc": {
+      "type": "symptom",
+      "name": "lump in throat",
+      "code": "0x00001F",
+      "id": 31
+    },
+    "throat_feels_tight.evodoc": {
+      "type": "symptom",
+      "name": "throat feels tight",
+      "code": "0x000020",
+      "id": 32
+    },
+    "difficulty_in_swallowing.evodoc": {
+      "type": "symptom",
+      "name": "difficulty in swallowing",
+      "code": "0x000021",
+      "id": 33
+    },
+    "skin_swelling.evodoc": {
+      "type": "symptom",
+      "name": "skin swelling",
+      "code": "0x000022",
+      "id": 34
+    },
+    "retention_of_urine.evodoc": {
+      "type": "symptom",
+      "name": "retention of urine",
+      "code": "0x000023",
+      "id": 35
+    },
+    "groin_mass.evodoc": {
+      "type": "symptom",
+      "name": "groin mass",
+      "code": "0x000024",
+      "id": 36
+    },
+    "leg_pain.evodoc": {
+      "type": "symptom",
+      "name": "leg pain",
+      "code": "0x000025",
+      "id": 37
+    },
+    "hip_pain.evodoc": {
+      "type": "symptom",
+      "name": "hip pain",
+      "code": "0x000026",
+      "id": 38
+    },
+    "suprapubic_pain.evodoc": {
+      "type": "symptom",
+      "name": "suprapubic pain",
+      "code": "0x000027",
+      "id": 39
+    },
+    "blood_in_stool.evodoc": {
+      "type": "symptom",
+      "name": "blood in stool",
+      "code": "0x000028",
+      "id": 40
+    },
+    "lack_of_growth.evodoc": {
+      "type": "symptom",
+      "name": "lack of growth",
+      "code": "0x000029",
+      "id": 41
+    },
+    "emotional_symptoms.evodoc": {
+      "type": "symptom",
+      "name": "emotional symptoms",
+      "code": "0x00002A",
+      "id": 42
+    },
+    "elbow_weakness.evodoc": {
+      "type": "symptom",
+      "name": "elbow weakness",
+      "code": "0x00002B",
+      "id": 43
+    },
+    "back_weakness.evodoc": {
+      "type": "symptom",
+      "name": "back weakness",
+      "code": "0x00002C",
+      "id": 44
+    },
+    "pus_in_sputum.evodoc": {
+      "type": "symptom",
+      "name": "pus in sputum",
+      "code": "0x00002D",
+      "id": 45
+    },
+    "symptoms_of_the_scrotum_and_testes.evodoc": {
+      "type": "symptom",
+      "name": "symptoms of the scrotum and testes",
+      "code": "0x00002E",
+      "id": 46
+    },
+    "swelling_of_scrotum.evodoc": {
+      "type": "symptom",
+      "name": "swelling of scrotum",
+      "code": "0x00002F",
+      "id": 47
+    },
+    "pain_in_testicles.evodoc": {
+      "type": "symptom",
+      "name": "pain in testicles",
+      "code": "0x000030",
+      "id": 48
+    },
+    "flatulence.evodoc": {
+      "type": "symptom",
+      "name": "flatulence",
+      "code": "0x000031",
+      "id": 49
+    },
+    "pus_draining_from_ear.evodoc": {
+      "type": "symptom",
+      "name": "pus draining from ear",
+      "code": "0x000032",
+      "id": 50
+    },
+    "jaundice.evodoc": {
+      "type": "symptom",
+      "name": "jaundice",
+      "code": "0x000033",
+      "id": 51
+    },
+    "mass_in_scrotum.evodoc": {
+      "type": "symptom",
+      "name": "mass in scrotum",
+      "code": "0x000034",
+      "id": 52
+    },
+    "white_discharge_from_eye.evodoc": {
+      "type": "symptom",
+      "name": "white discharge from eye",
+      "code": "0x000035",
+      "id": 53
+    },
+    "irritable_infant.evodoc": {
+      "type": "symptom",
+      "name": "irritable infant",
+      "code": "0x000036",
+      "id": 54
+    },
+    "abusing_alcohol.evodoc": {
+      "type": "symptom",
+      "name": "abusing alcohol",
+      "code": "0x000037",
+      "id": 55
+    },
+    "fainting.evodoc": {
+      "type": "symptom",
+      "name": "fainting",
+      "code": "0x000038",
+      "id": 56
+    },
+    "hostile_behavior.evodoc": {
+      "type": "symptom",
+      "name": "hostile behavior",
+      "code": "0x000039",
+      "id": 57
+    },
+    "drug_abuse.evodoc": {
+      "type": "symptom",
+      "name": "drug abuse",
+      "code": "0x00003A",
+      "id": 58
+    },
+    "sharp_abdominal_pain.evodoc": {
+      "type": "symptom",
+      "name": "sharp abdominal pain",
+      "code": "0x00003B",
+      "id": 59
+    },
+    "feeling_ill.evodoc": {
+      "type": "symptom",
+      "name": "feeling ill",
+      "code": "0x00003C",
+      "id": 60
+    },
+    "vomiting.evodoc": {
+      "type": "symptom",
+      "name": "vomiting",
+      "code": "0x00003D",
+      "id": 61
+    },
+    "headache.evodoc": {
+      "type": "symptom",
+      "name": "headache",
+      "code": "0x00003E",
+      "id": 62
+    },
+    "nausea.evodoc": {
+      "type": "symptom",
+      "name": "nausea",
+      "code": "0x00003F",
+      "id": 63
+    },
+    "diarrhea.evodoc": {
+      "type": "symptom",
+      "name": "diarrhea",
+      "code": "0x000040",
+      "id": 64
+    },
+    "vaginal_itching.evodoc": {
+      "type": "symptom",
+      "name": "vaginal itching",
+      "code": "0x000041",
+      "id": 65
+    },
+    "vaginal_dryness.evodoc": {
+      "type": "symptom",
+      "name": "vaginal dryness",
+      "code": "0x000042",
+      "id": 66
+    },
+    "painful_urination.evodoc": {
+      "type": "symptom",
+      "name": "painful urination",
+      "code": "0x000043",
+      "id": 67
+    },
+    "involuntary_urination.evodoc": {
+      "type": "symptom",
+      "name": "involuntary urination",
+      "code": "0x000044",
+      "id": 68
+    },
+    "pain_during_intercourse.evodoc": {
+      "type": "symptom",
+      "name": "pain during intercourse",
+      "code": "0x000045",
+      "id": 69
+    },
+    "frequent_urination.evodoc": {
+      "type": "symptom",
+      "name": "frequent urination",
+      "code": "0x000046",
+      "id": 70
+    },
+    "lower_abdominal_pain.evodoc": {
+      "type": "symptom",
+      "name": "lower abdominal pain",
+      "code": "0x000047",
+      "id": 71
+    },
+    "vaginal_discharge.evodoc": {
+      "type": "symptom",
+      "name": "vaginal discharge",
+      "code": "0x000048",
+      "id": 72
+    },
+    "blood_in_urine.evodoc": {
+      "type": "symptom",
+      "name": "blood in urine",
+      "code": "0x000049",
+      "id": 73
+    },
+    "hot_flashes.evodoc": {
+      "type": "symptom",
+      "name": "hot flashes",
+      "code": "0x00004A",
+      "id": 74
+    },
+    "intermenstrual_bleeding.evodoc": {
+      "type": "symptom",
+      "name": "intermenstrual bleeding",
+      "code": "0x00004B",
+      "id": 75
+    },
+    "hand_or_finger_pain.evodoc": {
+      "type": "symptom",
+      "name": "hand or finger pain",
+      "code": "0x00004C",
+      "id": 76
+    },
+    "wrist_pain.evodoc": {
+      "type": "symptom",
+      "name": "wrist pain",
+      "code": "0x00004D",
+      "id": 77
+    },
+    "hand_or_finger_swelling.evodoc": {
+      "type": "symptom",
+      "name": "hand or finger swelling",
+      "code": "0x00004E",
+      "id": 78
+    },
+    "arm_pain.evodoc": {
+      "type": "symptom",
+      "name": "arm pain",
+      "code": "0x00004F",
+      "id": 79
+    },
+    "wrist_swelling.evodoc": {
+      "type": "symptom",
+      "name": "wrist swelling",
+      "code": "0x000050",
+      "id": 80
+    },
+    "arm_stiffness_or_tightness.evodoc": {
+      "type": "symptom",
+      "name": "arm stiffness or tightness",
+      "code": "0x000051",
+      "id": 81
+    },
+    "arm_swelling.evodoc": {
+      "type": "symptom",
+      "name": "arm swelling",
+      "code": "0x000052",
+      "id": 82
+    },
+    "hand_or_finger_stiffness_or_tightness.evodoc": {
+      "type": "symptom",
+      "name": "hand or finger stiffness or tightness",
+      "code": "0x000053",
+      "id": 83
+    },
+    "wrist_stiffness_or_tightness.evodoc": {
+      "type": "symptom",
+      "name": "wrist stiffness or tightness",
+      "code": "0x000054",
+      "id": 84
+    },
+    "lip_swelling.evodoc": {
+      "type": "symptom",
+      "name": "lip swelling",
+      "code": "0x000055",
+      "id": 85
+    },
+    "toothache.evodoc": {
+      "type": "symptom",
+      "name": "toothache",
+      "code": "0x000056",
+      "id": 86
+    },
+    "abnormal_appearing_skin.evodoc": {
+      "type": "symptom",
+      "name": "abnormal appearing skin",
+      "code": "0x000057",
+      "id": 87
+    },
+    "skin_lesion.evodoc": {
+      "type": "symptom",
+      "name": "skin lesion",
+      "code": "0x000058",
+      "id": 88
+    },
+    "acne_or_pimples.evodoc": {
+      "type": "symptom",
+      "name": "acne or pimples",
+      "code": "0x000059",
+      "id": 89
+    },
+    "dry_lips.evodoc": {
+      "type": "symptom",
+      "name": "dry lips",
+      "code": "0x00005A",
+      "id": 90
+    },
+    "facial_pain.evodoc": {
+      "type": "symptom",
+      "name": "facial pain",
+      "code": "0x00005B",
+      "id": 91
+    },
+    "mouth_ulcer.evodoc": {
+      "type": "symptom",
+      "name": "mouth ulcer",
+      "code": "0x00005C",
+      "id": 92
+    },
+    "skin_growth.evodoc": {
+      "type": "symptom",
+      "name": "skin growth",
+      "code": "0x00005D",
+      "id": 93
+    },
+    "eye_deviation.evodoc": {
+      "type": "symptom",
+      "name": "eye deviation",
+      "code": "0x00005E",
+      "id": 94
+    },
+    "diminished_vision.evodoc": {
+      "type": "symptom",
+      "name": "diminished vision",
+      "code": "0x00005F",
+      "id": 95
+    },
+    "double_vision.evodoc": {
+      "type": "symptom",
+      "name": "double vision",
+      "code": "0x000060",
+      "id": 96
+    },
+    "cross-eyed.evodoc": {
+      "type": "symptom",
+      "name": "cross-eyed",
+      "code": "0x000061",
+      "id": 97
+    },
+    "symptoms_of_eye.evodoc": {
+      "type": "symptom",
+      "name": "symptoms of eye",
+      "code": "0x000062",
+      "id": 98
+    },
+    "pain_in_eye.evodoc": {
+      "type": "symptom",
+      "name": "pain in eye",
+      "code": "0x000063",
+      "id": 99
+    },
+    "eye_moves_abnormally.evodoc": {
+      "type": "symptom",
+      "name": "eye moves abnormally",
+      "code": "0x000064",
+      "id": 100
+    },
+    "abnormal_movement_of_eyelid.evodoc": {
+      "type": "symptom",
+      "name": "abnormal movement of eyelid",
+      "code": "0x000065",
+      "id": 101
+    },
+    "foreign_body_sensation_in_eye.evodoc": {
+      "type": "symptom",
+      "name": "foreign body sensation in eye",
+      "code": "0x000066",
+      "id": 102
+    },
+    "irregular_appearing_scalp.evodoc": {
+      "type": "symptom",
+      "name": "irregular appearing scalp",
+      "code": "0x000067",
+      "id": 103
+    },
+    "swollen_lymph_nodes.evodoc": {
+      "type": "symptom",
+      "name": "swollen lymph nodes",
+      "code": "0x000068",
+      "id": 104
+    },
+    "back_pain.evodoc": {
+      "type": "symptom",
+      "name": "back pain",
+      "code": "0x000069",
+      "id": 105
+    },
+    "neck_pain.evodoc": {
+      "type": "symptom",
+      "name": "neck pain",
+      "code": "0x00006A",
+      "id": 106
+    },
+    "low_back_pain.evodoc": {
+      "type": "symptom",
+      "name": "low back pain",
+      "code": "0x00006B",
+      "id": 107
+    },
+    "pain_of_the_anus.evodoc": {
+      "type": "symptom",
+      "name": "pain of the anus",
+      "code": "0x00006C",
+      "id": 108
+    },
+    "pain_during_pregnancy.evodoc": {
+      "type": "symptom",
+      "name": "pain during pregnancy",
+      "code": "0x00006D",
+      "id": 109
+    },
+    "pelvic_pain.evodoc": {
+      "type": "symptom",
+      "name": "pelvic pain",
+      "code": "0x00006E",
+      "id": 110
+    },
+    "impotence.evodoc": {
+      "type": "symptom",
+      "name": "impotence",
+      "code": "0x00006F",
+      "id": 111
+    },
+    "infant_spitting_up.evodoc": {
+      "type": "symptom",
+      "name": "infant spitting up",
+      "code": "0x000070",
+      "id": 112
+    },
+    "vomiting_blood.evodoc": {
+      "type": "symptom",
+      "name": "vomiting blood",
+      "code": "0x000071",
+      "id": 113
+    },
+    "regurgitation.evodoc": {
+      "type": "symptom",
+      "name": "regurgitation",
+      "code": "0x000072",
+      "id": 114
+    },
+    "burning_abdominal_pain.evodoc": {
+      "type": "symptom",
+      "name": "burning abdominal pain",
+      "code": "0x000073",
+      "id": 115
+    },
+    "restlessness.evodoc": {
+      "type": "symptom",
+      "name": "restlessness",
+      "code": "0x000074",
+      "id": 116
+    },
+    "symptoms_of_infants.evodoc": {
+      "type": "symptom",
+      "name": "symptoms of infants",
+      "code": "0x000075",
+      "id": 117
+    },
+    "wheezing.evodoc": {
+      "type": "symptom",
+      "name": "wheezing",
+      "code": "0x000076",
+      "id": 118
+    },
+    "peripheral_edema.evodoc": {
+      "type": "symptom",
+      "name": "peripheral edema",
+      "code": "0x000077",
+      "id": 119
+    },
+    "neck_mass.evodoc": {
+      "type": "symptom",
+      "name": "neck mass",
+      "code": "0x000078",
+      "id": 120
+    },
+    "ear_pain.evodoc": {
+      "type": "symptom",
+      "name": "ear pain",
+      "code": "0x000079",
+      "id": 121
+    },
+    "jaw_swelling.evodoc": {
+      "type": "symptom",
+      "name": "jaw swelling",
+      "code": "0x00007A",
+      "id": 122
+    },
+    "mouth_dryness.evodoc": {
+      "type": "symptom",
+      "name": "mouth dryness",
+      "code": "0x00007B",
+      "id": 123
+    },
+    "neck_swelling.evodoc": {
+      "type": "symptom",
+      "name": "neck swelling",
+      "code": "0x00007C",
+      "id": 124
+    },
+    "knee_pain.evodoc": {
+      "type": "symptom",
+      "name": "knee pain",
+      "code": "0x00007D",
+      "id": 125
+    },
+    "foot_or_toe_pain.evodoc": {
+      "type": "symptom",
+      "name": "foot or toe pain",
+      "code": "0x00007E",
+      "id": 126
+    },
+    "bowlegged_or_knock-kneed.evodoc": {
+      "type": "symptom",
+      "name": "bowlegged or knock-kneed",
+      "code": "0x00007F",
+      "id": 127
+    },
+    "ankle_pain.evodoc": {
+      "type": "symptom",
+      "name": "ankle pain",
+      "code": "0x000080",
+      "id": 128
+    },
+    "bones_are_painful.evodoc": {
+      "type": "symptom",
+      "name": "bones are painful",
+      "code": "0x000081",
+      "id": 129
+    },
+    "knee_weakness.evodoc": {
+      "type": "symptom",
+      "name": "knee weakness",
+      "code": "0x000082",
+      "id": 130
+    },
+    "elbow_pain.evodoc": {
+      "type": "symptom",
+      "name": "elbow pain",
+      "code": "0x000083",
+      "id": 131
+    },
+    "knee_swelling.evodoc": {
+      "type": "symptom",
+      "name": "knee swelling",
+      "code": "0x000084",
+      "id": 132
+    },
+    "skin_moles.evodoc": {
+      "type": "symptom",
+      "name": "skin moles",
+      "code": "0x000085",
+      "id": 133
+    },
+    "knee_lump_or_mass.evodoc": {
+      "type": "symptom",
+      "name": "knee lump or mass",
+      "code": "0x000086",
+      "id": 134
+    },
+    "weight_gain.evodoc": {
+      "type": "symptom",
+      "name": "weight gain",
+      "code": "0x000087",
+      "id": 135
+    },
+    "problems_with_movement.evodoc": {
+      "type": "symptom",
+      "name": "problems with movement",
+      "code": "0x000088",
+      "id": 136
+    },
+    "knee_stiffness_or_tightness.evodoc": {
+      "type": "symptom",
+      "name": "knee stiffness or tightness",
+      "code": "0x000089",
+      "id": 137
+    },
+    "leg_swelling.evodoc": {
+      "type": "symptom",
+      "name": "leg swelling",
+      "code": "0x00008A",
+      "id": 138
+    },
+    "foot_or_toe_swelling.evodoc": {
+      "type": "symptom",
+      "name": "foot or toe swelling",
+      "code": "0x00008B",
+      "id": 139
+    },
+    "heartburn.evodoc": {
+      "type": "symptom",
+      "name": "heartburn",
+      "code": "0x00008C",
+      "id": 140
+    },
+    "smoking_problems.evodoc": {
+      "type": "symptom",
+      "name": "smoking problems",
+      "code": "0x00008D",
+      "id": 141
+    },
+    "muscle_pain.evodoc": {
+      "type": "symptom",
+      "name": "muscle pain",
+      "code": "0x00008E",
+      "id": 142
+    },
+    "infant_feeding_problem.evodoc": {
+      "type": "symptom",
+      "name": "infant feeding problem",
+      "code": "0x00008F",
+      "id": 143
+    },
+    "recent_weight_loss.evodoc": {
+      "type": "symptom",
+      "name": "recent weight loss",
+      "code": "0x000090",
+      "id": 144
+    },
+    "problems_with_shape_or_size_of_breast.evodoc": {
+      "type": "symptom",
+      "name": "problems with shape or size of breast",
+      "code": "0x000091",
+      "id": 145
+    },
+    "underweight.evodoc": {
+      "type": "symptom",
+      "name": "underweight",
+      "code": "0x000092",
+      "id": 146
+    },
+    "difficulty_eating.evodoc": {
+      "type": "symptom",
+      "name": "difficulty eating",
+      "code": "0x000093",
+      "id": 147
+    },
+    "scanty_menstrual_flow.evodoc": {
+      "type": "symptom",
+      "name": "scanty menstrual flow",
+      "code": "0x000094",
+      "id": 148
+    },
+    "vaginal_pain.evodoc": {
+      "type": "symptom",
+      "name": "vaginal pain",
+      "code": "0x000095",
+      "id": 149
+    },
+    "vaginal_redness.evodoc": {
+      "type": "symptom",
+      "name": "vaginal redness",
+      "code": "0x000096",
+      "id": 150
+    },
+    "vulvar_irritation.evodoc": {
+      "type": "symptom",
+      "name": "vulvar irritation",
+      "code": "0x000097",
+      "id": 151
+    },
+    "weakness.evodoc": {
+      "type": "symptom",
+      "name": "weakness",
+      "code": "0x000098",
+      "id": 152
+    },
+    "decreased_heart_rate.evodoc": {
+      "type": "symptom",
+      "name": "decreased heart rate",
+      "code": "0x000099",
+      "id": 153
+    },
+    "increased_heart_rate.evodoc": {
+      "type": "symptom",
+      "name": "increased heart rate",
+      "code": "0x00009A",
+      "id": 154
+    },
+    "bleeding_or_discharge_from_nipple.evodoc": {
+      "type": "symptom",
+      "name": "bleeding or discharge from nipple",
+      "code": "0x00009B",
+      "id": 155
+    },
+    "ringing_in_ear.evodoc": {
+      "type": "symptom",
+      "name": "ringing in ear",
+      "code": "0x00009C",
+      "id": 156
+    },
+    "plugged_feeling_in_ear.evodoc": {
+      "type": "symptom",
+      "name": "plugged feeling in ear",
+      "code": "0x00009D",
+      "id": 157
+    },
+    "itchy_ear(s).evodoc": {
+      "type": "symptom",
+      "name": "itchy ear(s)",
+      "code": "0x00009E",
+      "id": 158
+    },
+    "frontal_headache.evodoc": {
+      "type": "symptom",
+      "name": "frontal headache",
+      "code": "0x00009F",
+      "id": 159
+    },
+    "fluid_in_ear.evodoc": {
+      "type": "symptom",
+      "name": "fluid in ear",
+      "code": "0x0000A0",
+      "id": 160
+    },
+    "neck_stiffness_or_tightness.evodoc": {
+      "type": "symptom",
+      "name": "neck stiffness or tightness",
+      "code": "0x0000A1",
+      "id": 161
+    },
+    "spots_or_clouds_in_vision.evodoc": {
+      "type": "symptom",
+      "name": "spots or clouds in vision",
+      "code": "0x0000A2",
+      "id": 162
+    },
+    "eye_redness.evodoc": {
+      "type": "symptom",
+      "name": "eye redness",
+      "code": "0x0000A3",
+      "id": 163
+    },
+    "lacrimation.evodoc": {
+      "type": "symptom",
+      "name": "lacrimation",
+      "code": "0x0000A4",
+      "id": 164
+    },
+    "itchiness_of_eye.evodoc": {
+      "type": "symptom",
+      "name": "itchiness of eye",
+      "code": "0x0000A5",
+      "id": 165
+    },
+    "blindness.evodoc": {
+      "type": "symptom",
+      "name": "blindness",
+      "code": "0x0000A6",
+      "id": 166
+    },
+    "eye_burns_or_stings.evodoc": {
+      "type": "symptom",
+      "name": "eye burns or stings",
+      "code": "0x0000A7",
+      "id": 167
+    },
+    "itchy_eyelid.evodoc": {
+      "type": "symptom",
+      "name": "itchy eyelid",
+      "code": "0x0000A8",
+      "id": 168
+    },
+    "feeling_cold.evodoc": {
+      "type": "symptom",
+      "name": "feeling cold",
+      "code": "0x0000A9",
+      "id": 169
+    },
+    "decreased_appetite.evodoc": {
+      "type": "symptom",
+      "name": "decreased appetite",
+      "code": "0x0000AA",
+      "id": 170
+    },
+    "excessive_appetite.evodoc": {
+      "type": "symptom",
+      "name": "excessive appetite",
+      "code": "0x0000AB",
+      "id": 171
+    },
+    "excessive_anger.evodoc": {
+      "type": "symptom",
+      "name": "excessive anger",
+      "code": "0x0000AC",
+      "id": 172
+    },
+    "loss_of_sensation.evodoc": {
+      "type": "symptom",
+      "name": "loss of sensation",
+      "code": "0x0000AD",
+      "id": 173
+    },
+    "focal_weakness.evodoc": {
+      "type": "symptom",
+      "name": "focal weakness",
+      "code": "0x0000AE",
+      "id": 174
+    },
+    "slurring_words.evodoc": {
+      "type": "symptom",
+      "name": "slurring words",
+      "code": "0x0000AF",
+      "id": 175
+    },
+    "symptoms_of_the_face.evodoc": {
+      "type": "symptom",
+      "name": "symptoms of the face",
+      "code": "0x0000B0",
+      "id": 176
+    },
+    "disturbance_of_memory.evodoc": {
+      "type": "symptom",
+      "name": "disturbance of memory",
+      "code": "0x0000B1",
+      "id": 177
+    },
+    "paresthesia.evodoc": {
+      "type": "symptom",
+      "name": "paresthesia",
+      "code": "0x0000B2",
+      "id": 178
+    },
+    "side_pain.evodoc": {
+      "type": "symptom",
+      "name": "side pain",
+      "code": "0x0000B3",
+      "id": 179
+    },
+    "fever.evodoc": {
+      "type": "symptom",
+      "name": "fever",
+      "code": "0x0000B4",
+      "id": 180
+    },
+    "shoulder_pain.evodoc": {
+      "type": "symptom",
+      "name": "shoulder pain",
+      "code": "0x0000B5",
+      "id": 181
+    },
+    "shoulder_stiffness_or_tightness.evodoc": {
+      "type": "symptom",
+      "name": "shoulder stiffness or tightness",
+      "code": "0x0000B6",
+      "id": 182
+    },
+    "shoulder_weakness.evodoc": {
+      "type": "symptom",
+      "name": "shoulder weakness",
+      "code": "0x0000B7",
+      "id": 183
+    },
+    "arm_cramps_or_spasms.evodoc": {
+      "type": "symptom",
+      "name": "arm cramps or spasms",
+      "code": "0x0000B8",
+      "id": 184
+    },
+    "shoulder_swelling.evodoc": {
+      "type": "symptom",
+      "name": "shoulder swelling",
+      "code": "0x0000B9",
+      "id": 185
+    },
+    "tongue_lesions.evodoc": {
+      "type": "symptom",
+      "name": "tongue lesions",
+      "code": "0x0000BA",
+      "id": 186
+    },
+    "leg_cramps_or_spasms.evodoc": {
+      "type": "symptom",
+      "name": "leg cramps or spasms",
+      "code": "0x0000BB",
+      "id": 187
+    },
+    "abnormal_appearing_tongue.evodoc": {
+      "type": "symptom",
+      "name": "abnormal appearing tongue",
+      "code": "0x0000BC",
+      "id": 188
+    },
+    "ache_all_over.evodoc": {
+      "type": "symptom",
+      "name": "ache all over",
+      "code": "0x0000BD",
+      "id": 189
+    },
+    "lower_body_pain.evodoc": {
+      "type": "symptom",
+      "name": "lower body pain",
+      "code": "0x0000BE",
+      "id": 190
+    },
+    "problems_during_pregnancy.evodoc": {
+      "type": "symptom",
+      "name": "problems during pregnancy",
+      "code": "0x0000BF",
+      "id": 191
+    },
+    "spotting_or_bleeding_during_pregnancy.evodoc": {
+      "type": "symptom",
+      "name": "spotting or bleeding during pregnancy",
+      "code": "0x0000C0",
+      "id": 192
+    },
+    "cramps_and_spasms.evodoc": {
+      "type": "symptom",
+      "name": "cramps and spasms",
+      "code": "0x0000C1",
+      "id": 193
+    },
+    "upper_abdominal_pain.evodoc": {
+      "type": "symptom",
+      "name": "upper abdominal pain",
+      "code": "0x0000C2",
+      "id": 194
+    },
+    "stomach_bloating.evodoc": {
+      "type": "symptom",
+      "name": "stomach bloating",
+      "code": "0x0000C3",
+      "id": 195
+    },
+    "changes_in_stool_appearance.evodoc": {
+      "type": "symptom",
+      "name": "changes in stool appearance",
+      "code": "0x0000C4",
+      "id": 196
+    },
+    "unusual_color_or_odor_to_urine.evodoc": {
+      "type": "symptom",
+      "name": "unusual color or odor to urine",
+      "code": "0x0000C5",
+      "id": 197
+    },
+    "kidney_mass.evodoc": {
+      "type": "symptom",
+      "name": "kidney mass",
+      "code": "0x0000C6",
+      "id": 198
+    },
+    "swollen_abdomen.evodoc": {
+      "type": "symptom",
+      "name": "swollen abdomen",
+      "code": "0x0000C7",
+      "id": 199
+    },
+    "symptoms_of_prostate.evodoc": {
+      "type": "symptom",
+      "name": "symptoms of prostate",
+      "code": "0x0000C8",
+      "id": 200
+    },
+    "leg_stiffness_or_tightness.evodoc": {
+      "type": "symptom",
+      "name": "leg stiffness or tightness",
+      "code": "0x0000C9",
+      "id": 201
+    },
+    "difficulty_breathing.evodoc": {
+      "type": "symptom",
+      "name": "difficulty breathing",
+      "code": "0x0000CA",
+      "id": 202
+    },
+    "rib_pain.evodoc": {
+      "type": "symptom",
+      "name": "rib pain",
+      "code": "0x0000CB",
+      "id": 203
+    },
+    "joint_pain.evodoc": {
+      "type": "symptom",
+      "name": "joint pain",
+      "code": "0x0000CC",
+      "id": 204
+    },
+    "muscle_stiffness_or_tightness.evodoc": {
+      "type": "symptom",
+      "name": "muscle stiffness or tightness",
+      "code": "0x0000CD",
+      "id": 205
+    },
+    "pallor.evodoc": {
+      "type": "symptom",
+      "name": "pallor",
+      "code": "0x0000CE",
+      "id": 206
+    },
+    "hand_or_finger_lump_or_mass.evodoc": {
+      "type": "symptom",
+      "name": "hand or finger lump or mass",
+      "code": "0x0000CF",
+      "id": 207
+    },
+    "chills.evodoc": {
+      "type": "symptom",
+      "name": "chills",
+      "code": "0x0000D0",
+      "id": 208
+    },
+    "groin_pain.evodoc": {
+      "type": "symptom",
+      "name": "groin pain",
+      "code": "0x0000D1",
+      "id": 209
+    },
+    "fatigue.evodoc": {
+      "type": "symptom",
+      "name": "fatigue",
+      "code": "0x0000D2",
+      "id": 210
+    },
+    "abdominal_distention.evodoc": {
+      "type": "symptom",
+      "name": "abdominal distention",
+      "code": "0x0000D3",
+      "id": 211
+    },
+    "regurgitation.1.evodoc": {
+      "type": "symptom",
+      "name": "regurgitation.1",
+      "code": "0x0000D4",
+      "id": 212
+    },
+    "symptoms_of_the_kidneys.evodoc": {
+      "type": "symptom",
+      "name": "symptoms of the kidneys",
+      "code": "0x0000D5",
+      "id": 213
+    },
+    "melena.evodoc": {
+      "type": "symptom",
+      "name": "melena",
+      "code": "0x0000D6",
+      "id": 214
+    },
+    "flushing.evodoc": {
+      "type": "symptom",
+      "name": "flushing",
+      "code": "0x0000D7",
+      "id": 215
+    },
+    "coughing_up_sputum.evodoc": {
+      "type": "symptom",
+      "name": "coughing up sputum",
+      "code": "0x0000D8",
+      "id": 216
+    },
+    "seizures.evodoc": {
+      "type": "symptom",
+      "name": "seizures",
+      "code": "0x0000D9",
+      "id": 217
+    },
+    "delusions_or_hallucinations.evodoc": {
+      "type": "symptom",
+      "name": "delusions or hallucinations",
+      "code": "0x0000DA",
+      "id": 218
+    },
+    "shoulder_cramps_or_spasms.evodoc": {
+      "type": "symptom",
+      "name": "shoulder cramps or spasms",
+      "code": "0x0000DB",
+      "id": 219
+    },
+    "joint_stiffness_or_tightness.evodoc": {
+      "type": "symptom",
+      "name": "joint stiffness or tightness",
+      "code": "0x0000DC",
+      "id": 220
+    },
+    "pain_or_soreness_of_breast.evodoc": {
+      "type": "symptom",
+      "name": "pain or soreness of breast",
+      "code": "0x0000DD",
+      "id": 221
+    },
+    "excessive_urination_at_night.evodoc": {
+      "type": "symptom",
+      "name": "excessive urination at night",
+      "code": "0x0000DE",
+      "id": 222
+    },
+    "bleeding_from_eye.evodoc": {
+      "type": "symptom",
+      "name": "bleeding from eye",
+      "code": "0x0000DF",
+      "id": 223
+    },
+    "rectal_bleeding.evodoc": {
+      "type": "symptom",
+      "name": "rectal bleeding",
+      "code": "0x0000E0",
+      "id": 224
+    },
+    "constipation.evodoc": {
+      "type": "symptom",
+      "name": "constipation",
+      "code": "0x0000E1",
+      "id": 225
+    },
+    "temper_problems.evodoc": {
+      "type": "symptom",
+      "name": "temper problems",
+      "code": "0x0000E2",
+      "id": 226
+    },
+    "coryza.evodoc": {
+      "type": "symptom",
+      "name": "coryza",
+      "code": "0x0000E3",
+      "id": 227
+    },
+    "wrist_weakness.evodoc": {
+      "type": "symptom",
+      "name": "wrist weakness",
+      "code": "0x0000E4",
+      "id": 228
+    },
+    "eye_strain.evodoc": {
+      "type": "symptom",
+      "name": "eye strain",
+      "code": "0x0000E5",
+      "id": 229
+    },
+    "hemoptysis.evodoc": {
+      "type": "symptom",
+      "name": "hemoptysis",
+      "code": "0x0000E6",
+      "id": 230
+    },
+    "lymphedema.evodoc": {
+      "type": "symptom",
+      "name": "lymphedema",
+      "code": "0x0000E7",
+      "id": 231
+    },
+    "skin_on_leg_or_foot_looks_infected.evodoc": {
+      "type": "symptom",
+      "name": "skin on leg or foot looks infected",
+      "code": "0x0000E8",
+      "id": 232
+    },
+    "allergic_reaction.evodoc": {
+      "type": "symptom",
+      "name": "allergic reaction",
+      "code": "0x0000E9",
+      "id": 233
+    },
+    "congestion_in_chest.evodoc": {
+      "type": "symptom",
+      "name": "congestion in chest",
+      "code": "0x0000EA",
+      "id": 234
+    },
+    "muscle_swelling.evodoc": {
+      "type": "symptom",
+      "name": "muscle swelling",
+      "code": "0x0000EB",
+      "id": 235
+    },
+    "pus_in_urine.evodoc": {
+      "type": "symptom",
+      "name": "pus in urine",
+      "code": "0x0000EC",
+      "id": 236
+    },
+    "abnormal_size_or_shape_of_ear.evodoc": {
+      "type": "symptom",
+      "name": "abnormal size or shape of ear",
+      "code": "0x0000ED",
+      "id": 237
+    },
+    "low_back_weakness.evodoc": {
+      "type": "symptom",
+      "name": "low back weakness",
+      "code": "0x0000EE",
+      "id": 238
+    },
+    "sleepiness.evodoc": {
+      "type": "symptom",
+      "name": "sleepiness",
+      "code": "0x0000EF",
+      "id": 239
+    },
+    "apnea.evodoc": {
+      "type": "symptom",
+      "name": "apnea",
+      "code": "0x0000F0",
+      "id": 240
+    },
+    "abnormal_breathing_sounds.evodoc": {
+      "type": "symptom",
+      "name": "abnormal breathing sounds",
+      "code": "0x0000F1",
+      "id": 241
+    },
+    "excessive_growth.evodoc": {
+      "type": "symptom",
+      "name": "excessive growth",
+      "code": "0x0000F2",
+      "id": 242
+    },
+    "elbow_cramps_or_spasms.evodoc": {
+      "type": "symptom",
+      "name": "elbow cramps or spasms",
+      "code": "0x0000F3",
+      "id": 243
+    },
+    "feeling_hot_and_cold.evodoc": {
+      "type": "symptom",
+      "name": "feeling hot and cold",
+      "code": "0x0000F4",
+      "id": 244
+    },
+    "blood_clots_during_menstrual_periods.evodoc": {
+      "type": "symptom",
+      "name": "blood clots during menstrual periods",
+      "code": "0x0000F5",
+      "id": 245
+    },
+    "absence_of_menstruation.evodoc": {
+      "type": "symptom",
+      "name": "absence of menstruation",
+      "code": "0x0000F6",
+      "id": 246
+    },
+    "pulling_at_ears.evodoc": {
+      "type": "symptom",
+      "name": "pulling at ears",
+      "code": "0x0000F7",
+      "id": 247
+    },
+    "gum_pain.evodoc": {
+      "type": "symptom",
+      "name": "gum pain",
+      "code": "0x0000F8",
+      "id": 248
+    },
+    "redness_in_ear.evodoc": {
+      "type": "symptom",
+      "name": "redness in ear",
+      "code": "0x0000F9",
+      "id": 249
+    },
+    "fluid_retention.evodoc": {
+      "type": "symptom",
+      "name": "fluid retention",
+      "code": "0x0000FA",
+      "id": 250
+    },
+    "flu-like_syndrome.evodoc": {
+      "type": "symptom",
+      "name": "flu-like syndrome",
+      "code": "0x0000FB",
+      "id": 251
+    },
+    "sinus_congestion.evodoc": {
+      "type": "symptom",
+      "name": "sinus congestion",
+      "code": "0x0000FC",
+      "id": 252
+    },
+    "painful_sinuses.evodoc": {
+      "type": "symptom",
+      "name": "painful sinuses",
+      "code": "0x0000FD",
+      "id": 253
+    },
+    "fears_and_phobias.evodoc": {
+      "type": "symptom",
+      "name": "fears and phobias",
+      "code": "0x0000FE",
+      "id": 254
+    },
+    "recent_pregnancy.evodoc": {
+      "type": "symptom",
+      "name": "recent pregnancy",
+      "code": "0x0000FF",
+      "id": 255
+    },
+    "uterine_contractions.evodoc": {
+      "type": "symptom",
+      "name": "uterine contractions",
+      "code": "0x000100",
+      "id": 256
+    },
+    "burning_chest_pain.evodoc": {
+      "type": "symptom",
+      "name": "burning chest pain",
+      "code": "0x000101",
+      "id": 257
+    },
+    "back_cramps_or_spasms.evodoc": {
+      "type": "symptom",
+      "name": "back cramps or spasms",
+      "code": "0x000102",
+      "id": 258
+    },
+    "stiffness_all_over.evodoc": {
+      "type": "symptom",
+      "name": "stiffness all over",
+      "code": "0x000103",
+      "id": 259
+    },
+    "muscle_cramps,_contractures,_or_spasms.evodoc": {
+      "type": "symptom",
+      "name": "muscle cramps, contractures, or spasms",
+      "code": "0x000104",
+      "id": 260
+    },
+    "low_back_cramps_or_spasms.evodoc": {
+      "type": "symptom",
+      "name": "low back cramps or spasms",
+      "code": "0x000105",
+      "id": 261
+    },
+    "back_mass_or_lump.evodoc": {
+      "type": "symptom",
+      "name": "back mass or lump",
+      "code": "0x000106",
+      "id": 262
+    },
+    "nosebleed.evodoc": {
+      "type": "symptom",
+      "name": "nosebleed",
+      "code": "0x000107",
+      "id": 263
+    },
+    "long_menstrual_periods.evodoc": {
+      "type": "symptom",
+      "name": "long menstrual periods",
+      "code": "0x000108",
+      "id": 264
+    },
+    "heavy_menstrual_flow.evodoc": {
+      "type": "symptom",
+      "name": "heavy menstrual flow",
+      "code": "0x000109",
+      "id": 265
+    },
+    "unpredictable_menstruation.evodoc": {
+      "type": "symptom",
+      "name": "unpredictable menstruation",
+      "code": "0x00010A",
+      "id": 266
+    },
+    "painful_menstruation.evodoc": {
+      "type": "symptom",
+      "name": "painful menstruation",
+      "code": "0x00010B",
+      "id": 267
+    },
+    "infertility.evodoc": {
+      "type": "symptom",
+      "name": "infertility",
+      "code": "0x00010C",
+      "id": 268
+    },
+    "frequent_menstruation.evodoc": {
+      "type": "symptom",
+      "name": "frequent menstruation",
+      "code": "0x00010D",
+      "id": 269
+    },
+    "sweating.evodoc": {
+      "type": "symptom",
+      "name": "sweating",
+      "code": "0x00010E",
+      "id": 270
+    },
+    "mass_on_eyelid.evodoc": {
+      "type": "symptom",
+      "name": "mass on eyelid",
+      "code": "0x00010F",
+      "id": 271
+    },
+    "swollen_eye.evodoc": {
+      "type": "symptom",
+      "name": "swollen eye",
+      "code": "0x000110",
+      "id": 272
+    },
+    "eyelid_swelling.evodoc": {
+      "type": "symptom",
+      "name": "eyelid swelling",
+      "code": "0x000111",
+      "id": 273
+    },
+    "eyelid_lesion_or_rash.evodoc": {
+      "type": "symptom",
+      "name": "eyelid lesion or rash",
+      "code": "0x000112",
+      "id": 274
+    },
+    "unwanted_hair.evodoc": {
+      "type": "symptom",
+      "name": "unwanted hair",
+      "code": "0x000113",
+      "id": 275
+    },
+    "symptoms_of_bladder.evodoc": {
+      "type": "symptom",
+      "name": "symptoms of bladder",
+      "code": "0x000114",
+      "id": 276
+    },
+    "irregular_appearing_nails.evodoc": {
+      "type": "symptom",
+      "name": "irregular appearing nails",
+      "code": "0x000115",
+      "id": 277
+    },
+    "itching_of_skin.evodoc": {
+      "type": "symptom",
+      "name": "itching of skin",
+      "code": "0x000116",
+      "id": 278
+    },
+    "hurts_to_breath.evodoc": {
+      "type": "symptom",
+      "name": "hurts to breath",
+      "code": "0x000117",
+      "id": 279
+    },
+    "nailbiting.evodoc": {
+      "type": "symptom",
+      "name": "nailbiting",
+      "code": "0x000118",
+      "id": 280
+    },
+    "skin_dryness,_peeling,_scaliness,_or_roughness.evodoc": {
+      "type": "symptom",
+      "name": "skin dryness, peeling, scaliness, or roughness",
+      "code": "0x000119",
+      "id": 281
+    },
+    "skin_on_arm_or_hand_looks_infected.evodoc": {
+      "type": "symptom",
+      "name": "skin on arm or hand looks infected",
+      "code": "0x00011A",
+      "id": 282
+    },
+    "skin_irritation.evodoc": {
+      "type": "symptom",
+      "name": "skin irritation",
+      "code": "0x00011B",
+      "id": 283
+    },
+    "itchy_scalp.evodoc": {
+      "type": "symptom",
+      "name": "itchy scalp",
+      "code": "0x00011C",
+      "id": 284
+    },
+    "hip_swelling.evodoc": {
+      "type": "symptom",
+      "name": "hip swelling",
+      "code": "0x00011D",
+      "id": 285
+    },
+    "incontinence_of_stool.evodoc": {
+      "type": "symptom",
+      "name": "incontinence of stool",
+      "code": "0x00011E",
+      "id": 286
+    },
+    "foot_or_toe_cramps_or_spasms.evodoc": {
+      "type": "symptom",
+      "name": "foot or toe cramps or spasms",
+      "code": "0x00011F",
+      "id": 287
+    },
+    "warts.evodoc": {
+      "type": "symptom",
+      "name": "warts",
+      "code": "0x000120",
+      "id": 288
+    },
+    "bumps_on_penis.evodoc": {
+      "type": "symptom",
+      "name": "bumps on penis",
+      "code": "0x000121",
+      "id": 289
+    },
+    "too_little_hair.evodoc": {
+      "type": "symptom",
+      "name": "too little hair",
+      "code": "0x000122",
+      "id": 290
+    },
+    "foot_or_toe_lump_or_mass.evodoc": {
+      "type": "symptom",
+      "name": "foot or toe lump or mass",
+      "code": "0x000123",
+      "id": 291
+    },
+    "skin_rash.evodoc": {
+      "type": "symptom",
+      "name": "skin rash",
+      "code": "0x000124",
+      "id": 292
+    },
+    "mass_or_swelling_around_the_anus.evodoc": {
+      "type": "symptom",
+      "name": "mass or swelling around the anus",
+      "code": "0x000125",
+      "id": 293
+    },
+    "low_back_swelling.evodoc": {
+      "type": "symptom",
+      "name": "low back swelling",
+      "code": "0x000126",
+      "id": 294
+    },
+    "ankle_swelling.evodoc": {
+      "type": "symptom",
+      "name": "ankle swelling",
+      "code": "0x000127",
+      "id": 295
+    },
+    "hip_lump_or_mass.evodoc": {
+      "type": "symptom",
+      "name": "hip lump or mass",
+      "code": "0x000128",
+      "id": 296
+    },
+    "drainage_in_throat.evodoc": {
+      "type": "symptom",
+      "name": "drainage in throat",
+      "code": "0x000129",
+      "id": 297
+    },
+    "dry_or_flaky_scalp.evodoc": {
+      "type": "symptom",
+      "name": "dry or flaky scalp",
+      "code": "0x00012A",
+      "id": 298
+    },
+    "premenstrual_tension_or_irritability.evodoc": {
+      "type": "symptom",
+      "name": "premenstrual tension or irritability",
+      "code": "0x00012B",
+      "id": 299
+    },
+    "feeling_hot.evodoc": {
+      "type": "symptom",
+      "name": "feeling hot",
+      "code": "0x00012C",
+      "id": 300
+    },
+    "feet_turned_in.evodoc": {
+      "type": "symptom",
+      "name": "feet turned in",
+      "code": "0x00012D",
+      "id": 301
+    },
+    "foot_or_toe_stiffness_or_tightness.evodoc": {
+      "type": "symptom",
+      "name": "foot or toe stiffness or tightness",
+      "code": "0x00012E",
+      "id": 302
+    },
+    "pelvic_pressure.evodoc": {
+      "type": "symptom",
+      "name": "pelvic pressure",
+      "code": "0x00012F",
+      "id": 303
+    },
+    "elbow_swelling.evodoc": {
+      "type": "symptom",
+      "name": "elbow swelling",
+      "code": "0x000130",
+      "id": 304
+    },
+    "elbow_stiffness_or_tightness.evodoc": {
+      "type": "symptom",
+      "name": "elbow stiffness or tightness",
+      "code": "0x000131",
+      "id": 305
+    },
+    "early_or_late_onset_of_menopause.evodoc": {
+      "type": "symptom",
+      "name": "early or late onset of menopause",
+      "code": "0x000132",
+      "id": 306
+    },
+    "mass_on_ear.evodoc": {
+      "type": "symptom",
+      "name": "mass on ear",
+      "code": "0x000133",
+      "id": 307
+    },
+    "bleeding_from_ear.evodoc": {
+      "type": "symptom",
+      "name": "bleeding from ear",
+      "code": "0x000134",
+      "id": 308
+    },
+    "hand_or_finger_weakness.evodoc": {
+      "type": "symptom",
+      "name": "hand or finger weakness",
+      "code": "0x000135",
+      "id": 309
+    },
+    "low_self-esteem.evodoc": {
+      "type": "symptom",
+      "name": "low self-esteem",
+      "code": "0x000136",
+      "id": 310
+    },
+    "throat_irritation.evodoc": {
+      "type": "symptom",
+      "name": "throat irritation",
+      "code": "0x000137",
+      "id": 311
+    },
+    "itching_of_the_anus.evodoc": {
+      "type": "symptom",
+      "name": "itching of the anus",
+      "code": "0x000138",
+      "id": 312
+    },
+    "swollen_or_red_tonsils.evodoc": {
+      "type": "symptom",
+      "name": "swollen or red tonsils",
+      "code": "0x000139",
+      "id": 313
+    },
+    "irregular_belly_button.evodoc": {
+      "type": "symptom",
+      "name": "irregular belly button",
+      "code": "0x00013A",
+      "id": 314
+    },
+    "swollen_tongue.evodoc": {
+      "type": "symptom",
+      "name": "swollen tongue",
+      "code": "0x00013B",
+      "id": 315
+    },
+    "lip_sore.evodoc": {
+      "type": "symptom",
+      "name": "lip sore",
+      "code": "0x00013C",
+      "id": 316
+    },
+    "vulvar_sore.evodoc": {
+      "type": "symptom",
+      "name": "vulvar sore",
+      "code": "0x00013D",
+      "id": 317
+    },
+    "hip_stiffness_or_tightness.evodoc": {
+      "type": "symptom",
+      "name": "hip stiffness or tightness",
+      "code": "0x00013E",
+      "id": 318
+    },
+    "mouth_pain.evodoc": {
+      "type": "symptom",
+      "name": "mouth pain",
+      "code": "0x00013F",
+      "id": 319
+    },
+    "arm_weakness.evodoc": {
+      "type": "symptom",
+      "name": "arm weakness",
+      "code": "0x000140",
+      "id": 320
+    },
+    "leg_lump_or_mass.evodoc": {
+      "type": "symptom",
+      "name": "leg lump or mass",
+      "code": "0x000141",
+      "id": 321
+    },
+    "disturbance_of_smell_or_taste.evodoc": {
+      "type": "symptom",
+      "name": "disturbance of smell or taste",
+      "code": "0x000142",
+      "id": 322
+    },
+    "discharge_in_stools.evodoc": {
+      "type": "symptom",
+      "name": "discharge in stools",
+      "code": "0x000143",
+      "id": 323
+    },
+    "penis_pain.evodoc": {
+      "type": "symptom",
+      "name": "penis pain",
+      "code": "0x000144",
+      "id": 324
+    },
+    "loss_of_sex_drive.evodoc": {
+      "type": "symptom",
+      "name": "loss of sex drive",
+      "code": "0x000145",
+      "id": 325
+    },
+    "obsessions_and_compulsions.evodoc": {
+      "type": "symptom",
+      "name": "obsessions and compulsions",
+      "code": "0x000146",
+      "id": 326
+    },
+    "antisocial_behavior.evodoc": {
+      "type": "symptom",
+      "name": "antisocial behavior",
+      "code": "0x000147",
+      "id": 327
+    },
+    "neck_cramps_or_spasms.evodoc": {
+      "type": "symptom",
+      "name": "neck cramps or spasms",
+      "code": "0x000148",
+      "id": 328
+    },
+    "pupils_unequal.evodoc": {
+      "type": "symptom",
+      "name": "pupils unequal",
+      "code": "0x000149",
+      "id": 329
+    },
+    "poor_circulation.evodoc": {
+      "type": "symptom",
+      "name": "poor circulation",
+      "code": "0x00014A",
+      "id": 330
+    },
+    "thirst.evodoc": {
+      "type": "symptom",
+      "name": "thirst",
+      "code": "0x00014B",
+      "id": 331
+    },
+    "sleepwalking.evodoc": {
+      "type": "symptom",
+      "name": "sleepwalking",
+      "code": "0x00014C",
+      "id": 332
+    },
+    "skin_oiliness.evodoc": {
+      "type": "symptom",
+      "name": "skin oiliness",
+      "code": "0x00014D",
+      "id": 333
+    },
+    "sneezing.evodoc": {
+      "type": "symptom",
+      "name": "sneezing",
+      "code": "0x00014E",
+      "id": 334
+    },
+    "bladder_mass.evodoc": {
+      "type": "symptom",
+      "name": "bladder mass",
+      "code": "0x00014F",
+      "id": 335
+    },
+    "knee_cramps_or_spasms.evodoc": {
+      "type": "symptom",
+      "name": "knee cramps or spasms",
+      "code": "0x000150",
+      "id": 336
+    },
+    "premature_ejaculation.evodoc": {
+      "type": "symptom",
+      "name": "premature ejaculation",
+      "code": "0x000151",
+      "id": 337
+    },
+    "leg_weakness.evodoc": {
+      "type": "symptom",
+      "name": "leg weakness",
+      "code": "0x000152",
+      "id": 338
+    },
+    "posture_problems.evodoc": {
+      "type": "symptom",
+      "name": "posture problems",
+      "code": "0x000153",
+      "id": 339
+    },
+    "bleeding_in_mouth.evodoc": {
+      "type": "symptom",
+      "name": "bleeding in mouth",
+      "code": "0x000154",
+      "id": 340
+    },
+    "tongue_bleeding.evodoc": {
+      "type": "symptom",
+      "name": "tongue bleeding",
+      "code": "0x000155",
+      "id": 341
+    },
+    "change_in_skin_mole_size_or_color.evodoc": {
+      "type": "symptom",
+      "name": "change in skin mole size or color",
+      "code": "0x000156",
+      "id": 342
+    },
+    "penis_redness.evodoc": {
+      "type": "symptom",
+      "name": "penis redness",
+      "code": "0x000157",
+      "id": 343
+    },
+    "penile_discharge.evodoc": {
+      "type": "symptom",
+      "name": "penile discharge",
+      "code": "0x000158",
+      "id": 344
+    },
+    "shoulder_lump_or_mass.evodoc": {
+      "type": "symptom",
+      "name": "shoulder lump or mass",
+      "code": "0x000159",
+      "id": 345
+    },
+    "polyuria.evodoc": {
+      "type": "symptom",
+      "name": "polyuria",
+      "code": "0x00015A",
+      "id": 346
+    },
+    "cloudy_eye.evodoc": {
+      "type": "symptom",
+      "name": "cloudy eye",
+      "code": "0x00015B",
+      "id": 347
+    },
+    "hysterical_behavior.evodoc": {
+      "type": "symptom",
+      "name": "hysterical behavior",
+      "code": "0x00015C",
+      "id": 348
+    },
+    "arm_lump_or_mass.evodoc": {
+      "type": "symptom",
+      "name": "arm lump or mass",
+      "code": "0x00015D",
+      "id": 349
+    },
+    "nightmares.evodoc": {
+      "type": "symptom",
+      "name": "nightmares",
+      "code": "0x00015E",
+      "id": 350
+    },
+    "bleeding_gums.evodoc": {
+      "type": "symptom",
+      "name": "bleeding gums",
+      "code": "0x00015F",
+      "id": 351
+    },
+    "pain_in_gums.evodoc": {
+      "type": "symptom",
+      "name": "pain in gums",
+      "code": "0x000160",
+      "id": 352
+    },
+    "bedwetting.evodoc": {
+      "type": "symptom",
+      "name": "bedwetting",
+      "code": "0x000161",
+      "id": 353
+    },
+    "diaper_rash.evodoc": {
+      "type": "symptom",
+      "name": "diaper rash",
+      "code": "0x000162",
+      "id": 354
+    },
+    "lump_or_mass_of_breast.evodoc": {
+      "type": "symptom",
+      "name": "lump or mass of breast",
+      "code": "0x000163",
+      "id": 355
+    },
+    "vaginal_bleeding_after_menopause.evodoc": {
+      "type": "symptom",
+      "name": "vaginal bleeding after menopause",
+      "code": "0x000164",
+      "id": 356
+    },
+    "infrequent_menstruation.evodoc": {
+      "type": "symptom",
+      "name": "infrequent menstruation",
+      "code": "0x000165",
+      "id": 357
+    },
+    "mass_on_vulva.evodoc": {
+      "type": "symptom",
+      "name": "mass on vulva",
+      "code": "0x000166",
+      "id": 358
+    },
+    "jaw_pain.evodoc": {
+      "type": "symptom",
+      "name": "jaw pain",
+      "code": "0x000167",
+      "id": 359
+    },
+    "itching_of_scrotum.evodoc": {
+      "type": "symptom",
+      "name": "itching of scrotum",
+      "code": "0x000168",
+      "id": 360
+    },
+    "postpartum_problems_of_the_breast.evodoc": {
+      "type": "symptom",
+      "name": "postpartum problems of the breast",
+      "code": "0x000169",
+      "id": 361
+    },
+    "eyelid_retracted.evodoc": {
+      "type": "symptom",
+      "name": "eyelid retracted",
+      "code": "0x00016A",
+      "id": 362
+    },
+    "hesitancy.evodoc": {
+      "type": "symptom",
+      "name": "hesitancy",
+      "code": "0x00016B",
+      "id": 363
+    },
+    "elbow_lump_or_mass.evodoc": {
+      "type": "symptom",
+      "name": "elbow lump or mass",
+      "code": "0x00016C",
+      "id": 364
+    },
+    "muscle_weakness.evodoc": {
+      "type": "symptom",
+      "name": "muscle weakness",
+      "code": "0x00016D",
+      "id": 365
+    },
+    "throat_redness.evodoc": {
+      "type": "symptom",
+      "name": "throat redness",
+      "code": "0x00016E",
+      "id": 366
+    },
+    "joint_swelling.evodoc": {
+      "type": "symptom",
+      "name": "joint swelling",
+      "code": "0x00016F",
+      "id": 367
+    },
+    "tongue_pain.evodoc": {
+      "type": "symptom",
+      "name": "tongue pain",
+      "code": "0x000170",
+      "id": 368
+    },
+    "redness_in_or_around_nose.evodoc": {
+      "type": "symptom",
+      "name": "redness in or around nose",
+      "code": "0x000171",
+      "id": 369
+    },
+    "wrinkles_on_skin.evodoc": {
+      "type": "symptom",
+      "name": "wrinkles on skin",
+      "code": "0x000172",
+      "id": 370
+    },
+    "foot_or_toe_weakness.evodoc": {
+      "type": "symptom",
+      "name": "foot or toe weakness",
+      "code": "0x000173",
+      "id": 371
+    },
+    "hand_or_finger_cramps_or_spasms.evodoc": {
+      "type": "symptom",
+      "name": "hand or finger cramps or spasms",
+      "code": "0x000174",
+      "id": 372
+    },
+    "back_stiffness_or_tightness.evodoc": {
+      "type": "symptom",
+      "name": "back stiffness or tightness",
+      "code": "0x000175",
+      "id": 373
+    },
+    "wrist_lump_or_mass.evodoc": {
+      "type": "symptom",
+      "name": "wrist lump or mass",
+      "code": "0x000176",
+      "id": 374
+    },
+    "skin_pain.evodoc": {
+      "type": "symptom",
+      "name": "skin pain",
+      "code": "0x000177",
+      "id": 375
+    },
+    "low_back_stiffness_or_tightness.evodoc": {
+      "type": "symptom",
+      "name": "low back stiffness or tightness",
+      "code": "0x000178",
+      "id": 376
+    },
+    "low_urine_output.evodoc": {
+      "type": "symptom",
+      "name": "low urine output",
+      "code": "0x000179",
+      "id": 377
+    },
+    "skin_on_head_or_neck_looks_infected.evodoc": {
+      "type": "symptom",
+      "name": "skin on head or neck looks infected",
+      "code": "0x00017A",
+      "id": 378
+    },
+    "stuttering_or_stammering.evodoc": {
+      "type": "symptom",
+      "name": "stuttering or stammering",
+      "code": "0x00017B",
+      "id": 379
+    },
+    "problems_with_orgasm.evodoc": {
+      "type": "symptom",
+      "name": "problems with orgasm",
+      "code": "0x00017C",
+      "id": 380
+    },
+    "nose_deformity.evodoc": {
+      "type": "symptom",
+      "name": "nose deformity",
+      "code": "0x00017D",
+      "id": 381
+    },
+    "lump_over_jaw.evodoc": {
+      "type": "symptom",
+      "name": "lump over jaw",
+      "code": "0x00017E",
+      "id": 382
+    },
+    "sore_in_nose.evodoc": {
+      "type": "symptom",
+      "name": "sore in nose",
+      "code": "0x00017F",
+      "id": 383
+    },
+    "hip_weakness.evodoc": {
+      "type": "symptom",
+      "name": "hip weakness",
+      "code": "0x000180",
+      "id": 384
+    },
+    "back_swelling.evodoc": {
+      "type": "symptom",
+      "name": "back swelling",
+      "code": "0x000181",
+      "id": 385
+    },
+    "ankle_stiffness_or_tightness.evodoc": {
+      "type": "symptom",
+      "name": "ankle stiffness or tightness",
+      "code": "0x000182",
+      "id": 386
+    },
+    "ankle_weakness.evodoc": {
+      "type": "symptom",
+      "name": "ankle weakness",
+      "code": "0x000183",
+      "id": 387
+    },
+    "neck_weakness.evodoc": {
+      "type": "symptom",
+      "name": "neck weakness",
+      "code": "0x000184",
+      "id": 388
+    },
+    "retinopathy_due_to_high_blood_pressure.evodoc": {
+      "type": "disease",
+      "name": "retinopathy due to high blood pressure",
+      "code": "0x000185",
+      "id": 389,
+      "icd10": "I389"
+    },
+    "heart_block.evodoc": {
+      "type": "disease",
+      "name": "heart block",
+      "code": "0x000186",
+      "id": 390,
+      "icd10": "I390"
+    },
+    "hypertensive_heart_disease.evodoc": {
+      "type": "disease",
+      "name": "hypertensive heart disease",
+      "code": "0x000187",
+      "id": 391,
+      "icd10": "I391"
+    },
+    "heart_attack.evodoc": {
+      "type": "disease",
+      "name": "heart attack",
+      "code": "0x000188",
+      "id": 392,
+      "icd10": "I392"
+    },
+    "congenital_heart_defect.evodoc": {
+      "type": "disease",
+      "name": "congenital heart defect",
+      "code": "0x000189",
+      "id": 393,
+      "icd10": "I393"
+    },
+    "heart_contusion.evodoc": {
+      "type": "disease",
+      "name": "heart contusion",
+      "code": "0x00018A",
+      "id": 394,
+      "icd10": "I394"
+    },
+    "ischemic_heart_disease.evodoc": {
+      "type": "disease",
+      "name": "ischemic heart disease",
+      "code": "0x00018B",
+      "id": 395,
+      "icd10": "I395"
+    },
+    "kidney_disease_due_to_longstanding_hypertension.evodoc": {
+      "type": "disease",
+      "name": "kidney disease due to longstanding hypertension",
+      "code": "0x00018C",
+      "id": 396,
+      "icd10": "I396"
+    },
+    "pulmonary_hypertension.evodoc": {
+      "type": "disease",
+      "name": "pulmonary hypertension",
+      "code": "0x00018D",
+      "id": 397,
+      "icd10": "I397"
+    },
+    "cardiac_arrest.evodoc": {
+      "type": "disease",
+      "name": "cardiac arrest",
+      "code": "0x00018E",
+      "id": 398,
+      "icd10": "I398"
+    },
+    "hypertension_of_pregnancy.evodoc": {
+      "type": "disease",
+      "name": "hypertension of pregnancy",
+      "code": "0x00018F",
+      "id": 399,
+      "icd10": "I399"
+    },
+    "high_blood_pressure.evodoc": {
+      "type": "disease",
+      "name": "high blood pressure",
+      "code": "0x000190",
+      "id": 400,
+      "icd10": "I400"
+    },
+    "malignant_hypertension.evodoc": {
+      "type": "disease",
+      "name": "malignant hypertension",
+      "code": "0x000191",
+      "id": 401,
+      "icd10": "I401"
+    },
+    "heart_failure.evodoc": {
+      "type": "disease",
+      "name": "heart failure",
+      "code": "0x000192",
+      "id": 402,
+      "icd10": "I402"
+    },
+    "headache_after_lumbar_puncture.evodoc": {
+      "type": "disease",
+      "name": "headache after lumbar puncture",
+      "code": "0x000193",
+      "id": 403,
+      "icd10": "I403"
+    },
+    "stroke.evodoc": {
+      "type": "disease",
+      "name": "stroke",
+      "code": "0x000194",
+      "id": 404,
+      "icd10": "I404"
+    },
+    "tension_headache.evodoc": {
+      "type": "disease",
+      "name": "tension headache",
+      "code": "0x000195",
+      "id": 405,
+      "icd10": "I405"
+    },
+    "migraine.evodoc": {
+      "type": "disease",
+      "name": "migraine",
+      "code": "0x000196",
+      "id": 406,
+      "icd10": "I406"
+    },
+    "heat_stroke.evodoc": {
+      "type": "disease",
+      "name": "heat stroke",
+      "code": "0x000197",
+      "id": 407,
+      "icd10": "I407"
+    },
+    "panic_disorder.evodoc": {
+      "type": "disease",
+      "name": "panic disorder",
+      "code": "0x000198",
+      "id": 408,
+      "icd10": "I408"
+    },
+    "vocal_cord_polyp.evodoc": {
+      "type": "disease",
+      "name": "vocal cord polyp",
+      "code": "0x000199",
+      "id": 409,
+      "icd10": "I409"
+    },
+    "turner_syndrome.evodoc": {
+      "type": "disease",
+      "name": "turner syndrome",
+      "code": "0x00019A",
+      "id": 410,
+      "icd10": "I410"
+    },
+    "cryptorchidism.evodoc": {
+      "type": "disease",
+      "name": "cryptorchidism",
+      "code": "0x00019B",
+      "id": 411,
+      "icd10": "I411"
+    },
+    "poisoning_due_to_ethylene_glycol.evodoc": {
+      "type": "disease",
+      "name": "poisoning due to ethylene glycol",
+      "code": "0x00019C",
+      "id": 412,
+      "icd10": "I412"
+    },
+    "atrophic_vaginitis.evodoc": {
+      "type": "disease",
+      "name": "atrophic vaginitis",
+      "code": "0x00019D",
+      "id": 413,
+      "icd10": "I413"
+    },
+    "fracture_of_the_hand.evodoc": {
+      "type": "disease",
+      "name": "fracture of the hand",
+      "code": "0x00019E",
+      "id": 414,
+      "icd10": "I414"
+    },
+    "cellulitis_or_abscess_of_mouth.evodoc": {
+      "type": "disease",
+      "name": "cellulitis or abscess of mouth",
+      "code": "0x00019F",
+      "id": 415,
+      "icd10": "I415"
+    },
+    "eye_alignment_disorder.evodoc": {
+      "type": "disease",
+      "name": "eye alignment disorder",
+      "code": "0x0001A0",
+      "id": 416,
+      "icd10": "I416"
+    },
+    "pyloric_stenosis.evodoc": {
+      "type": "disease",
+      "name": "pyloric stenosis",
+      "code": "0x0001A1",
+      "id": 417,
+      "icd10": "I417"
+    },
+    "salivary_gland_disorder.evodoc": {
+      "type": "disease",
+      "name": "salivary gland disorder",
+      "code": "0x0001A2",
+      "id": 418,
+      "icd10": "I418"
+    },
+    "osteochondrosis.evodoc": {
+      "type": "disease",
+      "name": "osteochondrosis",
+      "code": "0x0001A3",
+      "id": 419,
+      "icd10": "I419"
+    },
+    "injury_to_the_knee.evodoc": {
+      "type": "disease",
+      "name": "injury to the knee",
+      "code": "0x0001A4",
+      "id": 420,
+      "icd10": "I420"
+    },
+    "metabolic_disorder.evodoc": {
+      "type": "disease",
+      "name": "metabolic disorder",
+      "code": "0x0001A5",
+      "id": 421,
+      "icd10": "I421"
+    },
+    "vaginitis.evodoc": {
+      "type": "disease",
+      "name": "vaginitis",
+      "code": "0x0001A6",
+      "id": 422,
+      "icd10": "I422"
+    },
+    "sick_sinus_syndrome.evodoc": {
+      "type": "disease",
+      "name": "sick sinus syndrome",
+      "code": "0x0001A7",
+      "id": 423,
+      "icd10": "I423"
+    },
+    "tinnitus_of_unknown_cause.evodoc": {
+      "type": "disease",
+      "name": "tinnitus of unknown cause",
+      "code": "0x0001A8",
+      "id": 424,
+      "icd10": "I424"
+    },
+    "glaucoma.evodoc": {
+      "type": "disease",
+      "name": "glaucoma",
+      "code": "0x0001A9",
+      "id": 425,
+      "icd10": "I425"
+    },
+    "eating_disorder.evodoc": {
+      "type": "disease",
+      "name": "eating disorder",
+      "code": "0x0001AA",
+      "id": 426,
+      "icd10": "I426"
+    },
+    "transient_ischemic_attack.evodoc": {
+      "type": "disease",
+      "name": "transient ischemic attack",
+      "code": "0x0001AB",
+      "id": 427,
+      "icd10": "I427"
+    },
+    "pyelonephritis.evodoc": {
+      "type": "disease",
+      "name": "pyelonephritis",
+      "code": "0x0001AC",
+      "id": 428,
+      "icd10": "I428"
+    },
+    "rotator_cuff_injury.evodoc": {
+      "type": "disease",
+      "name": "rotator cuff injury",
+      "code": "0x0001AD",
+      "id": 429,
+      "icd10": "I429"
+    },
+    "chronic_pain_disorder.evodoc": {
+      "type": "disease",
+      "name": "chronic pain disorder",
+      "code": "0x0001AE",
+      "id": 430,
+      "icd10": "I430"
+    },
+    "problem_during_pregnancy.evodoc": {
+      "type": "disease",
+      "name": "problem during pregnancy",
+      "code": "0x0001AF",
+      "id": 431,
+      "icd10": "I431"
+    },
+    "liver_cancer.evodoc": {
+      "type": "disease",
+      "name": "liver cancer",
+      "code": "0x0001B0",
+      "id": 432,
+      "icd10": "I432"
+    },
+    "atelectasis.evodoc": {
+      "type": "disease",
+      "name": "atelectasis",
+      "code": "0x0001B1",
+      "id": 433,
+      "icd10": "I433"
+    },
+    "injury_to_the_hand.evodoc": {
+      "type": "disease",
+      "name": "injury to the hand",
+      "code": "0x0001B2",
+      "id": 434,
+      "icd10": "I434"
+    },
+    "choledocholithiasis.evodoc": {
+      "type": "disease",
+      "name": "choledocholithiasis",
+      "code": "0x0001B3",
+      "id": 435,
+      "icd10": "I435"
+    },
+    "injury_to_the_hip.evodoc": {
+      "type": "disease",
+      "name": "injury to the hip",
+      "code": "0x0001B4",
+      "id": 436,
+      "icd10": "I436"
+    },
+    "cirrhosis.evodoc": {
+      "type": "disease",
+      "name": "cirrhosis",
+      "code": "0x0001B5",
+      "id": 437,
+      "icd10": "I437"
+    },
+    "thoracic_aortic_aneurysm.evodoc": {
+      "type": "disease",
+      "name": "thoracic aortic aneurysm",
+      "code": "0x0001B6",
+      "id": 438,
+      "icd10": "I438"
+    },
+    "subdural_hemorrhage.evodoc": {
+      "type": "disease",
+      "name": "subdural hemorrhage",
+      "code": "0x0001B7",
+      "id": 439,
+      "icd10": "I439"
+    },
+    "diabetic_retinopathy.evodoc": {
+      "type": "disease",
+      "name": "diabetic retinopathy",
+      "code": "0x0001B8",
+      "id": 440,
+      "icd10": "I440"
+    },
+    "fibromyalgia.evodoc": {
+      "type": "disease",
+      "name": "fibromyalgia",
+      "code": "0x0001B9",
+      "id": 441,
+      "icd10": "I441"
+    },
+    "ischemia_of_the_bowel.evodoc": {
+      "type": "disease",
+      "name": "ischemia of the bowel",
+      "code": "0x0001BA",
+      "id": 442,
+      "icd10": "I442"
+    },
+    "fetal_alcohol_syndrome.evodoc": {
+      "type": "disease",
+      "name": "fetal alcohol syndrome",
+      "code": "0x0001BB",
+      "id": 443,
+      "icd10": "I443"
+    },
+    "peritonitis.evodoc": {
+      "type": "disease",
+      "name": "peritonitis",
+      "code": "0x0001BC",
+      "id": 444,
+      "icd10": "I444"
+    },
+    "injury_to_the_abdomen.evodoc": {
+      "type": "disease",
+      "name": "injury to the abdomen",
+      "code": "0x0001BD",
+      "id": 445,
+      "icd10": "I445"
+    },
+    "acute_pancreatitis.evodoc": {
+      "type": "disease",
+      "name": "acute pancreatitis",
+      "code": "0x0001BE",
+      "id": 446,
+      "icd10": "I446"
+    },
+    "thrombophlebitis.evodoc": {
+      "type": "disease",
+      "name": "thrombophlebitis",
+      "code": "0x0001BF",
+      "id": 447,
+      "icd10": "I447"
+    },
+    "foreign_body_in_the_vagina.evodoc": {
+      "type": "disease",
+      "name": "foreign body in the vagina",
+      "code": "0x0001C0",
+      "id": 448,
+      "icd10": "I448"
+    },
+    "restless_leg_syndrome.evodoc": {
+      "type": "disease",
+      "name": "restless leg syndrome",
+      "code": "0x0001C1",
+      "id": 449,
+      "icd10": "I449"
+    },
+    "emphysema.evodoc": {
+      "type": "disease",
+      "name": "emphysema",
+      "code": "0x0001C2",
+      "id": 450,
+      "icd10": "I450"
+    },
+    "cysticercosis.evodoc": {
+      "type": "disease",
+      "name": "cysticercosis",
+      "code": "0x0001C3",
+      "id": 451,
+      "icd10": "I451"
+    },
+    "induced_abortion.evodoc": {
+      "type": "disease",
+      "name": "induced abortion",
+      "code": "0x0001C4",
+      "id": 452,
+      "icd10": "I452"
+    },
+    "teething_syndrome.evodoc": {
+      "type": "disease",
+      "name": "teething syndrome",
+      "code": "0x0001C5",
+      "id": 453,
+      "icd10": "I453"
+    },
+    "infectious_gastroenteritis.evodoc": {
+      "type": "disease",
+      "name": "infectious gastroenteritis",
+      "code": "0x0001C6",
+      "id": 454,
+      "icd10": "I454"
+    },
+    "acute_sinusitis.evodoc": {
+      "type": "disease",
+      "name": "acute sinusitis",
+      "code": "0x0001C7",
+      "id": 455,
+      "icd10": "I455"
+    },
+    "substance-related_mental_disorder.evodoc": {
+      "type": "disease",
+      "name": "substance-related mental disorder",
+      "code": "0x0001C8",
+      "id": 456,
+      "icd10": "I456"
+    },
+    "postpartum_depression.evodoc": {
+      "type": "disease",
+      "name": "postpartum depression",
+      "code": "0x0001C9",
+      "id": 457,
+      "icd10": "I457"
+    },
+    "coronary_atherosclerosis.evodoc": {
+      "type": "disease",
+      "name": "coronary atherosclerosis",
+      "code": "0x0001CA",
+      "id": 458,
+      "icd10": "I458"
+    },
+    "spondylitis.evodoc": {
+      "type": "disease",
+      "name": "spondylitis",
+      "code": "0x0001CB",
+      "id": 459,
+      "icd10": "I459"
+    },
+    "pituitary_adenoma.evodoc": {
+      "type": "disease",
+      "name": "pituitary adenoma",
+      "code": "0x0001CC",
+      "id": 460,
+      "icd10": "I460"
+    },
+    "uterine_fibroids.evodoc": {
+      "type": "disease",
+      "name": "uterine fibroids",
+      "code": "0x0001CD",
+      "id": 461,
+      "icd10": "I461"
+    },
+    "idiopathic_nonmenstrual_bleeding.evodoc": {
+      "type": "disease",
+      "name": "idiopathic nonmenstrual bleeding",
+      "code": "0x0001CE",
+      "id": 462,
+      "icd10": "I462"
+    },
+    "chalazion.evodoc": {
+      "type": "disease",
+      "name": "chalazion",
+      "code": "0x0001CF",
+      "id": 463,
+      "icd10": "I463"
+    },
+    "ovarian_torsion.evodoc": {
+      "type": "disease",
+      "name": "ovarian torsion",
+      "code": "0x0001D0",
+      "id": 464,
+      "icd10": "I464"
+    },
+    "vaginal_yeast_infection.evodoc": {
+      "type": "disease",
+      "name": "vaginal yeast infection",
+      "code": "0x0001D1",
+      "id": 465,
+      "icd10": "I465"
+    },
+    "mastoiditis.evodoc": {
+      "type": "disease",
+      "name": "mastoiditis",
+      "code": "0x0001D2",
+      "id": 466,
+      "icd10": "I466"
+    },
+    "lung_contusion.evodoc": {
+      "type": "disease",
+      "name": "lung contusion",
+      "code": "0x0001D3",
+      "id": 467,
+      "icd10": "I467"
+    },
+    "hypertrophic_obstructive_cardiomyopathy_(hocm).evodoc": {
+      "type": "disease",
+      "name": "hypertrophic obstructive cardiomyopathy (hocm)",
+      "code": "0x0001D4",
+      "id": 468,
+      "icd10": "I468"
+    },
+    "ingrown_toe_nail.evodoc": {
+      "type": "disease",
+      "name": "ingrown toe nail",
+      "code": "0x0001D5",
+      "id": 469,
+      "icd10": "I469"
+    },
+    "pulmonary_eosinophilia.evodoc": {
+      "type": "disease",
+      "name": "pulmonary eosinophilia",
+      "code": "0x0001D6",
+      "id": 470,
+      "icd10": "I470"
+    },
+    "corneal_disorder.evodoc": {
+      "type": "disease",
+      "name": "corneal disorder",
+      "code": "0x0001D7",
+      "id": 471,
+      "icd10": "I471"
+    },
+    "foreign_body_in_the_gastrointestinal_tract.evodoc": {
+      "type": "disease",
+      "name": "foreign body in the gastrointestinal tract",
+      "code": "0x0001D8",
+      "id": 472,
+      "icd10": "I472"
+    },
+    "endophthalmitis.evodoc": {
+      "type": "disease",
+      "name": "endophthalmitis",
+      "code": "0x0001D9",
+      "id": 473,
+      "icd10": "I473"
+    },
+    "intestinal_malabsorption.evodoc": {
+      "type": "disease",
+      "name": "intestinal malabsorption",
+      "code": "0x0001DA",
+      "id": 474,
+      "icd10": "I474"
+    },
+    "viral_warts.evodoc": {
+      "type": "disease",
+      "name": "viral warts",
+      "code": "0x0001DB",
+      "id": 475,
+      "icd10": "I475"
+    },
+    "hyperhidrosis.evodoc": {
+      "type": "disease",
+      "name": "hyperhidrosis",
+      "code": "0x0001DC",
+      "id": 476,
+      "icd10": "I476"
+    },
+    "pilonidal_cyst.evodoc": {
+      "type": "disease",
+      "name": "pilonidal cyst",
+      "code": "0x0001DD",
+      "id": 477,
+      "icd10": "I477"
+    },
+    "crushing_injury.evodoc": {
+      "type": "disease",
+      "name": "crushing injury",
+      "code": "0x0001DE",
+      "id": 478,
+      "icd10": "I478"
+    },
+    "normal_pressure_hydrocephalus.evodoc": {
+      "type": "disease",
+      "name": "normal pressure hydrocephalus",
+      "code": "0x0001DF",
+      "id": 479,
+      "icd10": "I479"
+    },
+    "alopecia.evodoc": {
+      "type": "disease",
+      "name": "alopecia",
+      "code": "0x0001E0",
+      "id": 480,
+      "icd10": "I480"
+    },
+    "flat_feet.evodoc": {
+      "type": "disease",
+      "name": "flat feet",
+      "code": "0x0001E1",
+      "id": 481,
+      "icd10": "I481"
+    },
+    "nonalcoholic_liver_disease_(nash).evodoc": {
+      "type": "disease",
+      "name": "nonalcoholic liver disease (nash)",
+      "code": "0x0001E2",
+      "id": 482,
+      "icd10": "I482"
+    },
+    "hemarthrosis.evodoc": {
+      "type": "disease",
+      "name": "hemarthrosis",
+      "code": "0x0001E3",
+      "id": 483,
+      "icd10": "I483"
+    },
+    "pelvic_organ_prolapse.evodoc": {
+      "type": "disease",
+      "name": "pelvic organ prolapse",
+      "code": "0x0001E4",
+      "id": 484,
+      "icd10": "I484"
+    },
+    "fracture_of_the_arm.evodoc": {
+      "type": "disease",
+      "name": "fracture of the arm",
+      "code": "0x0001E5",
+      "id": 485,
+      "icd10": "I485"
+    },
+    "coagulation_(bleeding)_disorder.evodoc": {
+      "type": "disease",
+      "name": "coagulation (bleeding) disorder",
+      "code": "0x0001E6",
+      "id": 486,
+      "icd10": "I486"
+    },
+    "intracranial_hemorrhage.evodoc": {
+      "type": "disease",
+      "name": "intracranial hemorrhage",
+      "code": "0x0001E7",
+      "id": 487,
+      "icd10": "I487"
+    },
+    "hyperkalemia.evodoc": {
+      "type": "disease",
+      "name": "hyperkalemia",
+      "code": "0x0001E8",
+      "id": 488,
+      "icd10": "I488"
+    },
+    "cornea_infection.evodoc": {
+      "type": "disease",
+      "name": "cornea infection",
+      "code": "0x0001E9",
+      "id": 489,
+      "icd10": "I489"
+    },
+    "abscess_of_the_lung.evodoc": {
+      "type": "disease",
+      "name": "abscess of the lung",
+      "code": "0x0001EA",
+      "id": 490,
+      "icd10": "I490"
+    },
+    "dengue_fever.evodoc": {
+      "type": "disease",
+      "name": "dengue fever",
+      "code": "0x0001EB",
+      "id": 491,
+      "icd10": "I491"
+    },
+    "chronic_sinusitis.evodoc": {
+      "type": "disease",
+      "name": "chronic sinusitis",
+      "code": "0x0001EC",
+      "id": 492,
+      "icd10": "I492"
+    },
+    "cholesteatoma.evodoc": {
+      "type": "disease",
+      "name": "cholesteatoma",
+      "code": "0x0001ED",
+      "id": 493,
+      "icd10": "I493"
+    },
+    "volvulus.evodoc": {
+      "type": "disease",
+      "name": "volvulus",
+      "code": "0x0001EE",
+      "id": 494,
+      "icd10": "I494"
+    },
+    "injury_to_the_finger.evodoc": {
+      "type": "disease",
+      "name": "injury to the finger",
+      "code": "0x0001EF",
+      "id": 495,
+      "icd10": "I495"
+    },
+    "poisoning_due_to_analgesics.evodoc": {
+      "type": "disease",
+      "name": "poisoning due to analgesics",
+      "code": "0x0001F0",
+      "id": 496,
+      "icd10": "I496"
+    },
+    "atrial_fibrillation.evodoc": {
+      "type": "disease",
+      "name": "atrial fibrillation",
+      "code": "0x0001F1",
+      "id": 497,
+      "icd10": "I497"
+    },
+    "pinworm_infection.evodoc": {
+      "type": "disease",
+      "name": "pinworm infection",
+      "code": "0x0001F2",
+      "id": 498,
+      "icd10": "I498"
+    },
+    "urethral_valves.evodoc": {
+      "type": "disease",
+      "name": "urethral valves",
+      "code": "0x0001F3",
+      "id": 499,
+      "icd10": "I499"
+    },
+    "open_wound_of_the_neck.evodoc": {
+      "type": "disease",
+      "name": "open wound of the neck",
+      "code": "0x0001F4",
+      "id": 500,
+      "icd10": "I500"
+    },
+    "achalasia.evodoc": {
+      "type": "disease",
+      "name": "achalasia",
+      "code": "0x0001F5",
+      "id": 501,
+      "icd10": "I501"
+    },
+    "conductive_hearing_loss.evodoc": {
+      "type": "disease",
+      "name": "conductive hearing loss",
+      "code": "0x0001F6",
+      "id": 502,
+      "icd10": "I502"
+    },
+    "abdominal_hernia.evodoc": {
+      "type": "disease",
+      "name": "abdominal hernia",
+      "code": "0x0001F7",
+      "id": 503,
+      "icd10": "I503"
+    },
+    "cerebral_palsy.evodoc": {
+      "type": "disease",
+      "name": "cerebral palsy",
+      "code": "0x0001F8",
+      "id": 504,
+      "icd10": "I504"
+    },
+    "marijuana_abuse.evodoc": {
+      "type": "disease",
+      "name": "marijuana abuse",
+      "code": "0x0001F9",
+      "id": 505,
+      "icd10": "I505"
+    },
+    "cryptococcosis.evodoc": {
+      "type": "disease",
+      "name": "cryptococcosis",
+      "code": "0x0001FA",
+      "id": 506,
+      "icd10": "I506"
+    },
+    "indigestion.evodoc": {
+      "type": "disease",
+      "name": "indigestion",
+      "code": "0x0001FB",
+      "id": 507,
+      "icd10": "I507"
+    },
+    "bursitis.evodoc": {
+      "type": "disease",
+      "name": "bursitis",
+      "code": "0x0001FC",
+      "id": 508,
+      "icd10": "I508"
+    },
+    "esophageal_cancer.evodoc": {
+      "type": "disease",
+      "name": "esophageal cancer",
+      "code": "0x0001FD",
+      "id": 509,
+      "icd10": "I509"
+    },
+    "pulmonary_congestion.evodoc": {
+      "type": "disease",
+      "name": "pulmonary congestion",
+      "code": "0x0001FE",
+      "id": 510,
+      "icd10": "I510"
+    },
+    "juvenile_rheumatoid_arthritis.evodoc": {
+      "type": "disease",
+      "name": "juvenile rheumatoid arthritis",
+      "code": "0x0001FF",
+      "id": 511,
+      "icd10": "I511"
+    },
+    "actinic_keratosis.evodoc": {
+      "type": "disease",
+      "name": "actinic keratosis",
+      "code": "0x000200",
+      "id": 512,
+      "icd10": "I512"
+    },
+    "acute_otitis_media.evodoc": {
+      "type": "disease",
+      "name": "acute otitis media",
+      "code": "0x000201",
+      "id": 513,
+      "icd10": "I513"
+    },
+    "astigmatism.evodoc": {
+      "type": "disease",
+      "name": "astigmatism",
+      "code": "0x000202",
+      "id": 514,
+      "icd10": "I514"
+    },
+    "tuberous_sclerosis.evodoc": {
+      "type": "disease",
+      "name": "tuberous sclerosis",
+      "code": "0x000203",
+      "id": 515,
+      "icd10": "I515"
+    },
+    "empyema.evodoc": {
+      "type": "disease",
+      "name": "empyema",
+      "code": "0x000204",
+      "id": 516,
+      "icd10": "I516"
+    },
+    "presbyacusis.evodoc": {
+      "type": "disease",
+      "name": "presbyacusis",
+      "code": "0x000205",
+      "id": 517,
+      "icd10": "I517"
+    },
+    "neonatal_jaundice.evodoc": {
+      "type": "disease",
+      "name": "neonatal jaundice",
+      "code": "0x000206",
+      "id": 518,
+      "icd10": "I518"
+    },
+    "chronic_obstructive_pulmonary_disease_(copd).evodoc": {
+      "type": "disease",
+      "name": "chronic obstructive pulmonary disease (copd)",
+      "code": "0x000207",
+      "id": 519,
+      "icd10": "I519"
+    },
+    "dislocation_of_the_elbow.evodoc": {
+      "type": "disease",
+      "name": "dislocation of the elbow",
+      "code": "0x000208",
+      "id": 520,
+      "icd10": "I520"
+    },
+    "spondylosis.evodoc": {
+      "type": "disease",
+      "name": "spondylosis",
+      "code": "0x000209",
+      "id": 521,
+      "icd10": "I521"
+    },
+    "herpangina.evodoc": {
+      "type": "disease",
+      "name": "herpangina",
+      "code": "0x00020A",
+      "id": 522,
+      "icd10": "I522"
+    },
+    "injury_to_the_shoulder.evodoc": {
+      "type": "disease",
+      "name": "injury to the shoulder",
+      "code": "0x00020B",
+      "id": 523,
+      "icd10": "I523"
+    },
+    "poisoning_due_to_antidepressants.evodoc": {
+      "type": "disease",
+      "name": "poisoning due to antidepressants",
+      "code": "0x00020C",
+      "id": 524,
+      "icd10": "I524"
+    },
+    "infection_of_open_wound.evodoc": {
+      "type": "disease",
+      "name": "infection of open wound",
+      "code": "0x00020D",
+      "id": 525,
+      "icd10": "I525"
+    },
+    "deep_vein_thrombosis_(dvt).evodoc": {
+      "type": "disease",
+      "name": "deep vein thrombosis (dvt)",
+      "code": "0x00020E",
+      "id": 526,
+      "icd10": "I526"
+    },
+    "protein_deficiency.evodoc": {
+      "type": "disease",
+      "name": "protein deficiency",
+      "code": "0x00020F",
+      "id": 527,
+      "icd10": "I527"
+    },
+    "myoclonus.evodoc": {
+      "type": "disease",
+      "name": "myoclonus",
+      "code": "0x000210",
+      "id": 528,
+      "icd10": "I528"
+    },
+    "bone_spur_of_the_calcaneous.evodoc": {
+      "type": "disease",
+      "name": "bone spur of the calcaneous",
+      "code": "0x000211",
+      "id": 529,
+      "icd10": "I529"
+    },
+    "von_willebrand_disease.evodoc": {
+      "type": "disease",
+      "name": "von willebrand disease",
+      "code": "0x000212",
+      "id": 530,
+      "icd10": "I530"
+    },
+    "open_wound_of_the_back.evodoc": {
+      "type": "disease",
+      "name": "open wound of the back",
+      "code": "0x000213",
+      "id": 531,
+      "icd10": "I531"
+    },
+    "colonic_polyp.evodoc": {
+      "type": "disease",
+      "name": "colonic polyp",
+      "code": "0x000214",
+      "id": 532,
+      "icd10": "I532"
+    },
+    "magnesium_deficiency.evodoc": {
+      "type": "disease",
+      "name": "magnesium deficiency",
+      "code": "0x000215",
+      "id": 533,
+      "icd10": "I533"
+    },
+    "female_infertility_of_unknown_cause.evodoc": {
+      "type": "disease",
+      "name": "female infertility of unknown cause",
+      "code": "0x000216",
+      "id": 534,
+      "icd10": "I534"
+    },
+    "pericarditis.evodoc": {
+      "type": "disease",
+      "name": "pericarditis",
+      "code": "0x000217",
+      "id": 535,
+      "icd10": "I535"
+    },
+    "attention_deficit_hyperactivity_disorder_(adhd).evodoc": {
+      "type": "disease",
+      "name": "attention deficit hyperactivity disorder (adhd)",
+      "code": "0x000218",
+      "id": 536,
+      "icd10": "I536"
+    },
+    "pulmonic_valve_disease.evodoc": {
+      "type": "disease",
+      "name": "pulmonic valve disease",
+      "code": "0x000219",
+      "id": 537,
+      "icd10": "I537"
+    },
+    "tietze_syndrome.evodoc": {
+      "type": "disease",
+      "name": "tietze syndrome",
+      "code": "0x00021A",
+      "id": 538,
+      "icd10": "I538"
+    },
+    "cranial_nerve_palsy.evodoc": {
+      "type": "disease",
+      "name": "cranial nerve palsy",
+      "code": "0x00021B",
+      "id": 539,
+      "icd10": "I539"
+    },
+    "injury_to_the_arm.evodoc": {
+      "type": "disease",
+      "name": "injury to the arm",
+      "code": "0x00021C",
+      "id": 540,
+      "icd10": "I540"
+    },
+    "conversion_disorder.evodoc": {
+      "type": "disease",
+      "name": "conversion disorder",
+      "code": "0x00021D",
+      "id": 541,
+      "icd10": "I541"
+    },
+    "complex_regional_pain_syndrome.evodoc": {
+      "type": "disease",
+      "name": "complex regional pain syndrome",
+      "code": "0x00021E",
+      "id": 542,
+      "icd10": "I542"
+    },
+    "otosclerosis.evodoc": {
+      "type": "disease",
+      "name": "otosclerosis",
+      "code": "0x00021F",
+      "id": 543,
+      "icd10": "I543"
+    },
+    "injury_to_the_trunk.evodoc": {
+      "type": "disease",
+      "name": "injury to the trunk",
+      "code": "0x000220",
+      "id": 544,
+      "icd10": "I544"
+    },
+    "primary_insomnia.evodoc": {
+      "type": "disease",
+      "name": "primary insomnia",
+      "code": "0x000221",
+      "id": 545,
+      "icd10": "I545"
+    },
+    "lice.evodoc": {
+      "type": "disease",
+      "name": "lice",
+      "code": "0x000222",
+      "id": 546,
+      "icd10": "I546"
+    },
+    "vitamin_b12_deficiency.evodoc": {
+      "type": "disease",
+      "name": "vitamin b12 deficiency",
+      "code": "0x000223",
+      "id": 547,
+      "icd10": "I547"
+    },
+    "vulvodynia.evodoc": {
+      "type": "disease",
+      "name": "vulvodynia",
+      "code": "0x000224",
+      "id": 548,
+      "icd10": "I548"
+    },
+    "endometriosis.evodoc": {
+      "type": "disease",
+      "name": "endometriosis",
+      "code": "0x000225",
+      "id": 549,
+      "icd10": "I549"
+    },
+    "vasculitis.evodoc": {
+      "type": "disease",
+      "name": "vasculitis",
+      "code": "0x000226",
+      "id": 550,
+      "icd10": "I550"
+    },
+    "concussion.evodoc": {
+      "type": "disease",
+      "name": "concussion",
+      "code": "0x000227",
+      "id": 551,
+      "icd10": "I551"
+    },
+    "oral_leukoplakia.evodoc": {
+      "type": "disease",
+      "name": "oral leukoplakia",
+      "code": "0x000228",
+      "id": 552,
+      "icd10": "I552"
+    },
+    "chronic_kidney_disease.evodoc": {
+      "type": "disease",
+      "name": "chronic kidney disease",
+      "code": "0x000229",
+      "id": 553,
+      "icd10": "I553"
+    },
+    "bladder_disorder.evodoc": {
+      "type": "disease",
+      "name": "bladder disorder",
+      "code": "0x00022A",
+      "id": 554,
+      "icd10": "I554"
+    },
+    "chorioretinitis.evodoc": {
+      "type": "disease",
+      "name": "chorioretinitis",
+      "code": "0x00022B",
+      "id": 555,
+      "icd10": "I555"
+    },
+    "priapism.evodoc": {
+      "type": "disease",
+      "name": "priapism",
+      "code": "0x00022C",
+      "id": 556,
+      "icd10": "I556"
+    },
+    "myositis.evodoc": {
+      "type": "disease",
+      "name": "myositis",
+      "code": "0x00022D",
+      "id": 557,
+      "icd10": "I557"
+    },
+    "mononucleosis.evodoc": {
+      "type": "disease",
+      "name": "mononucleosis",
+      "code": "0x00022E",
+      "id": 558,
+      "icd10": "I558"
+    },
+    "neuralgia.evodoc": {
+      "type": "disease",
+      "name": "neuralgia",
+      "code": "0x00022F",
+      "id": 559,
+      "icd10": "I559"
+    },
+    "polycystic_kidney_disease.evodoc": {
+      "type": "disease",
+      "name": "polycystic kidney disease",
+      "code": "0x000230",
+      "id": 560,
+      "icd10": "I560"
+    },
+    "bipolar_disorder.evodoc": {
+      "type": "disease",
+      "name": "bipolar disorder",
+      "code": "0x000231",
+      "id": 561,
+      "icd10": "I561"
+    },
+    "amyloidosis.evodoc": {
+      "type": "disease",
+      "name": "amyloidosis",
+      "code": "0x000232",
+      "id": 562,
+      "icd10": "I562"
+    },
+    "chronic_inflammatory_demyelinating_polyneuropathy_(cidp).evodoc": {
+      "type": "disease",
+      "name": "chronic inflammatory demyelinating polyneuropathy (cidp)",
+      "code": "0x000233",
+      "id": 563,
+      "icd10": "I563"
+    },
+    "vitreous_hemorrhage.evodoc": {
+      "type": "disease",
+      "name": "vitreous hemorrhage",
+      "code": "0x000234",
+      "id": 564,
+      "icd10": "I564"
+    },
+    "poisoning_due_to_antimicrobial_drugs.evodoc": {
+      "type": "disease",
+      "name": "poisoning due to antimicrobial drugs",
+      "code": "0x000235",
+      "id": 565,
+      "icd10": "I565"
+    },
+    "open_wound_of_the_mouth.evodoc": {
+      "type": "disease",
+      "name": "open wound of the mouth",
+      "code": "0x000236",
+      "id": 566,
+      "icd10": "I566"
+    },
+    "scleroderma.evodoc": {
+      "type": "disease",
+      "name": "scleroderma",
+      "code": "0x000237",
+      "id": 567,
+      "icd10": "I567"
+    },
+    "myasthenia_gravis.evodoc": {
+      "type": "disease",
+      "name": "myasthenia gravis",
+      "code": "0x000238",
+      "id": 568,
+      "icd10": "I568"
+    },
+    "hypoglycemia.evodoc": {
+      "type": "disease",
+      "name": "hypoglycemia",
+      "code": "0x000239",
+      "id": 569,
+      "icd10": "I569"
+    },
+    "idiopathic_absence_of_menstruation.evodoc": {
+      "type": "disease",
+      "name": "idiopathic absence of menstruation",
+      "code": "0x00023A",
+      "id": 570,
+      "icd10": "I570"
+    },
+    "dislocation_of_the_ankle.evodoc": {
+      "type": "disease",
+      "name": "dislocation of the ankle",
+      "code": "0x00023B",
+      "id": 571,
+      "icd10": "I571"
+    },
+    "carbon_monoxide_poisoning.evodoc": {
+      "type": "disease",
+      "name": "carbon monoxide poisoning",
+      "code": "0x00023C",
+      "id": 572,
+      "icd10": "I572"
+    },
+    "panic_attack.evodoc": {
+      "type": "disease",
+      "name": "panic attack",
+      "code": "0x00023D",
+      "id": 573,
+      "icd10": "I573"
+    },
+    "plantar_fasciitis.evodoc": {
+      "type": "disease",
+      "name": "plantar fasciitis",
+      "code": "0x00023E",
+      "id": 574,
+      "icd10": "I574"
+    },
+    "hyperopia.evodoc": {
+      "type": "disease",
+      "name": "hyperopia",
+      "code": "0x00023F",
+      "id": 575,
+      "icd10": "I575"
+    },
+    "poisoning_due_to_sedatives.evodoc": {
+      "type": "disease",
+      "name": "poisoning due to sedatives",
+      "code": "0x000240",
+      "id": 576,
+      "icd10": "I576"
+    },
+    "pemphigus.evodoc": {
+      "type": "disease",
+      "name": "pemphigus",
+      "code": "0x000241",
+      "id": 577,
+      "icd10": "I577"
+    },
+    "peyronie_disease.evodoc": {
+      "type": "disease",
+      "name": "peyronie disease",
+      "code": "0x000242",
+      "id": 578,
+      "icd10": "I578"
+    },
+    "hiatal_hernia.evodoc": {
+      "type": "disease",
+      "name": "hiatal hernia",
+      "code": "0x000243",
+      "id": 579,
+      "icd10": "I579"
+    },
+    "extrapyramidal_effect_of_drugs.evodoc": {
+      "type": "disease",
+      "name": "extrapyramidal effect of drugs",
+      "code": "0x000244",
+      "id": 580,
+      "icd10": "I580"
+    },
+    "meniere_disease.evodoc": {
+      "type": "disease",
+      "name": "meniere disease",
+      "code": "0x000245",
+      "id": 581,
+      "icd10": "I581"
+    },
+    "anal_fissure.evodoc": {
+      "type": "disease",
+      "name": "anal fissure",
+      "code": "0x000246",
+      "id": 582,
+      "icd10": "I582"
+    },
+    "allergy.evodoc": {
+      "type": "disease",
+      "name": "allergy",
+      "code": "0x000247",
+      "id": 583,
+      "icd10": "I583"
+    },
+    "chronic_otitis_media.evodoc": {
+      "type": "disease",
+      "name": "chronic otitis media",
+      "code": "0x000248",
+      "id": 584,
+      "icd10": "I584"
+    },
+    "fracture_of_the_finger.evodoc": {
+      "type": "disease",
+      "name": "fracture of the finger",
+      "code": "0x000249",
+      "id": 585,
+      "icd10": "I585"
+    },
+    "hirschsprung_disease.evodoc": {
+      "type": "disease",
+      "name": "hirschsprung disease",
+      "code": "0x00024A",
+      "id": 586,
+      "icd10": "I586"
+    },
+    "polymyalgia_rheumatica.evodoc": {
+      "type": "disease",
+      "name": "polymyalgia rheumatica",
+      "code": "0x00024B",
+      "id": 587,
+      "icd10": "I587"
+    },
+    "bladder_cancer.evodoc": {
+      "type": "disease",
+      "name": "bladder cancer",
+      "code": "0x00024C",
+      "id": 588,
+      "icd10": "I588"
+    },
+    "acute_bronchospasm.evodoc": {
+      "type": "disease",
+      "name": "acute bronchospasm",
+      "code": "0x00024D",
+      "id": 589,
+      "icd10": "I589"
+    },
+    "acute_glaucoma.evodoc": {
+      "type": "disease",
+      "name": "acute glaucoma",
+      "code": "0x00024E",
+      "id": 590,
+      "icd10": "I590"
+    },
+    "open_wound_of_the_chest.evodoc": {
+      "type": "disease",
+      "name": "open wound of the chest",
+      "code": "0x00024F",
+      "id": 591,
+      "icd10": "I591"
+    },
+    "dislocation_of_the_patella.evodoc": {
+      "type": "disease",
+      "name": "dislocation of the patella",
+      "code": "0x000250",
+      "id": 592,
+      "icd10": "I592"
+    },
+    "sciatica.evodoc": {
+      "type": "disease",
+      "name": "sciatica",
+      "code": "0x000251",
+      "id": 593,
+      "icd10": "I593"
+    },
+    "hypercalcemia.evodoc": {
+      "type": "disease",
+      "name": "hypercalcemia",
+      "code": "0x000252",
+      "id": 594,
+      "icd10": "I594"
+    },
+    "stress_incontinence.evodoc": {
+      "type": "disease",
+      "name": "stress incontinence",
+      "code": "0x000253",
+      "id": 595,
+      "icd10": "I595"
+    },
+    "varicose_veins.evodoc": {
+      "type": "disease",
+      "name": "varicose veins",
+      "code": "0x000254",
+      "id": 596,
+      "icd10": "I596"
+    },
+    "benign_kidney_cyst.evodoc": {
+      "type": "disease",
+      "name": "benign kidney cyst",
+      "code": "0x000255",
+      "id": 597,
+      "icd10": "I597"
+    },
+    "hydrocele_of_the_testicle.evodoc": {
+      "type": "disease",
+      "name": "hydrocele of the testicle",
+      "code": "0x000256",
+      "id": 598,
+      "icd10": "I598"
+    },
+    "degenerative_disc_disease.evodoc": {
+      "type": "disease",
+      "name": "degenerative disc disease",
+      "code": "0x000257",
+      "id": 599,
+      "icd10": "I599"
+    },
+    "hirsutism.evodoc": {
+      "type": "disease",
+      "name": "hirsutism",
+      "code": "0x000258",
+      "id": 600,
+      "icd10": "I600"
+    },
+    "dislocation_of_the_foot.evodoc": {
+      "type": "disease",
+      "name": "dislocation of the foot",
+      "code": "0x000259",
+      "id": 601,
+      "icd10": "I601"
+    },
+    "hydronephrosis.evodoc": {
+      "type": "disease",
+      "name": "hydronephrosis",
+      "code": "0x00025A",
+      "id": 602,
+      "icd10": "I602"
+    },
+    "diverticulosis.evodoc": {
+      "type": "disease",
+      "name": "diverticulosis",
+      "code": "0x00025B",
+      "id": 603,
+      "icd10": "I603"
+    },
+    "pain_after_an_operation.evodoc": {
+      "type": "disease",
+      "name": "pain after an operation",
+      "code": "0x00025C",
+      "id": 604,
+      "icd10": "I604"
+    },
+    "huntington_disease.evodoc": {
+      "type": "disease",
+      "name": "huntington disease",
+      "code": "0x00025D",
+      "id": 605,
+      "icd10": "I605"
+    },
+    "lymphoma.evodoc": {
+      "type": "disease",
+      "name": "lymphoma",
+      "code": "0x00025E",
+      "id": 606,
+      "icd10": "I606"
+    },
+    "dermatitis_due_to_sun_exposure.evodoc": {
+      "type": "disease",
+      "name": "dermatitis due to sun exposure",
+      "code": "0x00025F",
+      "id": 607,
+      "icd10": "I607"
+    },
+    "anemia_due_to_chronic_kidney_disease.evodoc": {
+      "type": "disease",
+      "name": "anemia due to chronic kidney disease",
+      "code": "0x000260",
+      "id": 608,
+      "icd10": "I608"
+    },
+    "injury_to_internal_organ.evodoc": {
+      "type": "disease",
+      "name": "injury to internal organ",
+      "code": "0x000261",
+      "id": 609,
+      "icd10": "I609"
+    },
+    "scleritis.evodoc": {
+      "type": "disease",
+      "name": "scleritis",
+      "code": "0x000262",
+      "id": 610,
+      "icd10": "I610"
+    },
+    "pterygium.evodoc": {
+      "type": "disease",
+      "name": "pterygium",
+      "code": "0x000263",
+      "id": 611,
+      "icd10": "I611"
+    },
+    "fungal_infection_of_the_skin.evodoc": {
+      "type": "disease",
+      "name": "fungal infection of the skin",
+      "code": "0x000264",
+      "id": 612,
+      "icd10": "I612"
+    },
+    "insulin_overdose.evodoc": {
+      "type": "disease",
+      "name": "insulin overdose",
+      "code": "0x000265",
+      "id": 613,
+      "icd10": "I613"
+    },
+    "syndrome_of_inappropriate_secretion_of_adh_(siadh).evodoc": {
+      "type": "disease",
+      "name": "syndrome of inappropriate secretion of adh (siadh)",
+      "code": "0x000266",
+      "id": 614,
+      "icd10": "I614"
+    },
+    "foreign_body_in_the_ear.evodoc": {
+      "type": "disease",
+      "name": "foreign body in the ear",
+      "code": "0x000267",
+      "id": 615,
+      "icd10": "I615"
+    },
+    "premenstrual_tension_syndrome.evodoc": {
+      "type": "disease",
+      "name": "premenstrual tension syndrome",
+      "code": "0x000268",
+      "id": 616,
+      "icd10": "I616"
+    },
+    "orbital_cellulitis.evodoc": {
+      "type": "disease",
+      "name": "orbital cellulitis",
+      "code": "0x000269",
+      "id": 617,
+      "icd10": "I617"
+    },
+    "injury_to_the_leg.evodoc": {
+      "type": "disease",
+      "name": "injury to the leg",
+      "code": "0x00026A",
+      "id": 618,
+      "icd10": "I618"
+    },
+    "hepatic_encephalopathy.evodoc": {
+      "type": "disease",
+      "name": "hepatic encephalopathy",
+      "code": "0x00026B",
+      "id": 619,
+      "icd10": "I619"
+    },
+    "bone_cancer.evodoc": {
+      "type": "disease",
+      "name": "bone cancer",
+      "code": "0x00026C",
+      "id": 620,
+      "icd10": "I620"
+    },
+    "syringomyelia.evodoc": {
+      "type": "disease",
+      "name": "syringomyelia",
+      "code": "0x00026D",
+      "id": 621,
+      "icd10": "I621"
+    },
+    "pulmonary_fibrosis.evodoc": {
+      "type": "disease",
+      "name": "pulmonary fibrosis",
+      "code": "0x00026E",
+      "id": 622,
+      "icd10": "I622"
+    },
+    "mitral_valve_disease.evodoc": {
+      "type": "disease",
+      "name": "mitral valve disease",
+      "code": "0x00026F",
+      "id": 623,
+      "icd10": "I623"
+    },
+    "parkinson_disease.evodoc": {
+      "type": "disease",
+      "name": "parkinson disease",
+      "code": "0x000270",
+      "id": 624,
+      "icd10": "I624"
+    },
+    "gout.evodoc": {
+      "type": "disease",
+      "name": "gout",
+      "code": "0x000271",
+      "id": 625,
+      "icd10": "I625"
+    },
+    "otitis_media.evodoc": {
+      "type": "disease",
+      "name": "otitis media",
+      "code": "0x000272",
+      "id": 626,
+      "icd10": "I626"
+    },
+    "drug_abuse_(opioids).evodoc": {
+      "type": "disease",
+      "name": "drug abuse (opioids)",
+      "code": "0x000273",
+      "id": 627,
+      "icd10": "I627"
+    },
+    "myelodysplastic_syndrome.evodoc": {
+      "type": "disease",
+      "name": "myelodysplastic syndrome",
+      "code": "0x000274",
+      "id": 628,
+      "icd10": "I628"
+    },
+    "fracture_of_the_shoulder.evodoc": {
+      "type": "disease",
+      "name": "fracture of the shoulder",
+      "code": "0x000275",
+      "id": 629,
+      "icd10": "I629"
+    },
+    "acute_kidney_injury.evodoc": {
+      "type": "disease",
+      "name": "acute kidney injury",
+      "code": "0x000276",
+      "id": 630,
+      "icd10": "I630"
+    },
+    "threatened_pregnancy.evodoc": {
+      "type": "disease",
+      "name": "threatened pregnancy",
+      "code": "0x000277",
+      "id": 631,
+      "icd10": "I631"
+    },
+    "intracranial_abscess.evodoc": {
+      "type": "disease",
+      "name": "intracranial abscess",
+      "code": "0x000278",
+      "id": 632,
+      "icd10": "I632"
+    },
+    "gum_disease.evodoc": {
+      "type": "disease",
+      "name": "gum disease",
+      "code": "0x000279",
+      "id": 633,
+      "icd10": "I633"
+    },
+    "open_wound_from_surgical_incision.evodoc": {
+      "type": "disease",
+      "name": "open wound from surgical incision",
+      "code": "0x00027A",
+      "id": 634,
+      "icd10": "I634"
+    },
+    "gastrointestinal_hemorrhage.evodoc": {
+      "type": "disease",
+      "name": "gastrointestinal hemorrhage",
+      "code": "0x00027B",
+      "id": 635,
+      "icd10": "I635"
+    },
+    "seborrheic_dermatitis.evodoc": {
+      "type": "disease",
+      "name": "seborrheic dermatitis",
+      "code": "0x00027C",
+      "id": 636,
+      "icd10": "I636"
+    },
+    "drug_abuse_(methamphetamine).evodoc": {
+      "type": "disease",
+      "name": "drug abuse (methamphetamine)",
+      "code": "0x00027D",
+      "id": 637,
+      "icd10": "I637"
+    },
+    "torticollis.evodoc": {
+      "type": "disease",
+      "name": "torticollis",
+      "code": "0x00027E",
+      "id": 638,
+      "icd10": "I638"
+    },
+    "poisoning_due_to_antihypertensives.evodoc": {
+      "type": "disease",
+      "name": "poisoning due to antihypertensives",
+      "code": "0x00027F",
+      "id": 639,
+      "icd10": "I639"
+    },
+    "alcohol_intoxication.evodoc": {
+      "type": "disease",
+      "name": "alcohol intoxication",
+      "code": "0x000280",
+      "id": 640,
+      "icd10": "I640"
+    },
+    "scurvy.evodoc": {
+      "type": "disease",
+      "name": "scurvy",
+      "code": "0x000281",
+      "id": 641,
+      "icd10": "I641"
+    },
+    "narcolepsy.evodoc": {
+      "type": "disease",
+      "name": "narcolepsy",
+      "code": "0x000282",
+      "id": 642,
+      "icd10": "I642"
+    },
+    "food_allergy.evodoc": {
+      "type": "disease",
+      "name": "food allergy",
+      "code": "0x000283",
+      "id": 643,
+      "icd10": "I643"
+    },
+    "labyrinthitis.evodoc": {
+      "type": "disease",
+      "name": "labyrinthitis",
+      "code": "0x000284",
+      "id": 644,
+      "icd10": "I644"
+    },
+    "anxiety.evodoc": {
+      "type": "disease",
+      "name": "anxiety",
+      "code": "0x000285",
+      "id": 645,
+      "icd10": "I645"
+    },
+    "impulse_control_disorder.evodoc": {
+      "type": "disease",
+      "name": "impulse control disorder",
+      "code": "0x000286",
+      "id": 646,
+      "icd10": "I646"
+    },
+    "stenosis_of_the_tear_duct.evodoc": {
+      "type": "disease",
+      "name": "stenosis of the tear duct",
+      "code": "0x000287",
+      "id": 647,
+      "icd10": "I647"
+    },
+    "abscess_of_nose.evodoc": {
+      "type": "disease",
+      "name": "abscess of nose",
+      "code": "0x000288",
+      "id": 648,
+      "icd10": "I648"
+    },
+    "omphalitis.evodoc": {
+      "type": "disease",
+      "name": "omphalitis",
+      "code": "0x000289",
+      "id": 649,
+      "icd10": "I649"
+    },
+    "leukemia.evodoc": {
+      "type": "disease",
+      "name": "leukemia",
+      "code": "0x00028A",
+      "id": 650,
+      "icd10": "I650"
+    },
+    "bell_palsy.evodoc": {
+      "type": "disease",
+      "name": "bell palsy",
+      "code": "0x00028B",
+      "id": 651,
+      "icd10": "I651"
+    },
+    "conjunctivitis_due_to_allergy.evodoc": {
+      "type": "disease",
+      "name": "conjunctivitis due to allergy",
+      "code": "0x00028C",
+      "id": 652,
+      "icd10": "I652"
+    },
+    "drug_reaction.evodoc": {
+      "type": "disease",
+      "name": "drug reaction",
+      "code": "0x00028D",
+      "id": 653,
+      "icd10": "I653"
+    },
+    "adrenal_cancer.evodoc": {
+      "type": "disease",
+      "name": "adrenal cancer",
+      "code": "0x00028E",
+      "id": 654,
+      "icd10": "I654"
+    },
+    "myopia.evodoc": {
+      "type": "disease",
+      "name": "myopia",
+      "code": "0x00028F",
+      "id": 655,
+      "icd10": "I655"
+    },
+    "osteoarthritis.evodoc": {
+      "type": "disease",
+      "name": "osteoarthritis",
+      "code": "0x000290",
+      "id": 656,
+      "icd10": "I656"
+    },
+    "pharyngitis.evodoc": {
+      "type": "disease",
+      "name": "pharyngitis",
+      "code": "0x000291",
+      "id": 657,
+      "icd10": "I657"
+    },
+    "chronic_rheumatic_fever.evodoc": {
+      "type": "disease",
+      "name": "chronic rheumatic fever",
+      "code": "0x000292",
+      "id": 658,
+      "icd10": "I658"
+    },
+    "hypocalcemia.evodoc": {
+      "type": "disease",
+      "name": "hypocalcemia",
+      "code": "0x000293",
+      "id": 659,
+      "icd10": "I659"
+    },
+    "macular_degeneration.evodoc": {
+      "type": "disease",
+      "name": "macular degeneration",
+      "code": "0x000294",
+      "id": 660,
+      "icd10": "I660"
+    },
+    "premature_ventricular_contractions_(pvcs).evodoc": {
+      "type": "disease",
+      "name": "premature ventricular contractions (pvcs)",
+      "code": "0x000295",
+      "id": 661,
+      "icd10": "I661"
+    },
+    "testicular_cancer.evodoc": {
+      "type": "disease",
+      "name": "testicular cancer",
+      "code": "0x000296",
+      "id": 662,
+      "icd10": "I662"
+    },
+    "hydrocephalus.evodoc": {
+      "type": "disease",
+      "name": "hydrocephalus",
+      "code": "0x000297",
+      "id": 663,
+      "icd10": "I663"
+    },
+    "breast_cancer.evodoc": {
+      "type": "disease",
+      "name": "breast cancer",
+      "code": "0x000298",
+      "id": 664,
+      "icd10": "I664"
+    },
+    "anemia_due_to_malignancy.evodoc": {
+      "type": "disease",
+      "name": "anemia due to malignancy",
+      "code": "0x000299",
+      "id": 665,
+      "icd10": "I665"
+    },
+    "esophageal_varices.evodoc": {
+      "type": "disease",
+      "name": "esophageal varices",
+      "code": "0x00029A",
+      "id": 666,
+      "icd10": "I666"
+    },
+    "endometrial_cancer.evodoc": {
+      "type": "disease",
+      "name": "endometrial cancer",
+      "code": "0x00029B",
+      "id": 667,
+      "icd10": "I667"
+    },
+    "cystic_fibrosis.evodoc": {
+      "type": "disease",
+      "name": "cystic fibrosis",
+      "code": "0x00029C",
+      "id": 668,
+      "icd10": "I668"
+    },
+    "intertrigo_(skin_condition).evodoc": {
+      "type": "disease",
+      "name": "intertrigo (skin condition)",
+      "code": "0x00029D",
+      "id": 669,
+      "icd10": "I669"
+    },
+    "glucocorticoid_deficiency.evodoc": {
+      "type": "disease",
+      "name": "glucocorticoid deficiency",
+      "code": "0x00029E",
+      "id": 670,
+      "icd10": "I670"
+    },
+    "temporomandibular_joint_disorder.evodoc": {
+      "type": "disease",
+      "name": "temporomandibular joint disorder",
+      "code": "0x00029F",
+      "id": 671,
+      "icd10": "I671"
+    },
+    "wilson_disease.evodoc": {
+      "type": "disease",
+      "name": "wilson disease",
+      "code": "0x0002A0",
+      "id": 672,
+      "icd10": "I672"
+    },
+    "vitamin_a_deficiency.evodoc": {
+      "type": "disease",
+      "name": "vitamin a deficiency",
+      "code": "0x0002A1",
+      "id": 673,
+      "icd10": "I673"
+    },
+    "gonorrhea.evodoc": {
+      "type": "disease",
+      "name": "gonorrhea",
+      "code": "0x0002A2",
+      "id": 674,
+      "icd10": "I674"
+    },
+    "fracture_of_the_rib.evodoc": {
+      "type": "disease",
+      "name": "fracture of the rib",
+      "code": "0x0002A3",
+      "id": 675,
+      "icd10": "I675"
+    },
+    "ependymoma.evodoc": {
+      "type": "disease",
+      "name": "ependymoma",
+      "code": "0x0002A4",
+      "id": 676,
+      "icd10": "I676"
+    },
+    "hepatitis_due_to_a_toxin.evodoc": {
+      "type": "disease",
+      "name": "hepatitis due to a toxin",
+      "code": "0x0002A5",
+      "id": 677,
+      "icd10": "I677"
+    },
+    "vaginal_cyst.evodoc": {
+      "type": "disease",
+      "name": "vaginal cyst",
+      "code": "0x0002A6",
+      "id": 678,
+      "icd10": "I678"
+    },
+    "open_wound_of_the_shoulder.evodoc": {
+      "type": "disease",
+      "name": "open wound of the shoulder",
+      "code": "0x0002A7",
+      "id": 679,
+      "icd10": "I679"
+    },
+    "ectopic_pregnancy.evodoc": {
+      "type": "disease",
+      "name": "ectopic pregnancy",
+      "code": "0x0002A8",
+      "id": 680,
+      "icd10": "I680"
+    },
+    "chronic_knee_pain.evodoc": {
+      "type": "disease",
+      "name": "chronic knee pain",
+      "code": "0x0002A9",
+      "id": 681,
+      "icd10": "I681"
+    },
+    "pinguecula.evodoc": {
+      "type": "disease",
+      "name": "pinguecula",
+      "code": "0x0002AA",
+      "id": 682,
+      "icd10": "I682"
+    },
+    "hypergammaglobulinemia.evodoc": {
+      "type": "disease",
+      "name": "hypergammaglobulinemia",
+      "code": "0x0002AB",
+      "id": 683,
+      "icd10": "I683"
+    },
+    "alcohol_abuse.evodoc": {
+      "type": "disease",
+      "name": "alcohol abuse",
+      "code": "0x0002AC",
+      "id": 684,
+      "icd10": "I684"
+    },
+    "carpal_tunnel_syndrome.evodoc": {
+      "type": "disease",
+      "name": "carpal tunnel syndrome",
+      "code": "0x0002AD",
+      "id": 685,
+      "icd10": "I685"
+    },
+    "pituitary_disorder.evodoc": {
+      "type": "disease",
+      "name": "pituitary disorder",
+      "code": "0x0002AE",
+      "id": 686,
+      "icd10": "I686"
+    },
+    "kidney_stone.evodoc": {
+      "type": "disease",
+      "name": "kidney stone",
+      "code": "0x0002AF",
+      "id": 687,
+      "icd10": "I687"
+    },
+    "autism.evodoc": {
+      "type": "disease",
+      "name": "autism",
+      "code": "0x0002B0",
+      "id": 688,
+      "icd10": "I688"
+    },
+    "cat_scratch_disease.evodoc": {
+      "type": "disease",
+      "name": "cat scratch disease",
+      "code": "0x0002B1",
+      "id": 689,
+      "icd10": "I689"
+    },
+    "chronic_glaucoma.evodoc": {
+      "type": "disease",
+      "name": "chronic glaucoma",
+      "code": "0x0002B2",
+      "id": 690,
+      "icd10": "I690"
+    },
+    "retinal_detachment.evodoc": {
+      "type": "disease",
+      "name": "retinal detachment",
+      "code": "0x0002B3",
+      "id": 691,
+      "icd10": "I691"
+    },
+    "aplastic_anemia.evodoc": {
+      "type": "disease",
+      "name": "aplastic anemia",
+      "code": "0x0002B4",
+      "id": 692,
+      "icd10": "I692"
+    },
+    "overflow_incontinence.evodoc": {
+      "type": "disease",
+      "name": "overflow incontinence",
+      "code": "0x0002B5",
+      "id": 693,
+      "icd10": "I693"
+    },
+    "hemolytic_anemia.evodoc": {
+      "type": "disease",
+      "name": "hemolytic anemia",
+      "code": "0x0002B6",
+      "id": 694,
+      "icd10": "I694"
+    },
+    "lateral_epicondylitis_(tennis_elbow).evodoc": {
+      "type": "disease",
+      "name": "lateral epicondylitis (tennis elbow)",
+      "code": "0x0002B7",
+      "id": 695,
+      "icd10": "I695"
+    },
+    "open_wound_of_the_eye.evodoc": {
+      "type": "disease",
+      "name": "open wound of the eye",
+      "code": "0x0002B8",
+      "id": 696,
+      "icd10": "I696"
+    },
+    "syphilis.evodoc": {
+      "type": "disease",
+      "name": "syphilis",
+      "code": "0x0002B9",
+      "id": 697,
+      "icd10": "I697"
+    },
+    "diabetic_kidney_disease.evodoc": {
+      "type": "disease",
+      "name": "diabetic kidney disease",
+      "code": "0x0002BA",
+      "id": 698,
+      "icd10": "I698"
+    },
+    "nose_disorder.evodoc": {
+      "type": "disease",
+      "name": "nose disorder",
+      "code": "0x0002BB",
+      "id": 699,
+      "icd10": "I699"
+    },
+    "drug_withdrawal.evodoc": {
+      "type": "disease",
+      "name": "drug withdrawal",
+      "code": "0x0002BC",
+      "id": 700,
+      "icd10": "I700"
+    },
+    "dental_caries.evodoc": {
+      "type": "disease",
+      "name": "dental caries",
+      "code": "0x0002BD",
+      "id": 701,
+      "icd10": "I701"
+    },
+    "hypercholesterolemia.evodoc": {
+      "type": "disease",
+      "name": "hypercholesterolemia",
+      "code": "0x0002BE",
+      "id": 702,
+      "icd10": "I702"
+    },
+    "fracture_of_the_patella.evodoc": {
+      "type": "disease",
+      "name": "fracture of the patella",
+      "code": "0x0002BF",
+      "id": 703,
+      "icd10": "I703"
+    },
+    "kidney_failure.evodoc": {
+      "type": "disease",
+      "name": "kidney failure",
+      "code": "0x0002C0",
+      "id": 704,
+      "icd10": "I704"
+    },
+    "fracture_of_the_neck.evodoc": {
+      "type": "disease",
+      "name": "fracture of the neck",
+      "code": "0x0002C1",
+      "id": 705,
+      "icd10": "I705"
+    },
+    "muscle_spasm.evodoc": {
+      "type": "disease",
+      "name": "muscle spasm",
+      "code": "0x0002C2",
+      "id": 706,
+      "icd10": "I706"
+    },
+    "hemophilia.evodoc": {
+      "type": "disease",
+      "name": "hemophilia",
+      "code": "0x0002C3",
+      "id": 707,
+      "icd10": "I707"
+    },
+    "hyperosmotic_hyperketotic_state.evodoc": {
+      "type": "disease",
+      "name": "hyperosmotic hyperketotic state",
+      "code": "0x0002C4",
+      "id": 708,
+      "icd10": "I708"
+    },
+    "peritonsillar_abscess.evodoc": {
+      "type": "disease",
+      "name": "peritonsillar abscess",
+      "code": "0x0002C5",
+      "id": 709,
+      "icd10": "I709"
+    },
+    "gastroparesis.evodoc": {
+      "type": "disease",
+      "name": "gastroparesis",
+      "code": "0x0002C6",
+      "id": 710,
+      "icd10": "I710"
+    },
+    "itching_of_unknown_cause.evodoc": {
+      "type": "disease",
+      "name": "itching of unknown cause",
+      "code": "0x0002C7",
+      "id": 711,
+      "icd10": "I711"
+    },
+    "polycythemia_vera.evodoc": {
+      "type": "disease",
+      "name": "polycythemia vera",
+      "code": "0x0002C8",
+      "id": 712,
+      "icd10": "I712"
+    },
+    "thrombocytopenia.evodoc": {
+      "type": "disease",
+      "name": "thrombocytopenia",
+      "code": "0x0002C9",
+      "id": 713,
+      "icd10": "I713"
+    },
+    "head_and_neck_cancer.evodoc": {
+      "type": "disease",
+      "name": "head and neck cancer",
+      "code": "0x0002CA",
+      "id": 714,
+      "icd10": "I714"
+    },
+    "goiter.evodoc": {
+      "type": "disease",
+      "name": "goiter",
+      "code": "0x0002CB",
+      "id": 715,
+      "icd10": "I715"
+    },
+    "urge_incontinence.evodoc": {
+      "type": "disease",
+      "name": "urge incontinence",
+      "code": "0x0002CC",
+      "id": 716,
+      "icd10": "I716"
+    },
+    "edward_syndrome.evodoc": {
+      "type": "disease",
+      "name": "edward syndrome",
+      "code": "0x0002CD",
+      "id": 717,
+      "icd10": "I717"
+    },
+    "open_wound_of_the_arm.evodoc": {
+      "type": "disease",
+      "name": "open wound of the arm",
+      "code": "0x0002CE",
+      "id": 718,
+      "icd10": "I718"
+    },
+    "muscular_dystrophy.evodoc": {
+      "type": "disease",
+      "name": "muscular dystrophy",
+      "code": "0x0002CF",
+      "id": 719,
+      "icd10": "I719"
+    },
+    "mittelschmerz.evodoc": {
+      "type": "disease",
+      "name": "mittelschmerz",
+      "code": "0x0002D0",
+      "id": 720,
+      "icd10": "I720"
+    },
+    "corneal_abrasion.evodoc": {
+      "type": "disease",
+      "name": "corneal abrasion",
+      "code": "0x0002D1",
+      "id": 721,
+      "icd10": "I721"
+    },
+    "anemia_of_chronic_disease.evodoc": {
+      "type": "disease",
+      "name": "anemia of chronic disease",
+      "code": "0x0002D2",
+      "id": 722,
+      "icd10": "I722"
+    },
+    "dysthymic_disorder.evodoc": {
+      "type": "disease",
+      "name": "dysthymic disorder",
+      "code": "0x0002D3",
+      "id": 723,
+      "icd10": "I723"
+    },
+    "scarlet_fever.evodoc": {
+      "type": "disease",
+      "name": "scarlet fever",
+      "code": "0x0002D4",
+      "id": 724,
+      "icd10": "I724"
+    },
+    "drug_abuse_(barbiturates).evodoc": {
+      "type": "disease",
+      "name": "drug abuse (barbiturates)",
+      "code": "0x0002D5",
+      "id": 725,
+      "icd10": "I725"
+    },
+    "polycystic_ovarian_syndrome_(pcos).evodoc": {
+      "type": "disease",
+      "name": "polycystic ovarian syndrome (pcos)",
+      "code": "0x0002D6",
+      "id": 726,
+      "icd10": "I726"
+    },
+    "encephalitis.evodoc": {
+      "type": "disease",
+      "name": "encephalitis",
+      "code": "0x0002D7",
+      "id": 727,
+      "icd10": "I727"
+    },
+    "cyst_of_the_eyelid.evodoc": {
+      "type": "disease",
+      "name": "cyst of the eyelid",
+      "code": "0x0002D8",
+      "id": 728,
+      "icd10": "I728"
+    },
+    "balanitis.evodoc": {
+      "type": "disease",
+      "name": "balanitis",
+      "code": "0x0002D9",
+      "id": 729,
+      "icd10": "I729"
+    },
+    "foreign_body_in_the_throat.evodoc": {
+      "type": "disease",
+      "name": "foreign body in the throat",
+      "code": "0x0002DA",
+      "id": 730,
+      "icd10": "I730"
+    },
+    "drug_abuse_(cocaine).evodoc": {
+      "type": "disease",
+      "name": "drug abuse (cocaine)",
+      "code": "0x0002DB",
+      "id": 731,
+      "icd10": "I731"
+    },
+    "optic_neuritis.evodoc": {
+      "type": "disease",
+      "name": "optic neuritis",
+      "code": "0x0002DC",
+      "id": 732,
+      "icd10": "I732"
+    },
+    "alcohol_withdrawal.evodoc": {
+      "type": "disease",
+      "name": "alcohol withdrawal",
+      "code": "0x0002DD",
+      "id": 733,
+      "icd10": "I733"
+    },
+    "premature_atrial_contractions_(pacs).evodoc": {
+      "type": "disease",
+      "name": "premature atrial contractions (pacs)",
+      "code": "0x0002DE",
+      "id": 734,
+      "icd10": "I734"
+    },
+    "hemiplegia.evodoc": {
+      "type": "disease",
+      "name": "hemiplegia",
+      "code": "0x0002DF",
+      "id": 735,
+      "icd10": "I735"
+    },
+    "hammer_toe.evodoc": {
+      "type": "disease",
+      "name": "hammer toe",
+      "code": "0x0002E0",
+      "id": 736,
+      "icd10": "I736"
+    },
+    "open_wound_of_the_cheek.evodoc": {
+      "type": "disease",
+      "name": "open wound of the cheek",
+      "code": "0x0002E1",
+      "id": 737,
+      "icd10": "I737"
+    },
+    "joint_effusion.evodoc": {
+      "type": "disease",
+      "name": "joint effusion",
+      "code": "0x0002E2",
+      "id": 738,
+      "icd10": "I738"
+    },
+    "open_wound_of_the_knee.evodoc": {
+      "type": "disease",
+      "name": "open wound of the knee",
+      "code": "0x0002E3",
+      "id": 739,
+      "icd10": "I739"
+    },
+    "meningioma.evodoc": {
+      "type": "disease",
+      "name": "meningioma",
+      "code": "0x0002E4",
+      "id": 740,
+      "icd10": "I740"
+    },
+    "brain_cancer.evodoc": {
+      "type": "disease",
+      "name": "brain cancer",
+      "code": "0x0002E5",
+      "id": 741,
+      "icd10": "I741"
+    },
+    "placental_abruption.evodoc": {
+      "type": "disease",
+      "name": "placental abruption",
+      "code": "0x0002E6",
+      "id": 742,
+      "icd10": "I742"
+    },
+    "seasonal_allergies_(hay_fever).evodoc": {
+      "type": "disease",
+      "name": "seasonal allergies (hay fever)",
+      "code": "0x0002E7",
+      "id": 743,
+      "icd10": "I743"
+    },
+    "lung_cancer.evodoc": {
+      "type": "disease",
+      "name": "lung cancer",
+      "code": "0x0002E8",
+      "id": 744,
+      "icd10": "I744"
+    },
+    "primary_kidney_disease.evodoc": {
+      "type": "disease",
+      "name": "primary kidney disease",
+      "code": "0x0002E9",
+      "id": 745,
+      "icd10": "I745"
+    },
+    "uterine_cancer.evodoc": {
+      "type": "disease",
+      "name": "uterine cancer",
+      "code": "0x0002EA",
+      "id": 746,
+      "icd10": "I746"
+    },
+    "dry_eye_of_unknown_cause.evodoc": {
+      "type": "disease",
+      "name": "dry eye of unknown cause",
+      "code": "0x0002EB",
+      "id": 747,
+      "icd10": "I747"
+    },
+    "fibrocystic_breast_disease.evodoc": {
+      "type": "disease",
+      "name": "fibrocystic breast disease",
+      "code": "0x0002EC",
+      "id": 748,
+      "icd10": "I748"
+    },
+    "fungal_infection_of_the_hair.evodoc": {
+      "type": "disease",
+      "name": "fungal infection of the hair",
+      "code": "0x0002ED",
+      "id": 749,
+      "icd10": "I749"
+    },
+    "tooth_abscess.evodoc": {
+      "type": "disease",
+      "name": "tooth abscess",
+      "code": "0x0002EE",
+      "id": 750,
+      "icd10": "I750"
+    },
+    "envenomation_from_spider_or_animal_bite.evodoc": {
+      "type": "disease",
+      "name": "envenomation from spider or animal bite",
+      "code": "0x0002EF",
+      "id": 751,
+      "icd10": "I751"
+    },
+    "vacterl_syndrome.evodoc": {
+      "type": "disease",
+      "name": "vacterl syndrome",
+      "code": "0x0002F0",
+      "id": 752,
+      "icd10": "I752"
+    },
+    "vertebrobasilar_insufficiency.evodoc": {
+      "type": "disease",
+      "name": "vertebrobasilar insufficiency",
+      "code": "0x0002F1",
+      "id": 753,
+      "icd10": "I753"
+    },
+    "rectal_disorder.evodoc": {
+      "type": "disease",
+      "name": "rectal disorder",
+      "code": "0x0002F2",
+      "id": 754,
+      "icd10": "I754"
+    },
+    "atonic_bladder.evodoc": {
+      "type": "disease",
+      "name": "atonic bladder",
+      "code": "0x0002F3",
+      "id": 755,
+      "icd10": "I755"
+    },
+    "benign_paroxysmal_positional_vertical_(bppv).evodoc": {
+      "type": "disease",
+      "name": "benign paroxysmal positional vertical (bppv)",
+      "code": "0x0002F4",
+      "id": 756,
+      "icd10": "I756"
+    },
+    "blepharospasm.evodoc": {
+      "type": "disease",
+      "name": "blepharospasm",
+      "code": "0x0002F5",
+      "id": 757,
+      "icd10": "I757"
+    },
+    "sarcoidosis.evodoc": {
+      "type": "disease",
+      "name": "sarcoidosis",
+      "code": "0x0002F6",
+      "id": 758,
+      "icd10": "I758"
+    },
+    "metastatic_cancer.evodoc": {
+      "type": "disease",
+      "name": "metastatic cancer",
+      "code": "0x0002F7",
+      "id": 759,
+      "icd10": "I759"
+    },
+    "trigger_finger_(finger_disorder).evodoc": {
+      "type": "disease",
+      "name": "trigger finger (finger disorder)",
+      "code": "0x0002F8",
+      "id": 760,
+      "icd10": "I760"
+    },
+    "stye.evodoc": {
+      "type": "disease",
+      "name": "stye",
+      "code": "0x0002F9",
+      "id": 761,
+      "icd10": "I761"
+    },
+    "hemochromatosis.evodoc": {
+      "type": "disease",
+      "name": "hemochromatosis",
+      "code": "0x0002FA",
+      "id": 762,
+      "icd10": "I762"
+    },
+    "osteochondroma.evodoc": {
+      "type": "disease",
+      "name": "osteochondroma",
+      "code": "0x0002FB",
+      "id": 763,
+      "icd10": "I763"
+    },
+    "cushing_syndrome.evodoc": {
+      "type": "disease",
+      "name": "cushing syndrome",
+      "code": "0x0002FC",
+      "id": 764,
+      "icd10": "I764"
+    },
+    "typhoid_fever.evodoc": {
+      "type": "disease",
+      "name": "typhoid fever",
+      "code": "0x0002FD",
+      "id": 765,
+      "icd10": "I765"
+    },
+    "vitreous_degeneration.evodoc": {
+      "type": "disease",
+      "name": "vitreous degeneration",
+      "code": "0x0002FE",
+      "id": 766,
+      "icd10": "I766"
+    },
+    "atrophic_skin_condition.evodoc": {
+      "type": "disease",
+      "name": "atrophic skin condition",
+      "code": "0x0002FF",
+      "id": 767,
+      "icd10": "I767"
+    },
+    "aspergillosis.evodoc": {
+      "type": "disease",
+      "name": "aspergillosis",
+      "code": "0x000300",
+      "id": 768,
+      "icd10": "I768"
+    },
+    "uterine_atony.evodoc": {
+      "type": "disease",
+      "name": "uterine atony",
+      "code": "0x000301",
+      "id": 769,
+      "icd10": "I769"
+    },
+    "trichinosis.evodoc": {
+      "type": "disease",
+      "name": "trichinosis",
+      "code": "0x000302",
+      "id": 770,
+      "icd10": "I770"
+    },
+    "open_wound_of_the_lip.evodoc": {
+      "type": "disease",
+      "name": "open wound of the lip",
+      "code": "0x000303",
+      "id": 771,
+      "icd10": "I771"
+    },
+    "oral_mucosal_lesion.evodoc": {
+      "type": "disease",
+      "name": "oral mucosal lesion",
+      "code": "0x000304",
+      "id": 772,
+      "icd10": "I772"
+    },
+    "open_wound_due_to_trauma.evodoc": {
+      "type": "disease",
+      "name": "open wound due to trauma",
+      "code": "0x000305",
+      "id": 773,
+      "icd10": "I773"
+    },
+    "intracerebral_hemorrhage.evodoc": {
+      "type": "disease",
+      "name": "intracerebral hemorrhage",
+      "code": "0x000306",
+      "id": 774,
+      "icd10": "I774"
+    },
+    "alzheimer_disease.evodoc": {
+      "type": "disease",
+      "name": "alzheimer disease",
+      "code": "0x000307",
+      "id": 775,
+      "icd10": "I775"
+    },
+    "vaginismus.evodoc": {
+      "type": "disease",
+      "name": "vaginismus",
+      "code": "0x000308",
+      "id": 776,
+      "icd10": "I776"
+    },
+    "systemic_lupus_erythematosis_(sle).evodoc": {
+      "type": "disease",
+      "name": "systemic lupus erythematosis (sle)",
+      "code": "0x000309",
+      "id": 777,
+      "icd10": "I777"
+    },
+    "premature_ovarian_failure.evodoc": {
+      "type": "disease",
+      "name": "premature ovarian failure",
+      "code": "0x00030A",
+      "id": 778,
+      "icd10": "I778"
+    },
+    "thoracic_outlet_syndrome.evodoc": {
+      "type": "disease",
+      "name": "thoracic outlet syndrome",
+      "code": "0x00030B",
+      "id": 779,
+      "icd10": "I779"
+    },
+    "ganglion_cyst.evodoc": {
+      "type": "disease",
+      "name": "ganglion cyst",
+      "code": "0x00030C",
+      "id": 780,
+      "icd10": "I780"
+    },
+    "dislocation_of_the_knee.evodoc": {
+      "type": "disease",
+      "name": "dislocation of the knee",
+      "code": "0x00030D",
+      "id": 781,
+      "icd10": "I781"
+    },
+    "crohn_disease.evodoc": {
+      "type": "disease",
+      "name": "crohn disease",
+      "code": "0x00030E",
+      "id": 782,
+      "icd10": "I782"
+    },
+    "postoperative_infection.evodoc": {
+      "type": "disease",
+      "name": "postoperative infection",
+      "code": "0x00030F",
+      "id": 783,
+      "icd10": "I783"
+    },
+    "folate_deficiency.evodoc": {
+      "type": "disease",
+      "name": "folate deficiency",
+      "code": "0x000310",
+      "id": 784,
+      "icd10": "I784"
+    },
+    "skin_disorder.evodoc": {
+      "type": "disease",
+      "name": "skin disorder",
+      "code": "0x000311",
+      "id": 785,
+      "icd10": "I785"
+    },
+    "floaters.evodoc": {
+      "type": "disease",
+      "name": "floaters",
+      "code": "0x000312",
+      "id": 786,
+      "icd10": "I786"
+    },
+    "tooth_disorder.evodoc": {
+      "type": "disease",
+      "name": "tooth disorder",
+      "code": "0x000313",
+      "id": 787,
+      "icd10": "I787"
+    },
+    "open_wound_of_the_abdomen.evodoc": {
+      "type": "disease",
+      "name": "open wound of the abdomen",
+      "code": "0x000314",
+      "id": 788,
+      "icd10": "I788"
+    },
+    "fracture_of_the_leg.evodoc": {
+      "type": "disease",
+      "name": "fracture of the leg",
+      "code": "0x000315",
+      "id": 789,
+      "icd10": "I789"
+    },
+    "oral_thrush_(yeast_infection).evodoc": {
+      "type": "disease",
+      "name": "oral thrush (yeast infection)",
+      "code": "0x000316",
+      "id": 790,
+      "icd10": "I790"
+    },
+    "pityriasis_rosea.evodoc": {
+      "type": "disease",
+      "name": "pityriasis rosea",
+      "code": "0x000317",
+      "id": 791,
+      "icd10": "I791"
+    },
+    "allergy_to_animals.evodoc": {
+      "type": "disease",
+      "name": "allergy to animals",
+      "code": "0x000318",
+      "id": 792,
+      "icd10": "I792"
+    },
+    "orthostatic_hypotension.evodoc": {
+      "type": "disease",
+      "name": "orthostatic hypotension",
+      "code": "0x000319",
+      "id": 793,
+      "icd10": "I793"
+    },
+    "obstructive_sleep_apnea_(osa).evodoc": {
+      "type": "disease",
+      "name": "obstructive sleep apnea (osa)",
+      "code": "0x00031A",
+      "id": 794,
+      "icd10": "I794"
+    },
+    "hypokalemia.evodoc": {
+      "type": "disease",
+      "name": "hypokalemia",
+      "code": "0x00031B",
+      "id": 795,
+      "icd10": "I795"
+    },
+    "psoriasis.evodoc": {
+      "type": "disease",
+      "name": "psoriasis",
+      "code": "0x00031C",
+      "id": 796,
+      "icd10": "I796"
+    },
+    "dislocation_of_the_shoulder.evodoc": {
+      "type": "disease",
+      "name": "dislocation of the shoulder",
+      "code": "0x00031D",
+      "id": 797,
+      "icd10": "I797"
+    },
+    "intussusception.evodoc": {
+      "type": "disease",
+      "name": "intussusception",
+      "code": "0x00031E",
+      "id": 798,
+      "icd10": "I798"
+    },
+    "cervicitis.evodoc": {
+      "type": "disease",
+      "name": "cervicitis",
+      "code": "0x00031F",
+      "id": 799,
+      "icd10": "I799"
+    },
+    "abscess_of_the_pharynx.evodoc": {
+      "type": "disease",
+      "name": "abscess of the pharynx",
+      "code": "0x000320",
+      "id": 800,
+      "icd10": "I800"
+    },
+    "primary_thrombocythemia.evodoc": {
+      "type": "disease",
+      "name": "primary thrombocythemia",
+      "code": "0x000321",
+      "id": 801,
+      "icd10": "I801"
+    },
+    "arthritis_of_the_hip.evodoc": {
+      "type": "disease",
+      "name": "arthritis of the hip",
+      "code": "0x000322",
+      "id": 802,
+      "icd10": "I802"
+    },
+    "decubitus_ulcer.evodoc": {
+      "type": "disease",
+      "name": "decubitus ulcer",
+      "code": "0x000323",
+      "id": 803,
+      "icd10": "I803"
+    },
+    "hypernatremia.evodoc": {
+      "type": "disease",
+      "name": "hypernatremia",
+      "code": "0x000324",
+      "id": 804,
+      "icd10": "I804"
+    },
+    "sensorineural_hearing_loss.evodoc": {
+      "type": "disease",
+      "name": "sensorineural hearing loss",
+      "code": "0x000325",
+      "id": 805,
+      "icd10": "I805"
+    },
+    "chronic_ulcer.evodoc": {
+      "type": "disease",
+      "name": "chronic ulcer",
+      "code": "0x000326",
+      "id": 806,
+      "icd10": "I806"
+    },
+    "osteoporosis.evodoc": {
+      "type": "disease",
+      "name": "osteoporosis",
+      "code": "0x000327",
+      "id": 807,
+      "icd10": "I807"
+    },
+    "ileus.evodoc": {
+      "type": "disease",
+      "name": "ileus",
+      "code": "0x000328",
+      "id": 808,
+      "icd10": "I808"
+    },
+    "sickle_cell_crisis.evodoc": {
+      "type": "disease",
+      "name": "sickle cell crisis",
+      "code": "0x000329",
+      "id": 809,
+      "icd10": "I809"
+    },
+    "urethritis.evodoc": {
+      "type": "disease",
+      "name": "urethritis",
+      "code": "0x00032A",
+      "id": 810,
+      "icd10": "I810"
+    },
+    "prostatitis.evodoc": {
+      "type": "disease",
+      "name": "prostatitis",
+      "code": "0x00032B",
+      "id": 811,
+      "icd10": "I811"
+    },
+    "otitis_externa_(swimmer's_ear).evodoc": {
+      "type": "disease",
+      "name": "otitis externa (swimmer's ear)",
+      "code": "0x00032C",
+      "id": 812,
+      "icd10": "I812"
+    },
+    "poisoning_due_to_anticonvulsants.evodoc": {
+      "type": "disease",
+      "name": "poisoning due to anticonvulsants",
+      "code": "0x00032D",
+      "id": 813,
+      "icd10": "I813"
+    },
+    "testicular_torsion.evodoc": {
+      "type": "disease",
+      "name": "testicular torsion",
+      "code": "0x00032E",
+      "id": 814,
+      "icd10": "I814"
+    },
+    "tricuspid_valve_disease.evodoc": {
+      "type": "disease",
+      "name": "tricuspid valve disease",
+      "code": "0x00032F",
+      "id": 815,
+      "icd10": "I815"
+    },
+    "urethral_stricture.evodoc": {
+      "type": "disease",
+      "name": "urethral stricture",
+      "code": "0x000330",
+      "id": 816,
+      "icd10": "I816"
+    },
+    "vitamin_d_deficiency.evodoc": {
+      "type": "disease",
+      "name": "vitamin d deficiency",
+      "code": "0x000331",
+      "id": 817,
+      "icd10": "I817"
+    },
+    "hydatidiform_mole.evodoc": {
+      "type": "disease",
+      "name": "hydatidiform mole",
+      "code": "0x000332",
+      "id": 818,
+      "icd10": "I818"
+    },
+    "pain_disorder_affecting_the_neck.evodoc": {
+      "type": "disease",
+      "name": "pain disorder affecting the neck",
+      "code": "0x000333",
+      "id": 819,
+      "icd10": "I819"
+    },
+    "tuberculosis.evodoc": {
+      "type": "disease",
+      "name": "tuberculosis",
+      "code": "0x000334",
+      "id": 820,
+      "icd10": "I820"
+    },
+    "pelvic_fistula.evodoc": {
+      "type": "disease",
+      "name": "pelvic fistula",
+      "code": "0x000335",
+      "id": 821,
+      "icd10": "I821"
+    },
+    "acute_bronchiolitis.evodoc": {
+      "type": "disease",
+      "name": "acute bronchiolitis",
+      "code": "0x000336",
+      "id": 822,
+      "icd10": "I822"
+    },
+    "presbyopia.evodoc": {
+      "type": "disease",
+      "name": "presbyopia",
+      "code": "0x000337",
+      "id": 823,
+      "icd10": "I823"
+    },
+    "dementia.evodoc": {
+      "type": "disease",
+      "name": "dementia",
+      "code": "0x000338",
+      "id": 824,
+      "icd10": "I824"
+    },
+    "insect_bite.evodoc": {
+      "type": "disease",
+      "name": "insect bite",
+      "code": "0x000339",
+      "id": 825,
+      "icd10": "I825"
+    },
+    "paroxysmal_ventricular_tachycardia.evodoc": {
+      "type": "disease",
+      "name": "paroxysmal ventricular tachycardia",
+      "code": "0x00033A",
+      "id": 826,
+      "icd10": "I826"
+    },
+    "connective_tissue_disorder.evodoc": {
+      "type": "disease",
+      "name": "connective tissue disorder",
+      "code": "0x00033B",
+      "id": 827,
+      "icd10": "I827"
+    },
+    "foreign_body_in_the_eye.evodoc": {
+      "type": "disease",
+      "name": "foreign body in the eye",
+      "code": "0x00033C",
+      "id": 828,
+      "icd10": "I828"
+    },
+    "poisoning_due_to_gas.evodoc": {
+      "type": "disease",
+      "name": "poisoning due to gas",
+      "code": "0x00033D",
+      "id": 829,
+      "icd10": "I829"
+    },
+    "pyogenic_skin_infection.evodoc": {
+      "type": "disease",
+      "name": "pyogenic skin infection",
+      "code": "0x00033E",
+      "id": 830,
+      "icd10": "I830"
+    },
+    "endometrial_hyperplasia.evodoc": {
+      "type": "disease",
+      "name": "endometrial hyperplasia",
+      "code": "0x00033F",
+      "id": 831,
+      "icd10": "I831"
+    },
+    "acanthosis_nigricans.evodoc": {
+      "type": "disease",
+      "name": "acanthosis nigricans",
+      "code": "0x000340",
+      "id": 832,
+      "icd10": "I832"
+    },
+    "central_atherosclerosis.evodoc": {
+      "type": "disease",
+      "name": "central atherosclerosis",
+      "code": "0x000341",
+      "id": 833,
+      "icd10": "I833"
+    },
+    "viral_exanthem.evodoc": {
+      "type": "disease",
+      "name": "viral exanthem",
+      "code": "0x000342",
+      "id": 834,
+      "icd10": "I834"
+    },
+    "noninfectious_gastroenteritis.evodoc": {
+      "type": "disease",
+      "name": "noninfectious gastroenteritis",
+      "code": "0x000343",
+      "id": 835,
+      "icd10": "I835"
+    },
+    "benign_prostatic_hyperplasia_(bph).evodoc": {
+      "type": "disease",
+      "name": "benign prostatic hyperplasia (bph)",
+      "code": "0x000344",
+      "id": 836,
+      "icd10": "I836"
+    },
+    "menopause.evodoc": {
+      "type": "disease",
+      "name": "menopause",
+      "code": "0x000345",
+      "id": 837,
+      "icd10": "I837"
+    },
+    "primary_immunodeficiency.evodoc": {
+      "type": "disease",
+      "name": "primary immunodeficiency",
+      "code": "0x000346",
+      "id": 838,
+      "icd10": "I838"
+    },
+    "ovarian_cancer.evodoc": {
+      "type": "disease",
+      "name": "ovarian cancer",
+      "code": "0x000347",
+      "id": 839,
+      "icd10": "I839"
+    },
+    "cataract.evodoc": {
+      "type": "disease",
+      "name": "cataract",
+      "code": "0x000348",
+      "id": 840,
+      "icd10": "I840"
+    },
+    "dislocation_of_the_hip.evodoc": {
+      "type": "disease",
+      "name": "dislocation of the hip",
+      "code": "0x000349",
+      "id": 841,
+      "icd10": "I841"
+    },
+    "spinal_stenosis.evodoc": {
+      "type": "disease",
+      "name": "spinal stenosis",
+      "code": "0x00034A",
+      "id": 842,
+      "icd10": "I842"
+    },
+    "intestinal_obstruction.evodoc": {
+      "type": "disease",
+      "name": "intestinal obstruction",
+      "code": "0x00034B",
+      "id": 843,
+      "icd10": "I843"
+    },
+    "congenital_malformation_syndrome.evodoc": {
+      "type": "disease",
+      "name": "congenital malformation syndrome",
+      "code": "0x00034C",
+      "id": 844,
+      "icd10": "I844"
+    },
+    "sporotrichosis.evodoc": {
+      "type": "disease",
+      "name": "sporotrichosis",
+      "code": "0x00034D",
+      "id": 845,
+      "icd10": "I845"
+    },
+    "lymphangitis.evodoc": {
+      "type": "disease",
+      "name": "lymphangitis",
+      "code": "0x00034E",
+      "id": 846,
+      "icd10": "I846"
+    },
+    "wernicke_korsakoff_syndrome.evodoc": {
+      "type": "disease",
+      "name": "wernicke korsakoff syndrome",
+      "code": "0x00034F",
+      "id": 847,
+      "icd10": "I847"
+    },
+    "intestinal_disease.evodoc": {
+      "type": "disease",
+      "name": "intestinal disease",
+      "code": "0x000350",
+      "id": 848,
+      "icd10": "I848"
+    },
+    "persistent_vomiting_of_unknown_cause.evodoc": {
+      "type": "disease",
+      "name": "persistent vomiting of unknown cause",
+      "code": "0x000351",
+      "id": 849,
+      "icd10": "I849"
+    },
+    "open_wound_of_the_foot.evodoc": {
+      "type": "disease",
+      "name": "open wound of the foot",
+      "code": "0x000352",
+      "id": 850,
+      "icd10": "I850"
+    },
+    "myocarditis.evodoc": {
+      "type": "disease",
+      "name": "myocarditis",
+      "code": "0x000353",
+      "id": 851,
+      "icd10": "I851"
+    },
+    "preeclampsia.evodoc": {
+      "type": "disease",
+      "name": "preeclampsia",
+      "code": "0x000354",
+      "id": 852,
+      "icd10": "I852"
+    },
+    "neurofibromatosis.evodoc": {
+      "type": "disease",
+      "name": "neurofibromatosis",
+      "code": "0x000355",
+      "id": 853,
+      "icd10": "I853"
+    },
+    "chickenpox.evodoc": {
+      "type": "disease",
+      "name": "chickenpox",
+      "code": "0x000356",
+      "id": 854,
+      "icd10": "I854"
+    },
+    "pancreatic_cancer.evodoc": {
+      "type": "disease",
+      "name": "pancreatic cancer",
+      "code": "0x000357",
+      "id": 855,
+      "icd10": "I855"
+    },
+    "neuropathy_due_to_drugs.evodoc": {
+      "type": "disease",
+      "name": "neuropathy due to drugs",
+      "code": "0x000358",
+      "id": 856,
+      "icd10": "I856"
+    },
+    "croup.evodoc": {
+      "type": "disease",
+      "name": "croup",
+      "code": "0x000359",
+      "id": 857,
+      "icd10": "I857"
+    },
+    "idiopathic_excessive_menstruation.evodoc": {
+      "type": "disease",
+      "name": "idiopathic excessive menstruation",
+      "code": "0x00035A",
+      "id": 858,
+      "icd10": "I858"
+    },
+    "amblyopia.evodoc": {
+      "type": "disease",
+      "name": "amblyopia",
+      "code": "0x00035B",
+      "id": 859,
+      "icd10": "I859"
+    },
+    "meckel_diverticulum.evodoc": {
+      "type": "disease",
+      "name": "meckel diverticulum",
+      "code": "0x00035C",
+      "id": 860,
+      "icd10": "I860"
+    },
+    "dislocation_of_the_wrist.evodoc": {
+      "type": "disease",
+      "name": "dislocation of the wrist",
+      "code": "0x00035D",
+      "id": 861,
+      "icd10": "I861"
+    },
+    "ear_drum_damage.evodoc": {
+      "type": "disease",
+      "name": "ear drum damage",
+      "code": "0x00035E",
+      "id": 862,
+      "icd10": "I862"
+    },
+    "erectile_dysfunction.evodoc": {
+      "type": "disease",
+      "name": "erectile dysfunction",
+      "code": "0x00035F",
+      "id": 863,
+      "icd10": "I863"
+    },
+    "temporary_or_benign_blood_in_urine.evodoc": {
+      "type": "disease",
+      "name": "temporary or benign blood in urine",
+      "code": "0x000360",
+      "id": 864,
+      "icd10": "I864"
+    },
+    "chondromalacia_of_the_patella.evodoc": {
+      "type": "disease",
+      "name": "chondromalacia of the patella",
+      "code": "0x000361",
+      "id": 865,
+      "icd10": "I865"
+    },
+    "onychomycosis.evodoc": {
+      "type": "disease",
+      "name": "onychomycosis",
+      "code": "0x000362",
+      "id": 866,
+      "icd10": "I866"
+    },
+    "urethral_disorder.evodoc": {
+      "type": "disease",
+      "name": "urethral disorder",
+      "code": "0x000363",
+      "id": 867,
+      "icd10": "I867"
+    },
+    "lyme_disease.evodoc": {
+      "type": "disease",
+      "name": "lyme disease",
+      "code": "0x000364",
+      "id": 868,
+      "icd10": "I868"
+    },
+    "iron_deficiency_anemia.evodoc": {
+      "type": "disease",
+      "name": "iron deficiency anemia",
+      "code": "0x000365",
+      "id": 869,
+      "icd10": "I869"
+    },
+    "acute_respiratory_distress_syndrome_(ards).evodoc": {
+      "type": "disease",
+      "name": "acute respiratory distress syndrome (ards)",
+      "code": "0x000366",
+      "id": 870,
+      "icd10": "I870"
+    },
+    "toxic_multinodular_goiter.evodoc": {
+      "type": "disease",
+      "name": "toxic multinodular goiter",
+      "code": "0x000367",
+      "id": 871,
+      "icd10": "I871"
+    },
+    "open_wound_of_the_finger.evodoc": {
+      "type": "disease",
+      "name": "open wound of the finger",
+      "code": "0x000368",
+      "id": 872,
+      "icd10": "I872"
+    },
+    "autonomic_nervous_system_disorder.evodoc": {
+      "type": "disease",
+      "name": "autonomic nervous system disorder",
+      "code": "0x000369",
+      "id": 873,
+      "icd10": "I873"
+    },
+    "psychosexual_disorder.evodoc": {
+      "type": "disease",
+      "name": "psychosexual disorder",
+      "code": "0x00036A",
+      "id": 874,
+      "icd10": "I874"
+    },
+    "anemia.evodoc": {
+      "type": "disease",
+      "name": "anemia",
+      "code": "0x00036B",
+      "id": 875,
+      "icd10": "I875"
+    },
+    "tendinitis.evodoc": {
+      "type": "disease",
+      "name": "tendinitis",
+      "code": "0x00036C",
+      "id": 876,
+      "icd10": "I876"
+    },
+    "amyotrophic_lateral_sclerosis_(als).evodoc": {
+      "type": "disease",
+      "name": "amyotrophic lateral sclerosis (als)",
+      "code": "0x00036D",
+      "id": 877,
+      "icd10": "I877"
+    },
+    "central_retinal_artery_or_vein_occlusion.evodoc": {
+      "type": "disease",
+      "name": "central retinal artery or vein occlusion",
+      "code": "0x00036E",
+      "id": 878,
+      "icd10": "I878"
+    },
+    "paroxysmal_supraventricular_tachycardia.evodoc": {
+      "type": "disease",
+      "name": "paroxysmal supraventricular tachycardia",
+      "code": "0x00036F",
+      "id": 879,
+      "icd10": "I879"
+    },
+    "venous_insufficiency.evodoc": {
+      "type": "disease",
+      "name": "venous insufficiency",
+      "code": "0x000370",
+      "id": 880,
+      "icd10": "I880"
+    },
+    "trichomonas_infection.evodoc": {
+      "type": "disease",
+      "name": "trichomonas infection",
+      "code": "0x000371",
+      "id": 881,
+      "icd10": "I881"
+    },
+    "acne.evodoc": {
+      "type": "disease",
+      "name": "acne",
+      "code": "0x000372",
+      "id": 882,
+      "icd10": "I882"
+    },
+    "urinary_tract_obstruction.evodoc": {
+      "type": "disease",
+      "name": "urinary tract obstruction",
+      "code": "0x000373",
+      "id": 883,
+      "icd10": "I883"
+    },
+    "iridocyclitis.evodoc": {
+      "type": "disease",
+      "name": "iridocyclitis",
+      "code": "0x000374",
+      "id": 884,
+      "icd10": "I884"
+    },
+    "varicocele_of_the_testicles.evodoc": {
+      "type": "disease",
+      "name": "varicocele of the testicles",
+      "code": "0x000375",
+      "id": 885,
+      "icd10": "I885"
+    },
+    "irritable_bowel_syndrome.evodoc": {
+      "type": "disease",
+      "name": "irritable bowel syndrome",
+      "code": "0x000376",
+      "id": 886,
+      "icd10": "I886"
+    },
+    "fracture_of_the_foot.evodoc": {
+      "type": "disease",
+      "name": "fracture of the foot",
+      "code": "0x000377",
+      "id": 887,
+      "icd10": "I887"
+    },
+    "ovarian_cyst.evodoc": {
+      "type": "disease",
+      "name": "ovarian cyst",
+      "code": "0x000378",
+      "id": 888,
+      "icd10": "I888"
+    },
+    "chlamydia.evodoc": {
+      "type": "disease",
+      "name": "chlamydia",
+      "code": "0x000379",
+      "id": 889,
+      "icd10": "I889"
+    },
+    "parasitic_disease.evodoc": {
+      "type": "disease",
+      "name": "parasitic disease",
+      "code": "0x00037A",
+      "id": 890,
+      "icd10": "I890"
+    },
+    "fracture_of_the_jaw.evodoc": {
+      "type": "disease",
+      "name": "fracture of the jaw",
+      "code": "0x00037B",
+      "id": 891,
+      "icd10": "I891"
+    },
+    "lipoma.evodoc": {
+      "type": "disease",
+      "name": "lipoma",
+      "code": "0x00037C",
+      "id": 892,
+      "icd10": "I892"
+    },
+    "female_genitalia_infection.evodoc": {
+      "type": "disease",
+      "name": "female genitalia infection",
+      "code": "0x00037D",
+      "id": 893,
+      "icd10": "I893"
+    },
+    "broken_tooth.evodoc": {
+      "type": "disease",
+      "name": "broken tooth",
+      "code": "0x00037E",
+      "id": 894,
+      "icd10": "I894"
+    },
+    "dumping_syndrome.evodoc": {
+      "type": "disease",
+      "name": "dumping syndrome",
+      "code": "0x00037F",
+      "id": 895,
+      "icd10": "I895"
+    },
+    "lymphadenitis.evodoc": {
+      "type": "disease",
+      "name": "lymphadenitis",
+      "code": "0x000380",
+      "id": 896,
+      "icd10": "I896"
+    },
+    "injury_to_the_face.evodoc": {
+      "type": "disease",
+      "name": "injury to the face",
+      "code": "0x000381",
+      "id": 897,
+      "icd10": "I897"
+    },
+    "aortic_valve_disease.evodoc": {
+      "type": "disease",
+      "name": "aortic valve disease",
+      "code": "0x000382",
+      "id": 898,
+      "icd10": "I898"
+    },
+    "rheumatoid_arthritis.evodoc": {
+      "type": "disease",
+      "name": "rheumatoid arthritis",
+      "code": "0x000383",
+      "id": 899,
+      "icd10": "I899"
+    },
+    "spermatocele.evodoc": {
+      "type": "disease",
+      "name": "spermatocele",
+      "code": "0x000384",
+      "id": 900,
+      "icd10": "I900"
+    },
+    "impetigo.evodoc": {
+      "type": "disease",
+      "name": "impetigo",
+      "code": "0x000385",
+      "id": 901,
+      "icd10": "I901"
+    },
+    "anal_fistula.evodoc": {
+      "type": "disease",
+      "name": "anal fistula",
+      "code": "0x000386",
+      "id": 902,
+      "icd10": "I902"
+    },
+    "hypothermia.evodoc": {
+      "type": "disease",
+      "name": "hypothermia",
+      "code": "0x000387",
+      "id": 903,
+      "icd10": "I903"
+    },
+    "oppositional_disorder.evodoc": {
+      "type": "disease",
+      "name": "oppositional disorder",
+      "code": "0x000388",
+      "id": 904,
+      "icd10": "I904"
+    },
+    "diabetic_peripheral_neuropathy.evodoc": {
+      "type": "disease",
+      "name": "diabetic peripheral neuropathy",
+      "code": "0x000389",
+      "id": 905,
+      "icd10": "I905"
+    },
+    "testicular_disorder.evodoc": {
+      "type": "disease",
+      "name": "testicular disorder",
+      "code": "0x00038A",
+      "id": 906,
+      "icd10": "I906"
+    },
+    "hidradenitis_suppurativa.evodoc": {
+      "type": "disease",
+      "name": "hidradenitis suppurativa",
+      "code": "0x00038B",
+      "id": 907,
+      "icd10": "I907"
+    },
+    "valley_fever.evodoc": {
+      "type": "disease",
+      "name": "valley fever",
+      "code": "0x00038C",
+      "id": 908,
+      "icd10": "I908"
+    },
+    "conjunctivitis_due_to_bacteria.evodoc": {
+      "type": "disease",
+      "name": "conjunctivitis due to bacteria",
+      "code": "0x00038D",
+      "id": 909,
+      "icd10": "I909"
+    },
+    "lewy_body_dementia.evodoc": {
+      "type": "disease",
+      "name": "lewy body dementia",
+      "code": "0x00038E",
+      "id": 910,
+      "icd10": "I910"
+    },
+    "multiple_myeloma.evodoc": {
+      "type": "disease",
+      "name": "multiple myeloma",
+      "code": "0x00038F",
+      "id": 911,
+      "icd10": "I911"
+    },
+    "head_injury.evodoc": {
+      "type": "disease",
+      "name": "head injury",
+      "code": "0x000390",
+      "id": 912,
+      "icd10": "I912"
+    },
+    "ascending_cholangitis.evodoc": {
+      "type": "disease",
+      "name": "ascending cholangitis",
+      "code": "0x000391",
+      "id": 913,
+      "icd10": "I913"
+    },
+    "idiopathic_irregular_menstrual_cycle.evodoc": {
+      "type": "disease",
+      "name": "idiopathic irregular menstrual cycle",
+      "code": "0x000392",
+      "id": 914,
+      "icd10": "I914"
+    },
+    "interstitial_lung_disease.evodoc": {
+      "type": "disease",
+      "name": "interstitial lung disease",
+      "code": "0x000393",
+      "id": 915,
+      "icd10": "I915"
+    },
+    "mononeuritis.evodoc": {
+      "type": "disease",
+      "name": "mononeuritis",
+      "code": "0x000394",
+      "id": 916,
+      "icd10": "I916"
+    },
+    "malaria.evodoc": {
+      "type": "disease",
+      "name": "malaria",
+      "code": "0x000395",
+      "id": 917,
+      "icd10": "I917"
+    },
+    "somatization_disorder.evodoc": {
+      "type": "disease",
+      "name": "somatization disorder",
+      "code": "0x000396",
+      "id": 918,
+      "icd10": "I918"
+    },
+    "hypovolemia.evodoc": {
+      "type": "disease",
+      "name": "hypovolemia",
+      "code": "0x000397",
+      "id": 919,
+      "icd10": "I919"
+    },
+    "schizophrenia.evodoc": {
+      "type": "disease",
+      "name": "schizophrenia",
+      "code": "0x000398",
+      "id": 920,
+      "icd10": "I920"
+    },
+    "knee_ligament_or_meniscus_tear.evodoc": {
+      "type": "disease",
+      "name": "knee ligament or meniscus tear",
+      "code": "0x000399",
+      "id": 921,
+      "icd10": "I921"
+    },
+    "endocarditis.evodoc": {
+      "type": "disease",
+      "name": "endocarditis",
+      "code": "0x00039A",
+      "id": 922,
+      "icd10": "I922"
+    },
+    "sepsis.evodoc": {
+      "type": "disease",
+      "name": "sepsis",
+      "code": "0x00039B",
+      "id": 923,
+      "icd10": "I923"
+    },
+    "cholecystitis.evodoc": {
+      "type": "disease",
+      "name": "cholecystitis",
+      "code": "0x00039C",
+      "id": 924,
+      "icd10": "I924"
+    },
+    "cardiomyopathy.evodoc": {
+      "type": "disease",
+      "name": "cardiomyopathy",
+      "code": "0x00039D",
+      "id": 925,
+      "icd10": "I925"
+    },
+    "social_phobia.evodoc": {
+      "type": "disease",
+      "name": "social phobia",
+      "code": "0x00039E",
+      "id": 926,
+      "icd10": "I926"
+    },
+    "meningitis.evodoc": {
+      "type": "disease",
+      "name": "meningitis",
+      "code": "0x00039F",
+      "id": 927,
+      "icd10": "I927"
+    },
+    "spherocytosis.evodoc": {
+      "type": "disease",
+      "name": "spherocytosis",
+      "code": "0x0003A0",
+      "id": 928,
+      "icd10": "I928"
+    },
+    "hormone_disorder.evodoc": {
+      "type": "disease",
+      "name": "hormone disorder",
+      "code": "0x0003A1",
+      "id": 929,
+      "icd10": "I929"
+    },
+    "raynaud_disease.evodoc": {
+      "type": "disease",
+      "name": "raynaud disease",
+      "code": "0x0003A2",
+      "id": 930,
+      "icd10": "I930"
+    },
+    "reactive_arthritis.evodoc": {
+      "type": "disease",
+      "name": "reactive arthritis",
+      "code": "0x0003A3",
+      "id": 931,
+      "icd10": "I931"
+    },
+    "scabies.evodoc": {
+      "type": "disease",
+      "name": "scabies",
+      "code": "0x0003A4",
+      "id": 932,
+      "icd10": "I932"
+    },
+    "ear_wax_impaction.evodoc": {
+      "type": "disease",
+      "name": "ear wax impaction",
+      "code": "0x0003A5",
+      "id": 933,
+      "icd10": "I933"
+    },
+    "peripheral_arterial_embolism.evodoc": {
+      "type": "disease",
+      "name": "peripheral arterial embolism",
+      "code": "0x0003A6",
+      "id": 934,
+      "icd10": "I934"
+    },
+    "rosacea.evodoc": {
+      "type": "disease",
+      "name": "rosacea",
+      "code": "0x0003A7",
+      "id": 935,
+      "icd10": "I935"
+    },
+    "fracture_of_the_skull.evodoc": {
+      "type": "disease",
+      "name": "fracture of the skull",
+      "code": "0x0003A8",
+      "id": 936,
+      "icd10": "I936"
+    },
+    "uveitis.evodoc": {
+      "type": "disease",
+      "name": "uveitis",
+      "code": "0x0003A9",
+      "id": 937,
+      "icd10": "I937"
+    },
+    "fracture_of_the_facial_bones.evodoc": {
+      "type": "disease",
+      "name": "fracture of the facial bones",
+      "code": "0x0003AA",
+      "id": 938,
+      "icd10": "I938"
+    },
+    "tracheitis.evodoc": {
+      "type": "disease",
+      "name": "tracheitis",
+      "code": "0x0003AB",
+      "id": 939,
+      "icd10": "I939"
+    },
+    "jaw_disorder.evodoc": {
+      "type": "disease",
+      "name": "jaw disorder",
+      "code": "0x0003AC",
+      "id": 940,
+      "icd10": "I940"
+    },
+    "perirectal_infection.evodoc": {
+      "type": "disease",
+      "name": "perirectal infection",
+      "code": "0x0003AD",
+      "id": 941,
+      "icd10": "I941"
+    },
+    "breast_cyst.evodoc": {
+      "type": "disease",
+      "name": "breast cyst",
+      "code": "0x0003AE",
+      "id": 942,
+      "icd10": "I942"
+    },
+    "post-traumatic_stress_disorder_(ptsd).evodoc": {
+      "type": "disease",
+      "name": "post-traumatic stress disorder (ptsd)",
+      "code": "0x0003AF",
+      "id": 943,
+      "icd10": "I943"
+    },
+    "kidney_cancer.evodoc": {
+      "type": "disease",
+      "name": "kidney cancer",
+      "code": "0x0003B0",
+      "id": 944,
+      "icd10": "I944"
+    },
+    "vulvar_cancer.evodoc": {
+      "type": "disease",
+      "name": "vulvar cancer",
+      "code": "0x0003B1",
+      "id": 945,
+      "icd10": "I945"
+    },
+    "blepharitis.evodoc": {
+      "type": "disease",
+      "name": "blepharitis",
+      "code": "0x0003B2",
+      "id": 946,
+      "icd10": "I946"
+    },
+    "celiac_disease.evodoc": {
+      "type": "disease",
+      "name": "celiac disease",
+      "code": "0x0003B3",
+      "id": 947,
+      "icd10": "I947"
+    },
+    "cystitis.evodoc": {
+      "type": "disease",
+      "name": "cystitis",
+      "code": "0x0003B4",
+      "id": 948,
+      "icd10": "I948"
+    },
+    "sickle_cell_anemia.evodoc": {
+      "type": "disease",
+      "name": "sickle cell anemia",
+      "code": "0x0003B5",
+      "id": 949,
+      "icd10": "I949"
+    },
+    "subconjunctival_hemorrhage.evodoc": {
+      "type": "disease",
+      "name": "subconjunctival hemorrhage",
+      "code": "0x0003B6",
+      "id": 950,
+      "icd10": "I950"
+    },
+    "hemorrhoids.evodoc": {
+      "type": "disease",
+      "name": "hemorrhoids",
+      "code": "0x0003B7",
+      "id": 951,
+      "icd10": "I951"
+    },
+    "contact_dermatitis.evodoc": {
+      "type": "disease",
+      "name": "contact dermatitis",
+      "code": "0x0003B8",
+      "id": 952,
+      "icd10": "I952"
+    },
+    "sinus_bradycardia.evodoc": {
+      "type": "disease",
+      "name": "sinus bradycardia",
+      "code": "0x0003B9",
+      "id": 953,
+      "icd10": "I953"
+    },
+    "pelvic_inflammatory_disease.evodoc": {
+      "type": "disease",
+      "name": "pelvic inflammatory disease",
+      "code": "0x0003BA",
+      "id": 954,
+      "icd10": "I954"
+    },
+    "liver_disease.evodoc": {
+      "type": "disease",
+      "name": "liver disease",
+      "code": "0x0003BB",
+      "id": 955,
+      "icd10": "I955"
+    },
+    "chronic_constipation.evodoc": {
+      "type": "disease",
+      "name": "chronic constipation",
+      "code": "0x0003BC",
+      "id": 956,
+      "icd10": "I956"
+    },
+    "friedrich_ataxia.evodoc": {
+      "type": "disease",
+      "name": "friedrich ataxia",
+      "code": "0x0003BD",
+      "id": 957,
+      "icd10": "I957"
+    },
+    "tic_(movement)_disorder.evodoc": {
+      "type": "disease",
+      "name": "tic (movement) disorder",
+      "code": "0x0003BE",
+      "id": 958,
+      "icd10": "I958"
+    },
+    "skin_polyp.evodoc": {
+      "type": "disease",
+      "name": "skin polyp",
+      "code": "0x0003BF",
+      "id": 959,
+      "icd10": "I959"
+    },
+    "brachial_neuritis.evodoc": {
+      "type": "disease",
+      "name": "brachial neuritis",
+      "code": "0x0003C0",
+      "id": 960,
+      "icd10": "I960"
+    },
+    "cervical_cancer.evodoc": {
+      "type": "disease",
+      "name": "cervical cancer",
+      "code": "0x0003C1",
+      "id": 961,
+      "icd10": "I961"
+    },
+    "adrenal_adenoma.evodoc": {
+      "type": "disease",
+      "name": "adrenal adenoma",
+      "code": "0x0003C2",
+      "id": 962,
+      "icd10": "I962"
+    },
+    "esophagitis.evodoc": {
+      "type": "disease",
+      "name": "esophagitis",
+      "code": "0x0003C3",
+      "id": 963,
+      "icd10": "I963"
+    },
+    "gas_gangrene.evodoc": {
+      "type": "disease",
+      "name": "gas gangrene",
+      "code": "0x0003C4",
+      "id": 964,
+      "icd10": "I964"
+    },
+    "yeast_infection.evodoc": {
+      "type": "disease",
+      "name": "yeast infection",
+      "code": "0x0003C5",
+      "id": 965,
+      "icd10": "I965"
+    },
+    "spina_bifida.evodoc": {
+      "type": "disease",
+      "name": "spina bifida",
+      "code": "0x0003C6",
+      "id": 966,
+      "icd10": "I966"
+    },
+    "drug_poisoning_due_to_medication.evodoc": {
+      "type": "disease",
+      "name": "drug poisoning due to medication",
+      "code": "0x0003C7",
+      "id": 967,
+      "icd10": "I967"
+    },
+    "alcoholic_liver_disease.evodoc": {
+      "type": "disease",
+      "name": "alcoholic liver disease",
+      "code": "0x0003C8",
+      "id": 968,
+      "icd10": "I968"
+    },
+    "diverticulitis.evodoc": {
+      "type": "disease",
+      "name": "diverticulitis",
+      "code": "0x0003C9",
+      "id": 969,
+      "icd10": "I969"
+    },
+    "moyamoya_disease.evodoc": {
+      "type": "disease",
+      "name": "moyamoya disease",
+      "code": "0x0003CA",
+      "id": 970,
+      "icd10": "I970"
+    },
+    "heat_exhaustion.evodoc": {
+      "type": "disease",
+      "name": "heat exhaustion",
+      "code": "0x0003CB",
+      "id": 971,
+      "icd10": "I971"
+    },
+    "psychotic_disorder.evodoc": {
+      "type": "disease",
+      "name": "psychotic disorder",
+      "code": "0x0003CC",
+      "id": 972,
+      "icd10": "I972"
+    },
+    "frostbite.evodoc": {
+      "type": "disease",
+      "name": "frostbite",
+      "code": "0x0003CD",
+      "id": 973,
+      "icd10": "I973"
+    },
+    "atrophy_of_the_corpus_cavernosum.evodoc": {
+      "type": "disease",
+      "name": "atrophy of the corpus cavernosum",
+      "code": "0x0003CE",
+      "id": 974,
+      "icd10": "I974"
+    },
+    "smoking_or_tobacco_addiction.evodoc": {
+      "type": "disease",
+      "name": "smoking or tobacco addiction",
+      "code": "0x0003CF",
+      "id": 975,
+      "icd10": "I975"
+    },
+    "sprain_or_strain.evodoc": {
+      "type": "disease",
+      "name": "sprain or strain",
+      "code": "0x0003D0",
+      "id": 976,
+      "icd10": "I976"
+    },
+    "essential_tremor.evodoc": {
+      "type": "disease",
+      "name": "essential tremor",
+      "code": "0x0003D1",
+      "id": 977,
+      "icd10": "I977"
+    },
+    "open_wound_of_the_ear.evodoc": {
+      "type": "disease",
+      "name": "open wound of the ear",
+      "code": "0x0003D2",
+      "id": 978,
+      "icd10": "I978"
+    },
+    "foreign_body_in_the_nose.evodoc": {
+      "type": "disease",
+      "name": "foreign body in the nose",
+      "code": "0x0003D3",
+      "id": 979,
+      "icd10": "I979"
+    },
+    "idiopathic_painful_menstruation.evodoc": {
+      "type": "disease",
+      "name": "idiopathic painful menstruation",
+      "code": "0x0003D4",
+      "id": 980,
+      "icd10": "I980"
+    },
+    "down_syndrome.evodoc": {
+      "type": "disease",
+      "name": "down syndrome",
+      "code": "0x0003D5",
+      "id": 981,
+      "icd10": "I981"
+    },
+    "idiopathic_infrequent_menstruation.evodoc": {
+      "type": "disease",
+      "name": "idiopathic infrequent menstruation",
+      "code": "0x0003D6",
+      "id": 982,
+      "icd10": "I982"
+    },
+    "pneumothorax.evodoc": {
+      "type": "disease",
+      "name": "pneumothorax",
+      "code": "0x0003D7",
+      "id": 983,
+      "icd10": "I983"
+    },
+    "de_quervain_disease.evodoc": {
+      "type": "disease",
+      "name": "de quervain disease",
+      "code": "0x0003D8",
+      "id": 984,
+      "icd10": "I984"
+    },
+    "fracture_of_the_vertebra.evodoc": {
+      "type": "disease",
+      "name": "fracture of the vertebra",
+      "code": "0x0003D9",
+      "id": 985,
+      "icd10": "I985"
+    },
+    "human_immunodeficiency_virus_infection_(hiv).evodoc": {
+      "type": "disease",
+      "name": "human immunodeficiency virus infection (hiv)",
+      "code": "0x0003DA",
+      "id": 986,
+      "icd10": "I986"
+    },
+    "mumps.evodoc": {
+      "type": "disease",
+      "name": "mumps",
+      "code": "0x0003DB",
+      "id": 987,
+      "icd10": "I987"
+    },
+    "subarachnoid_hemorrhage.evodoc": {
+      "type": "disease",
+      "name": "subarachnoid hemorrhage",
+      "code": "0x0003DC",
+      "id": 988,
+      "icd10": "I988"
+    },
+    "acute_fatty_liver_of_pregnancy_(aflp).evodoc": {
+      "type": "disease",
+      "name": "acute fatty liver of pregnancy (aflp)",
+      "code": "0x0003DD",
+      "id": 989,
+      "icd10": "I989"
+    },
+    "ectropion.evodoc": {
+      "type": "disease",
+      "name": "ectropion",
+      "code": "0x0003DE",
+      "id": 990,
+      "icd10": "I990"
+    },
+    "scar.evodoc": {
+      "type": "disease",
+      "name": "scar",
+      "code": "0x0003DF",
+      "id": 991,
+      "icd10": "I991"
+    },
+    "lactose_intolerance.evodoc": {
+      "type": "disease",
+      "name": "lactose intolerance",
+      "code": "0x0003E0",
+      "id": 992,
+      "icd10": "I992"
+    },
+    "eustachian_tube_dysfunction_(ear_disorder).evodoc": {
+      "type": "disease",
+      "name": "eustachian tube dysfunction (ear disorder)",
+      "code": "0x0003E1",
+      "id": 993,
+      "icd10": "I993"
+    },
+    "appendicitis.evodoc": {
+      "type": "disease",
+      "name": "appendicitis",
+      "code": "0x0003E2",
+      "id": 994,
+      "icd10": "I994"
+    },
+    "graves_disease.evodoc": {
+      "type": "disease",
+      "name": "graves disease",
+      "code": "0x0003E3",
+      "id": 995,
+      "icd10": "I995"
+    },
+    "dissociative_disorder.evodoc": {
+      "type": "disease",
+      "name": "dissociative disorder",
+      "code": "0x0003E4",
+      "id": 996,
+      "icd10": "I996"
+    },
+    "open_wound_of_the_face.evodoc": {
+      "type": "disease",
+      "name": "open wound of the face",
+      "code": "0x0003E5",
+      "id": 997,
+      "icd10": "I997"
+    },
+    "dislocation_of_the_vertebra.evodoc": {
+      "type": "disease",
+      "name": "dislocation of the vertebra",
+      "code": "0x0003E6",
+      "id": 998,
+      "icd10": "I998"
+    },
+    "phimosis.evodoc": {
+      "type": "disease",
+      "name": "phimosis",
+      "code": "0x0003E7",
+      "id": 999,
+      "icd10": "I999"
+    },
+    "hyperemesis_gravidarum.evodoc": {
+      "type": "disease",
+      "name": "hyperemesis gravidarum",
+      "code": "0x0003E8",
+      "id": 1000,
+      "icd10": "I1000"
+    },
+    "pregnancy.evodoc": {
+      "type": "disease",
+      "name": "pregnancy",
+      "code": "0x0003E9",
+      "id": 1001,
+      "icd10": "I1001"
+    },
+    "thalassemia.evodoc": {
+      "type": "disease",
+      "name": "thalassemia",
+      "code": "0x0003EA",
+      "id": 1002,
+      "icd10": "I1002"
+    },
+    "placenta_previa.evodoc": {
+      "type": "disease",
+      "name": "placenta previa",
+      "code": "0x0003EB",
+      "id": 1003,
+      "icd10": "I1003"
+    },
+    "epidural_hemorrhage.evodoc": {
+      "type": "disease",
+      "name": "epidural hemorrhage",
+      "code": "0x0003EC",
+      "id": 1004,
+      "icd10": "I1004"
+    },
+    "septic_arthritis.evodoc": {
+      "type": "disease",
+      "name": "septic arthritis",
+      "code": "0x0003ED",
+      "id": 1005,
+      "icd10": "I1005"
+    },
+    "athlete's_foot.evodoc": {
+      "type": "disease",
+      "name": "athlete's foot",
+      "code": "0x0003EE",
+      "id": 1006,
+      "icd10": "I1006"
+    },
+    "pleural_effusion.evodoc": {
+      "type": "disease",
+      "name": "pleural effusion",
+      "code": "0x0003EF",
+      "id": 1007,
+      "icd10": "I1007"
+    },
+    "aphakia.evodoc": {
+      "type": "disease",
+      "name": "aphakia",
+      "code": "0x0003F0",
+      "id": 1008,
+      "icd10": "I1008"
+    },
+    "vulvar_disorder.evodoc": {
+      "type": "disease",
+      "name": "vulvar disorder",
+      "code": "0x0003F1",
+      "id": 1009,
+      "icd10": "I1009"
+    },
+    "sialoadenitis.evodoc": {
+      "type": "disease",
+      "name": "sialoadenitis",
+      "code": "0x0003F2",
+      "id": 1010,
+      "icd10": "I1010"
+    },
+    "gynecomastia.evodoc": {
+      "type": "disease",
+      "name": "gynecomastia",
+      "code": "0x0003F3",
+      "id": 1011,
+      "icd10": "I1011"
+    },
+    "urinary_tract_infection.evodoc": {
+      "type": "disease",
+      "name": "urinary tract infection",
+      "code": "0x0003F4",
+      "id": 1012,
+      "icd10": "I1012"
+    },
+    "histoplasmosis.evodoc": {
+      "type": "disease",
+      "name": "histoplasmosis",
+      "code": "0x0003F5",
+      "id": 1013,
+      "icd10": "I1013"
+    },
+    "erythema_multiforme.evodoc": {
+      "type": "disease",
+      "name": "erythema multiforme",
+      "code": "0x0003F6",
+      "id": 1014,
+      "icd10": "I1014"
+    },
+    "scoliosis.evodoc": {
+      "type": "disease",
+      "name": "scoliosis",
+      "code": "0x0003F7",
+      "id": 1015,
+      "icd10": "I1015"
+    },
+    "bunion.evodoc": {
+      "type": "disease",
+      "name": "bunion",
+      "code": "0x0003F8",
+      "id": 1016,
+      "icd10": "I1016"
+    },
+    "arrhythmia.evodoc": {
+      "type": "disease",
+      "name": "arrhythmia",
+      "code": "0x0003F9",
+      "id": 1017,
+      "icd10": "I1017"
+    },
+    "trigeminal_neuralgia.evodoc": {
+      "type": "disease",
+      "name": "trigeminal neuralgia",
+      "code": "0x0003FA",
+      "id": 1018,
+      "icd10": "I1018"
+    },
+    "ankylosing_spondylitis.evodoc": {
+      "type": "disease",
+      "name": "ankylosing spondylitis",
+      "code": "0x0003FB",
+      "id": 1019,
+      "icd10": "I1019"
+    },
+    "peripheral_nerve_disorder.evodoc": {
+      "type": "disease",
+      "name": "peripheral nerve disorder",
+      "code": "0x0003FC",
+      "id": 1020,
+      "icd10": "I1020"
+    },
+    "sebaceous_cyst.evodoc": {
+      "type": "disease",
+      "name": "sebaceous cyst",
+      "code": "0x0003FD",
+      "id": 1021,
+      "icd10": "I1021"
+    },
+    "poisoning_due_to_antipsychotics.evodoc": {
+      "type": "disease",
+      "name": "poisoning due to antipsychotics",
+      "code": "0x0003FE",
+      "id": 1022,
+      "icd10": "I1022"
+    },
+    "neurosis.evodoc": {
+      "type": "disease",
+      "name": "neurosis",
+      "code": "0x0003FF",
+      "id": 1023,
+      "icd10": "I1023"
+    },
+    "prostate_cancer.evodoc": {
+      "type": "disease",
+      "name": "prostate cancer",
+      "code": "0x000400",
+      "id": 1024,
+      "icd10": "I1024"
+    },
+    "cerebral_edema.evodoc": {
+      "type": "disease",
+      "name": "cerebral edema",
+      "code": "0x000401",
+      "id": 1025,
+      "icd10": "I1025"
+    },
+    "dislocation_of_the_finger.evodoc": {
+      "type": "disease",
+      "name": "dislocation of the finger",
+      "code": "0x000402",
+      "id": 1026,
+      "icd10": "I1026"
+    },
+    "birth_trauma.evodoc": {
+      "type": "disease",
+      "name": "birth trauma",
+      "code": "0x000403",
+      "id": 1027,
+      "icd10": "I1027"
+    },
+    "chronic_pancreatitis.evodoc": {
+      "type": "disease",
+      "name": "chronic pancreatitis",
+      "code": "0x000404",
+      "id": 1028,
+      "icd10": "I1028"
+    },
+    "hematoma.evodoc": {
+      "type": "disease",
+      "name": "hematoma",
+      "code": "0x000405",
+      "id": 1029,
+      "icd10": "I1029"
+    },
+    "carcinoid_syndrome.evodoc": {
+      "type": "disease",
+      "name": "carcinoid syndrome",
+      "code": "0x000406",
+      "id": 1030,
+      "icd10": "I1030"
+    },
+    "open_wound_of_the_head.evodoc": {
+      "type": "disease",
+      "name": "open wound of the head",
+      "code": "0x000407",
+      "id": 1031,
+      "icd10": "I1031"
+    },
+    "seborrheic_keratosis.evodoc": {
+      "type": "disease",
+      "name": "seborrheic keratosis",
+      "code": "0x000408",
+      "id": 1032,
+      "icd10": "I1032"
+    },
+    "burn.evodoc": {
+      "type": "disease",
+      "name": "burn",
+      "code": "0x000409",
+      "id": 1033,
+      "icd10": "I1033"
+    },
+    "spontaneous_abortion.evodoc": {
+      "type": "disease",
+      "name": "spontaneous abortion",
+      "code": "0x00040A",
+      "id": 1034,
+      "icd10": "I1034"
+    },
+    "genital_herpes.evodoc": {
+      "type": "disease",
+      "name": "genital herpes",
+      "code": "0x00040B",
+      "id": 1035,
+      "icd10": "I1035"
+    },
+    "adjustment_reaction.evodoc": {
+      "type": "disease",
+      "name": "adjustment reaction",
+      "code": "0x00040C",
+      "id": 1036,
+      "icd10": "I1036"
+    },
+    "gallstone.evodoc": {
+      "type": "disease",
+      "name": "gallstone",
+      "code": "0x00040D",
+      "id": 1037,
+      "icd10": "I1037"
+    },
+    "multiple_sclerosis.evodoc": {
+      "type": "disease",
+      "name": "multiple sclerosis",
+      "code": "0x00040E",
+      "id": 1038,
+      "icd10": "I1038"
+    },
+    "zenker_diverticulum.evodoc": {
+      "type": "disease",
+      "name": "zenker diverticulum",
+      "code": "0x00040F",
+      "id": 1039,
+      "icd10": "I1039"
+    },
+    "fracture_of_the_pelvis.evodoc": {
+      "type": "disease",
+      "name": "fracture of the pelvis",
+      "code": "0x000410",
+      "id": 1040,
+      "icd10": "I1040"
+    },
+    "pneumoconiosis.evodoc": {
+      "type": "disease",
+      "name": "pneumoconiosis",
+      "code": "0x000411",
+      "id": 1041,
+      "icd10": "I1041"
+    },
+    "hyperlipidemia.evodoc": {
+      "type": "disease",
+      "name": "hyperlipidemia",
+      "code": "0x000412",
+      "id": 1042,
+      "icd10": "I1042"
+    },
+    "ulcerative_colitis.evodoc": {
+      "type": "disease",
+      "name": "ulcerative colitis",
+      "code": "0x000413",
+      "id": 1043,
+      "icd10": "I1043"
+    },
+    "male_genitalia_infection.evodoc": {
+      "type": "disease",
+      "name": "male genitalia infection",
+      "code": "0x000414",
+      "id": 1044,
+      "icd10": "I1044"
+    },
+    "hpv.evodoc": {
+      "type": "disease",
+      "name": "hpv",
+      "code": "0x000415",
+      "id": 1045,
+      "icd10": "I1045"
+    },
+    "angina.evodoc": {
+      "type": "disease",
+      "name": "angina",
+      "code": "0x000416",
+      "id": 1046,
+      "icd10": "I1046"
+    },
+    "injury_to_the_spinal_cord.evodoc": {
+      "type": "disease",
+      "name": "injury to the spinal cord",
+      "code": "0x000417",
+      "id": 1047,
+      "icd10": "I1047"
+    },
+    "nasal_polyp.evodoc": {
+      "type": "disease",
+      "name": "nasal polyp",
+      "code": "0x000418",
+      "id": 1048,
+      "icd10": "I1048"
+    },
+    "lichen_simplex.evodoc": {
+      "type": "disease",
+      "name": "lichen simplex",
+      "code": "0x000419",
+      "id": 1049,
+      "icd10": "I1049"
+    },
+    "trichiasis.evodoc": {
+      "type": "disease",
+      "name": "trichiasis",
+      "code": "0x00041A",
+      "id": 1050,
+      "icd10": "I1050"
+    },
+    "acariasis.evodoc": {
+      "type": "disease",
+      "name": "acariasis",
+      "code": "0x00041B",
+      "id": 1051,
+      "icd10": "I1051"
+    },
+    "colorectal_cancer.evodoc": {
+      "type": "disease",
+      "name": "colorectal cancer",
+      "code": "0x00041C",
+      "id": 1052,
+      "icd10": "I1052"
+    },
+    "skin_pigmentation_disorder.evodoc": {
+      "type": "disease",
+      "name": "skin pigmentation disorder",
+      "code": "0x00041D",
+      "id": 1053,
+      "icd10": "I1053"
+    },
+    "factitious_disorder.evodoc": {
+      "type": "disease",
+      "name": "factitious disorder",
+      "code": "0x00041E",
+      "id": 1054,
+      "icd10": "I1054"
+    },
+    "lymphogranuloma_venereum.evodoc": {
+      "type": "disease",
+      "name": "lymphogranuloma venereum",
+      "code": "0x00041F",
+      "id": 1055,
+      "icd10": "I1055"
+    },
+    "galactorrhea_of_unknown_cause.evodoc": {
+      "type": "disease",
+      "name": "galactorrhea of unknown cause",
+      "code": "0x000420",
+      "id": 1056,
+      "icd10": "I1056"
+    },
+    "g6pd_enzyme_deficiency.evodoc": {
+      "type": "disease",
+      "name": "g6pd enzyme deficiency",
+      "code": "0x000421",
+      "id": 1057,
+      "icd10": "I1057"
+    },
+    "nerve_impingement_near_the_shoulder.evodoc": {
+      "type": "disease",
+      "name": "nerve impingement near the shoulder",
+      "code": "0x000422",
+      "id": 1058,
+      "icd10": "I1058"
+    },
+    "toxoplasmosis.evodoc": {
+      "type": "disease",
+      "name": "toxoplasmosis",
+      "code": "0x000423",
+      "id": 1059,
+      "icd10": "I1059"
+    },
+    "fibroadenoma.evodoc": {
+      "type": "disease",
+      "name": "fibroadenoma",
+      "code": "0x000424",
+      "id": 1060,
+      "icd10": "I1060"
+    },
+    "open_wound_of_the_hand.evodoc": {
+      "type": "disease",
+      "name": "open wound of the hand",
+      "code": "0x000425",
+      "id": 1061,
+      "icd10": "I1061"
+    },
+    "missed_abortion.evodoc": {
+      "type": "disease",
+      "name": "missed abortion",
+      "code": "0x000426",
+      "id": 1062,
+      "icd10": "I1062"
+    },
+    "diabetic_ketoacidosis.evodoc": {
+      "type": "disease",
+      "name": "diabetic ketoacidosis",
+      "code": "0x000427",
+      "id": 1063,
+      "icd10": "I1063"
+    },
+    "granuloma_inguinale.evodoc": {
+      "type": "disease",
+      "name": "granuloma inguinale",
+      "code": "0x000428",
+      "id": 1064,
+      "icd10": "I1064"
+    },
+    "obsessive_compulsive_disorder_(ocd).evodoc": {
+      "type": "disease",
+      "name": "obsessive compulsive disorder (ocd)",
+      "code": "0x000429",
+      "id": 1065,
+      "icd10": "I1065"
+    },
+    "injury_of_the_ankle.evodoc": {
+      "type": "disease",
+      "name": "injury of the ankle",
+      "code": "0x00042A",
+      "id": 1066,
+      "icd10": "I1066"
+    },
+    "hyponatremia.evodoc": {
+      "type": "disease",
+      "name": "hyponatremia",
+      "code": "0x00042B",
+      "id": 1067,
+      "icd10": "I1067"
+    },
+    "stricture_of_the_esophagus.evodoc": {
+      "type": "disease",
+      "name": "stricture of the esophagus",
+      "code": "0x00042C",
+      "id": 1068,
+      "icd10": "I1068"
+    },
+    "fracture_of_the_ankle.evodoc": {
+      "type": "disease",
+      "name": "fracture of the ankle",
+      "code": "0x00042D",
+      "id": 1069,
+      "icd10": "I1069"
+    },
+    "soft_tissue_sarcoma.evodoc": {
+      "type": "disease",
+      "name": "soft tissue sarcoma",
+      "code": "0x00042E",
+      "id": 1070,
+      "icd10": "I1070"
+    },
+    "bone_disorder.evodoc": {
+      "type": "disease",
+      "name": "bone disorder",
+      "code": "0x00042F",
+      "id": 1071,
+      "icd10": "I1071"
+    },
+    "epilepsy.evodoc": {
+      "type": "disease",
+      "name": "epilepsy",
+      "code": "0x000430",
+      "id": 1072,
+      "icd10": "I1072"
+    },
+    "personality_disorder.evodoc": {
+      "type": "disease",
+      "name": "personality disorder",
+      "code": "0x000431",
+      "id": 1073,
+      "icd10": "I1073"
+    },
+    "shingles_(herpes_zoster).evodoc": {
+      "type": "disease",
+      "name": "shingles (herpes zoster)",
+      "code": "0x000432",
+      "id": 1074,
+      "icd10": "I1074"
+    },
+    "tourette_syndrome.evodoc": {
+      "type": "disease",
+      "name": "tourette syndrome",
+      "code": "0x000433",
+      "id": 1075,
+      "icd10": "I1075"
+    },
+    "avascular_necrosis.evodoc": {
+      "type": "disease",
+      "name": "avascular necrosis",
+      "code": "0x000434",
+      "id": 1076,
+      "icd10": "I1076"
+    },
+    "strep_throat.evodoc": {
+      "type": "disease",
+      "name": "strep throat",
+      "code": "0x000435",
+      "id": 1077,
+      "icd10": "I1077"
+    },
+    "spinocerebellar_ataxia.evodoc": {
+      "type": "disease",
+      "name": "spinocerebellar ataxia",
+      "code": "0x000436",
+      "id": 1078,
+      "icd10": "I1078"
+    },
+    "osteomyelitis.evodoc": {
+      "type": "disease",
+      "name": "osteomyelitis",
+      "code": "0x000437",
+      "id": 1079,
+      "icd10": "I1079"
+    },
+    "sjogren_syndrome.evodoc": {
+      "type": "disease",
+      "name": "sjogren syndrome",
+      "code": "0x000438",
+      "id": 1080,
+      "icd10": "I1080"
+    },
+    "adhesive_capsulitis_of_the_shoulder.evodoc": {
+      "type": "disease",
+      "name": "adhesive capsulitis of the shoulder",
+      "code": "0x000439",
+      "id": 1081,
+      "icd10": "I1081"
+    },
+    "viral_hepatitis.evodoc": {
+      "type": "disease",
+      "name": "viral hepatitis",
+      "code": "0x00043A",
+      "id": 1082,
+      "icd10": "I1082"
+    },
+    "tonsillar_hypertrophy.evodoc": {
+      "type": "disease",
+      "name": "tonsillar hypertrophy",
+      "code": "0x00043B",
+      "id": 1083,
+      "icd10": "I1083"
+    },
+    "gastritis.evodoc": {
+      "type": "disease",
+      "name": "gastritis",
+      "code": "0x00043C",
+      "id": 1084,
+      "icd10": "I1084"
+    },
+    "skin_cancer.evodoc": {
+      "type": "disease",
+      "name": "skin cancer",
+      "code": "0x00043D",
+      "id": 1085,
+      "icd10": "I1085"
+    },
+    "rheumatic_fever.evodoc": {
+      "type": "disease",
+      "name": "rheumatic fever",
+      "code": "0x00043E",
+      "id": 1086,
+      "icd10": "I1086"
+    },
+    "aphthous_ulcer.evodoc": {
+      "type": "disease",
+      "name": "aphthous ulcer",
+      "code": "0x00043F",
+      "id": 1087,
+      "icd10": "I1087"
+    },
+    "tonsillitis.evodoc": {
+      "type": "disease",
+      "name": "tonsillitis",
+      "code": "0x000440",
+      "id": 1088,
+      "icd10": "I1088"
+    },
+    "intestinal_cancer.evodoc": {
+      "type": "disease",
+      "name": "intestinal cancer",
+      "code": "0x000441",
+      "id": 1089,
+      "icd10": "I1089"
+    },
+    "rocky_mountain_spotted_fever.evodoc": {
+      "type": "disease",
+      "name": "rocky mountain spotted fever",
+      "code": "0x000442",
+      "id": 1090,
+      "icd10": "I1090"
+    },
+    "stomach_cancer.evodoc": {
+      "type": "disease",
+      "name": "stomach cancer",
+      "code": "0x000443",
+      "id": 1091,
+      "icd10": "I1091"
+    },
+    "developmental_disability.evodoc": {
+      "type": "disease",
+      "name": "developmental disability",
+      "code": "0x000444",
+      "id": 1092,
+      "icd10": "I1092"
+    },
+    "acute_stress_reaction.evodoc": {
+      "type": "disease",
+      "name": "acute stress reaction",
+      "code": "0x000445",
+      "id": 1093,
+      "icd10": "I1093"
+    },
+    "delirium.evodoc": {
+      "type": "disease",
+      "name": "delirium",
+      "code": "0x000446",
+      "id": 1094,
+      "icd10": "I1094"
+    },
+    "callus.evodoc": {
+      "type": "disease",
+      "name": "callus",
+      "code": "0x000447",
+      "id": 1095,
+      "icd10": "I1095"
+    },
+    "guillain_barre_syndrome.evodoc": {
+      "type": "disease",
+      "name": "guillain barre syndrome",
+      "code": "0x000448",
+      "id": 1096,
+      "icd10": "I1096"
+    },
+    "lumbago.evodoc": {
+      "type": "disease",
+      "name": "lumbago",
+      "code": "0x000449",
+      "id": 1097,
+      "icd10": "I1097"
+    },
+    "deviated_nasal_septum.evodoc": {
+      "type": "disease",
+      "name": "deviated nasal septum",
+      "code": "0x00044A",
+      "id": 1098,
+      "icd10": "I1098"
+    },
+    "hemangioma.evodoc": {
+      "type": "disease",
+      "name": "hemangioma",
+      "code": "0x00044B",
+      "id": 1099,
+      "icd10": "I1099"
+    },
+    "peripheral_arterial_disease.evodoc": {
+      "type": "disease",
+      "name": "peripheral arterial disease",
+      "code": "0x00044C",
+      "id": 1100,
+      "icd10": "I1100"
+    },
+    "chronic_back_pain.evodoc": {
+      "type": "disease",
+      "name": "chronic back pain",
+      "code": "0x00044D",
+      "id": 1101,
+      "icd10": "I1101"
+    },
+    "conjunctivitis.evodoc": {
+      "type": "disease",
+      "name": "conjunctivitis",
+      "code": "0x00044E",
+      "id": 1102,
+      "icd10": "I1102"
+    },
+    "herniated_disk.evodoc": {
+      "type": "disease",
+      "name": "herniated disk",
+      "code": "0x00044F",
+      "id": 1103,
+      "icd10": "I1103"
+    },
+    "rhabdomyolysis.evodoc": {
+      "type": "disease",
+      "name": "rhabdomyolysis",
+      "code": "0x000450",
+      "id": 1104,
+      "icd10": "I1104"
+    },
+    "breast_infection_(mastitis).evodoc": {
+      "type": "disease",
+      "name": "breast infection (mastitis)",
+      "code": "0x000451",
+      "id": 1105,
+      "icd10": "I1105"
+    },
+    "abdominal_aortic_aneurysm.evodoc": {
+      "type": "disease",
+      "name": "abdominal aortic aneurysm",
+      "code": "0x000452",
+      "id": 1106,
+      "icd10": "I1106"
+    },
+    "pulmonary_embolism.evodoc": {
+      "type": "disease",
+      "name": "pulmonary embolism",
+      "code": "0x000453",
+      "id": 1107,
+      "icd10": "I1107"
+    },
+    "conduct_disorder.evodoc": {
+      "type": "disease",
+      "name": "conduct disorder",
+      "code": "0x000454",
+      "id": 1108,
+      "icd10": "I1108"
+    },
+    "mastectomy.evodoc": {
+      "type": "disease",
+      "name": "mastectomy",
+      "code": "0x000455",
+      "id": 1109,
+      "icd10": "I1109"
+    },
+    "epididymitis.evodoc": {
+      "type": "disease",
+      "name": "epididymitis",
+      "code": "0x000456",
+      "id": 1110,
+      "icd10": "I1110"
+    },
+    "premature_rupture_of_amniotic_membrane.evodoc": {
+      "type": "disease",
+      "name": "premature rupture of amniotic membrane",
+      "code": "0x000457",
+      "id": 1111,
+      "icd10": "I1111"
+    },
+    "molluscum_contagiosum.evodoc": {
+      "type": "disease",
+      "name": "molluscum contagiosum",
+      "code": "0x000458",
+      "id": 1112,
+      "icd10": "I1112"
+    },
+    "necrotizing_fasciitis.evodoc": {
+      "type": "disease",
+      "name": "necrotizing fasciitis",
+      "code": "0x000459",
+      "id": 1113,
+      "icd10": "I1113"
+    },
+    "benign_vaginal_discharge_(leukorrhea).evodoc": {
+      "type": "disease",
+      "name": "benign vaginal discharge (leukorrhea)",
+      "code": "0x00045A",
+      "id": 1114,
+      "icd10": "I1114"
+    },
+    "bladder_obstruction.evodoc": {
+      "type": "disease",
+      "name": "bladder obstruction",
+      "code": "0x00045B",
+      "id": 1115,
+      "icd10": "I1115"
+    },
+    "melanoma.evodoc": {
+      "type": "disease",
+      "name": "melanoma",
+      "code": "0x00045C",
+      "id": 1116,
+      "icd10": "I1116"
+    },
+    "cervical_disorder.evodoc": {
+      "type": "disease",
+      "name": "cervical disorder",
+      "code": "0x00045D",
+      "id": 1117,
+      "icd10": "I1117"
+    },
+    "laryngitis.evodoc": {
+      "type": "disease",
+      "name": "laryngitis",
+      "code": "0x00045E",
+      "id": 1118,
+      "icd10": "I1118"
+    },
+    "dyshidrosis.evodoc": {
+      "type": "disease",
+      "name": "dyshidrosis",
+      "code": "0x00045F",
+      "id": 1119,
+      "icd10": "I1119"
+    },
+    "poisoning_due_to_opioids.evodoc": {
+      "type": "disease",
+      "name": "poisoning due to opioids",
+      "code": "0x000460",
+      "id": 1120,
+      "icd10": "I1120"
+    },
+    "lichen_planus.evodoc": {
+      "type": "disease",
+      "name": "lichen planus",
+      "code": "0x000461",
+      "id": 1121,
+      "icd10": "I1121"
+    },
+    "gastroduodenal_ulcer.evodoc": {
+      "type": "disease",
+      "name": "gastroduodenal ulcer",
+      "code": "0x000462",
+      "id": 1122,
+      "icd10": "I1122"
+    },
+    "inguinal_hernia.evodoc": {
+      "type": "disease",
+      "name": "inguinal hernia",
+      "code": "0x000463",
+      "id": 1123,
+      "icd10": "I1123"
+    },
+    "eczema.evodoc": {
+      "type": "disease",
+      "name": "eczema",
+      "code": "0x000464",
+      "id": 1124,
+      "icd10": "I1124"
+    },
+    "asperger_syndrome.evodoc": {
+      "type": "disease",
+      "name": "asperger syndrome",
+      "code": "0x000465",
+      "id": 1125,
+      "icd10": "I1125"
+    },
+    "mucositis.evodoc": {
+      "type": "disease",
+      "name": "mucositis",
+      "code": "0x000466",
+      "id": 1126,
+      "icd10": "I1126"
+    },
+    "paronychia.evodoc": {
+      "type": "disease",
+      "name": "paronychia",
+      "code": "0x000467",
+      "id": 1127,
+      "icd10": "I1127"
+    },
+    "open_wound_of_the_jaw.evodoc": {
+      "type": "disease",
+      "name": "open wound of the jaw",
+      "code": "0x000468",
+      "id": 1128,
+      "icd10": "I1128"
+    },
+    "white_blood_cell_disease.evodoc": {
+      "type": "disease",
+      "name": "white blood cell disease",
+      "code": "0x000469",
+      "id": 1129,
+      "icd10": "I1129"
+    },
+    "kaposi_sarcoma.evodoc": {
+      "type": "disease",
+      "name": "kaposi sarcoma",
+      "code": "0x00046A",
+      "id": 1130,
+      "icd10": "I1130"
+    },
+    "spondylolisthesis.evodoc": {
+      "type": "disease",
+      "name": "spondylolisthesis",
+      "code": "0x00046B",
+      "id": 1131,
+      "icd10": "I1131"
+    },
+    "pseudotumor_cerebri.evodoc": {
+      "type": "disease",
+      "name": "pseudotumor cerebri",
+      "code": "0x00046C",
+      "id": 1132,
+      "icd10": "I1132"
+    },
+    "conjunctivitis_due_to_virus.evodoc": {
+      "type": "disease",
+      "name": "conjunctivitis due to virus",
+      "code": "0x00046D",
+      "id": 1133,
+      "icd10": "I1133"
+    },
+    "open_wound_of_the_nose.evodoc": {
+      "type": "disease",
+      "name": "open wound of the nose",
+      "code": "0x00046E",
+      "id": 1134,
+      "icd10": "I1134"
+    }
+  },
+  "created_at": "2025-09-28T02:24:34.626262"
+}
