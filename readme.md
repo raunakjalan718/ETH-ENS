@@ -91,13 +91,13 @@ We demonstrate that ENS can power the **next generation of decentralized healthc
 
 Install dependencies and run the demo:
 
-git clone https://github.com/your-username/evodoc-ens.git
+git clone https://github.com/raunakjalan718/ETH-ENS.git
 cd evodoc-ens
 python -m venv venv && source venv/bin/activate
 pip install pandas numpy scikit-learn xgboost joblib
 
 Place your medical dataset CSV in data/raw/ then run:
-```bash
+
 python split.py      # Split dataset by disease groups
 python setup.py      # Initialize ENS registry  
 python train1.py     # Train first model (respiratory)
