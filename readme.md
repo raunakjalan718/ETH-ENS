@@ -91,7 +91,6 @@ We demonstrate that ENS can power the **next generation of decentralized healthc
 
 Install dependencies and run the demo:
 
-```bash
 git clone https://github.com/your-username/evodoc-ens.git
 cd evodoc-ens
 python -m venv venv && source venv/bin/activate
