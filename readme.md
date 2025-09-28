@@ -3,39 +3,26 @@
 
 EvoDoc solves healthcare AI's biggest problems: fragmented data, opaque models, and non-portable patient identities. By using ENS as a naming layer for medical entities, we create the first truly interoperable medical AI system where diseases, symptoms, medicines, patients, and models all have human-readable blockchain identities.
 
+---
+
 ## The Problem
 
 Traditional healthcare AI systems cannot communicate with each other. When you add new disease categories, you must retrain everything from scratch. Patient data stays locked in institutional silos. There's no way to verify which model made a prediction or what data it was trained on.
+
+---
 
 ## Our Solution
 
 EvoDoc reimagines ENS as `.evodoc` domains that name every medical entity:
 
-- **flu.evodoc** maps to Influenza with ICD-10 codes and stable hex identifiers
+- **flu.evodoc** maps to Influenza with ICD-10 codes and stable hex identifiers  
 - **fever.evodoc** represents symptoms with consistent IDs across all models  
-- **ravi123.evodoc** creates portable patient profiles that work everywhere
-- **model.v1.evodoc** provides verifiable AI with accuracy metrics and dataset provenance
+- **ravi123.evodoc** creates portable patient profiles that work everywhere  
+- **model.v1.evodoc** provides verifiable AI with accuracy metrics and dataset provenance  
 
 The breakthrough is **incremental training**: train a respiratory model, then add a cardiovascular model later without touching the first one. ENS stable identities make this possible.
 
-## Quick Start
-
-Install dependencies and run the demo:
-
-```bash
-git clone https://github.com/your-username/evodoc-ens.git
-cd evodoc-ens
-python -m venv venv && source venv/bin/activate
-pip install pandas numpy scikit-learn xgboost joblib
-
-Place your medical dataset CSV in data/raw/ then run:
-```bash
-python split.py      # Split dataset by disease groups
-python setup.py      # Initialize ENS registry  
-python train1.py     # Train first model (respiratory)
-python train2.py     # Train second model (your choice: heart/diabetes/brain)
-python combine.py    # Combine without retraining first model
-python test.py       # Interactive patient demo
+---
 
 ## What Makes This Special
 
@@ -100,17 +87,21 @@ We demonstrate that ENS can power the **next generation of decentralized healthc
 
 ---
 
-## Contributing
+## Quick Start
 
-We welcome contributions to:  
-- Expand medical entity coverage  
-- Improve model performance  
-- Advance the on-chain roadmap  
+Install dependencies and run the demo:
 
-The codebase is designed for **clarity and extensibility**.  
+```bash
+git clone https://github.com/your-username/evodoc-ens.git
+cd evodoc-ens
+python -m venv venv && source venv/bin/activate
+pip install pandas numpy scikit-learn xgboost joblib
 
----
-
-## License
-
-MIT License – see **LICENSE** file for details.  
+Place your medical dataset CSV in data/raw/ then run:
+```bash
+python split.py      # Split dataset by disease groups
+python setup.py      # Initialize ENS registry  
+python train1.py     # Train first model (respiratory)
+python train2.py     # Train second model (your choice: heart/diabetes/brain)
+python combine.py    # Combine without retraining first model
+python test.py       # Interactive patient demo
